@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Segula Technologies - Office Français de la
+# Biodiversité
+# This file is distributed under the same license as the cuspy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr "Project-Id-Version: cuspy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-19 16:17+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../source/examples.rst:2
+msgid "Example data to test the package :mod:`cuspy`"
+msgstr "Données d'exemple pour tester le paquet :mod:`cuspy`"
+
+#: ../../source/examples.rst:4
+msgid ""
+"You can test the application with example data provided in the folder "
+":file:`example_data` and the OKP model implemented in the :mod:`okplm` "
+"package. Several scripts that use these data and model are also available"
+" in the folder :file:`tests`."
+msgstr "Vous pouvez tester le logiciel à l'aide des données d'exemple fourniesdans le dossier :file:`example_data` et le modèle OKP implementé dans le paquet :mod:`okplm`. Plusieurs scripts qu'utilisent ces données et modèle sont disponibles aussi dans le dossier :file:`tests`."
+
+#: ../../source/examples.rst:10
+msgid "The data"
+msgstr "Les données"
+
+#: ../../source/examples.rst:12
+msgid ""
+"The lake data in the :file:`lake.txt` file corresponds to the Lake Allos "
+"(lake code = ALL04)."
+msgstr "Les données de lac dans le fichier :file:`lake.txt` correspondent au lac d'Allos (code de lac = ALL04)."
+
+#: ../../source/examples.rst:15
+msgid ""
+"The meteorological data (:file:`meteo.txt`) is synthetic data based on "
+"meteorological data. Air temperature has been created using a seasonal "
+"component and an ARMA model, while solar radiation data corresponds to "
+"the seasonal component only."
+msgstr "Les données météorologiques (:file:`meteo.txt`) sont des données synthetiques créées depuis des données météorologiques. La température de l'air a été créée à l'aide d'une composante saisonnière et un modèle ARMA, tandis que les données de rayonnement solaire correspondent seulement à la composante saisonnière"
+
+#: ../../source/examples.rst:20
+msgid ""
+"The observations in the files :file:`obs.txt` and :file:`pred.txt` are "
+"fictitious and their only aim is to verify the package is working "
+"correctly and to help learn its usage."
+msgstr "Les observations dans les fichiers :file:`obs.txt` et :file:`pred.txt` sont fitives et leur seul but est de vérifier le correct fonctionnement du paquet et d'aider dans l'apprentissage de son utilisation."
+
+#: ../../source/examples.rst:24
+msgid ""
+"The folder also contains three files containing observation names "
+"(:file:`obs_names.txt`), observation group names (:file:`obs_groups.txt`)"
+" and observation weights (:file:`obs_weights.txt`)."
+msgstr "Dans le dossier il y a aussi trois fichiers qui contiennent les noms des observations (:file:`obs_names.txt`), les noms des groupes d'observations (:file:`obs_groups.txt`) et les poids des observations (:file:`obs_weights.txt`)."
+
+#: ../../source/examples.rst:29
+msgid "The scripts"
+msgstr "Les scripts"
+
+#: ../../source/examples.rst:30
+msgid ""
+"The folder :file:`tests` contains several scripts that can be used to "
+"test the package functionalities. Each script illustrates how to make "
+"different types of analysis."
+msgstr "Le dossier :file:`tests` contient plusieurs scripts permettant de tester les fonctionnalités du paquet. Chaque script démontre comment faire différents types d'analyses."
+
+#: ../../source/examples.rst:34
+msgid "The included scripts are:"
+msgstr "Les scripts inclus sont:"
+
+#: ../../source/examples.rst:36
+msgid ":file:`test_0_input.py`: it illustrates input file management."
+msgstr ":file:`test_0_input.py`: il démontre la gestion des fichiers d'entrée."
+
+#: ../../source/examples.rst:37
+msgid ""
+":file:`test_1_overdet.py`: it provides examples of calibration in the "
+"overdetermined case, with GLM or DE algorithms."
+msgstr ":file:`test_1_overdet.py`: il donne des exemples de calibration dans le cas surdéterminé, avec les algorithmes GLM ou DE."
+
+#: ../../source/examples.rst:39
+msgid ""
+":file:`test_2_calib_reg.py`: it provides an example of calibration in the"
+" under-determined case, using Tikhonov regularisation."
+msgstr ":file:`test_2_calib_reg.py`: il donne un exemple de calibration dans le cas sous-déterminé, en utilisant la régularisation de Tikhonov."
+
+#: ../../source/examples.rst:41
+msgid ""
+":file:`test_3_sensitivity.py`: it exemplifies the realisation of a global"
+" sensitivity analysis."
+msgstr ":file:`test_3_sensitivity.py`: il exemplifie la réalisation d'une analyse de sensitivité globale."
+
+#: ../../source/examples.rst:43
+msgid ""
+":file:`test_4_monte_carlo.py`: it shows how to carry Monte Carlo "
+"simulations."
+msgstr ":file:`test_4_monte_carlo.py`: il montre comment faire des simulations de Monte Carlo simulations."
+
+#: ../../source/examples.rst:45
+msgid ""
+":file:`test_5_ies.py`: it shows an application of Iterative Ensemble "
+"Smoothing."
+msgstr ":file:`test_5_ies.py`: il montre une application du Lissage Itératif d'Ensemble (Iterative Ensemble Smoothing)."
+
+#: ../../source/examples.rst:47
+msgid ""
+":file:`test_6_uncertainty.py`: it shows an example of calibration and "
+"uncertainty analysis."
+msgstr ":file:`test_6_uncertainty.py`: il montre un exemple de calibration et d'analyse d'incertitudes."
+

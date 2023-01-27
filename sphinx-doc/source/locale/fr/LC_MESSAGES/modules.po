@@ -1,0 +1,938 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Segula Technologies - Office Français de la
+# Biodiversité
+# This file is distributed under the same license as the cuspy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr "Project-Id-Version: cuspy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-07 12:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../source/modules.rst:2
+msgid "Modules"
+msgstr "Modules"
+
+#: ../../source/modules.rst:4
+msgid "Module ``input_output``"
+msgstr "Module ``input_output``"
+
+#: input_output:1 of
+msgid "Functions to read and write data."
+msgstr "Fonctions pour lire et écrire des données."
+
+#: input_output:3 of
+msgid ""
+"The functions in this module are used to manage reading and writing of "
+"input and output files."
+msgstr "Les fonctions de ce module servent à lire et écrire des fichiers d'entrée et sortie."
+
+#: analyses:6 input_output:6 of
+msgid "This module contains the following functions:"
+msgstr "Ce module contient les fonctions suivantes :"
+
+#: input_output:8 of
+msgid ":func:`get_obs_data`: Get observation data."
+msgstr ":func:`get_obs_data`: Obtient des données observées."
+
+#: input_output:9 of
+msgid ":func:`process_sweep_out`: Process file :file:`sweep_out.csv`."
+msgstr ":func:`process_sweep_out`: Traite fichier :file:`sweep_out.csv`."
+
+#: input_output:10 of
+msgid ":func:`write_dict`: Write dictionary to file."
+msgstr ":func:`write_dict`: Écrit un dictionnaire à un fichier."
+
+#: input_output:11 of
+msgid ":func:`write_dummy_pred_file`: Write a predictions file with dummy values."
+msgstr ":func:`write_dummy_pred_file`: Écrit un fichier de prédictions avec des valeurs fictives."
+
+#: input_output:12 of
+msgid ":func:`write_ins_file`: Write PEST instruction file."
+msgstr ":func:`write_ins_file`: Écrit le fichier PEST d'instructions."
+
+#: input_output:13 of
+msgid ":func:`write_pest_files`: Writes PEST files."
+msgstr ":func:`write_pest_files`: Écrit les fichiers de PEST."
+
+#: input_output:14 of
+msgid ":func:`write_par_data_file`: Write parameter data file."
+msgstr ":func:`write_tpl_file`: Écrit le fichier de paramètres modèle de PEST."
+
+#: input_output:15 of
+msgid ":func:`write_tpl_file`: Write PEST template parameter file."
+msgstr ":func:`write_tpl_file`: Écrit le fichier de paramètres modèle de PEST."
+
+#: input_output.get_obs_data:1 of
+msgid "Get observation data"
+msgstr "Obtient données observées"
+
+#: input_output.get_obs_data:3 of
+msgid ""
+"This function is used to read data (observations or predictions) from a "
+"file. It is also used to group data and to assign names and weights to "
+"data. In PEST parlance \"observations\" correspond to measurements "
+"already made (usually with weight > 0), and \"predictions\" (or "
+"\"forecasts\") correspond to data we intend to forecast (with weight = "
+"0)."
+msgstr "Cette fonction sert à lire des données (observations ou prédictions) depuis un fichier. Il est utilisé aussi pour grouper des données et pour assigner des noms et poids aux données. Dans la terminologie utilisée par PEST les \"observations\" correspondent à mesures déjà réalisées (d'habitude avec un poids > 0), et les \"prédictions\" (ou \"prévisions\") correspondent aux données que nous voulons prédire (avec poids = 0)."
+
+#: analyses.calibration analyses.gsa analyses.ies analyses.linear_uncertainty
+#: analyses.monte_carlo functions.launch_pestpp input_output.get_obs_data
+#: input_output.process_sweep_out input_output.write_dict
+#: input_output.write_dummy_pred_file input_output.write_ins_file
+#: input_output.write_par_data_file input_output.write_pest_files
+#: input_output.write_tpl_file of
+msgid "Parameters"
+msgstr "Paramètres"
+
+#: input_output.get_obs_data:10 of
+msgid ""
+"path of the observations file (it should have the same format as the "
+"model output file). Missing values may be indicated with NA, na or NaN. "
+"The first column contains dates in the format \"YYYY-mm-dd\"."
+msgstr "chemin du fichier d'observations (il devrait avoir le même format que le fichier de sortie du modèle). Les valeurs manquantes peuvent être indiquées avec NA, na ou NaN. La première colonne contient les dates avec le format \"AAAA-mm-jj\"."
+
+#: input_output.get_obs_data:14 of
+msgid "date of start of simulation (in the format \"YYYY-mm-dd\")."
+msgstr "date de début de la simulation avec le format 'AAAA-mm-jj'."
+
+#: input_output.get_obs_data:16 of
+msgid "date of end of simulation (in the format \"YYYY-mm-dd\")."
+msgstr "date de finalisation de la simulation avec le format 'AAAA-mm-jj'."
+
+#: input_output.get_obs_data:18 of
+msgid ""
+"str or float. If str, it indicates the path to a file with the same "
+"format and column names as obs_file containing weights for each "
+"measurement. If float, it indicates a weight to apply to all "
+"measurements."
+msgstr "str ou float. Si c'est str, l'argument indique le chemin à un fichier avec les mêmes format et nom des colonnes que obs_file et qui contient les poids pour chaque mesure. Si c'est float, il indique un poids à appliquer à toutes les mesures."
+
+#: input_output.get_obs_data:22 of
+msgid ""
+"it can be a path, a string or 'default'. If it is a path, group names are"
+" read from a file with the same format and column names as obs_file. If "
+"'default', observations are grouped by variable name. If another str, all"
+" observations are assigned to the same group."
+msgstr "peut être un chemin, une chaîne de caractères ou 'default'. si c'est un chemin, les noms des groupes sont lus depuis un fichier avec les mêmes format et noms de colonnes que obs_file. Si c'est 'default', les observations sont groupées par nom de variable. Si c'est une autre str, toutes les observations sont assignées au même groupe."
+
+#: input_output.get_obs_data:27 of
+msgid ""
+"it can be a path, a string or 'default'. If it is a path, observation "
+"names are read from a file with the same format and column names as "
+"obs_file. If 'default', observations names have the format xxxx_YYYYmmdd "
+"(xxxx is the corresponding variable name, and YYYYmmdd is a date string)."
+" If another str, the observation names have the format obsnamesNN, where "
+"NN is the index of the observation in the resulting dataframe."
+msgstr "peut être un chemin, une chaîne de caractères ou 'default'. Si c'est un chemin, les noms des observations sont lus depuis un fichier avec les mêmes format et noms des colonnes que obs_file. Si c'est 'default', les noms des observations ont le format xxxx_AAAAmmjj (xxxx est le nom de la variable correspondante, et AAAAmmjj est une chaîne de caractères qui représente la date). Si c'est une autre str, les noms des observations ont le format obsnamesNN, où NN est l'index de l'observation dans le dataframe créé."
+
+#: input_output.get_obs_data:35 of
+msgid "column delimiter used in the files read by the function."
+msgstr "délimiteur des colonnes utilisé dans les fichiers lus par la fonction."
+
+#: analyses.calibration analyses.gsa analyses.ies analyses.linear_uncertainty
+#: analyses.monte_carlo functions.launch_pestpp input_output.get_obs_data
+#: input_output.process_sweep_out input_output.write_dict
+#: input_output.write_dummy_pred_file input_output.write_ins_file
+#: input_output.write_pest_files input_output.write_tpl_file of
+msgid "Returns"
+msgstr "Retour"
+
+#: input_output.get_obs_data:38 of
+msgid ""
+"A pandas dataframe containing the row and column indexes of observations "
+"in the output file, the observation names and groups, and their weights."
+msgstr "Un dataframe pandas qui contient les indexes des files et colonnes des observations dans le fichier de sortie, les noms et groupes des observations, et leur poids."
+
+#: input_output.process_sweep_out:1 of
+msgid "Process file :file:`sweep_out.csv`."
+msgstr "Traite le fichier :file:`sweep_out.csv`."
+
+#: input_output.process_sweep_out:3 of
+msgid ""
+"Path of the :file:`sweep_out.csv` file, created when making Monte Carlo "
+"simulations."
+msgstr "Chemin du fichier :file:`sweep_out.csv`, créé quand on réalise des simulations de Monte Carlo simulations."
+
+#: input_output.process_sweep_out:5 of
+msgid "List of variable names."
+msgstr "Liste des noms des variables."
+
+#: input_output.process_sweep_out:6 of
+msgid "Folder where the processed data will be written."
+msgstr "Dossier où écrire les données traitées."
+
+#: input_output.process_sweep_out:7 of
+msgid ""
+"Dictionary of variable names for which partial averages will be "
+"calculated. The keys indicate the variables used to group data into "
+"percentiles; the values are lists of variables names for which partial "
+"averages will be calculated for each of the percentile groups of the key "
+"variable."
+msgstr "Dictionnaire de noms des variables pour lesquelles des moyennes partielles seront calculées. Les clés indiquent les variables utilisées pour grouper les données par percentiles; les valeurs sont listes des noms des variables pour lesquelles des moyennes partielles seront calculées pour chaque groupe de la variable clé."
+
+#: input_output.process_sweep_out:14 of
+#, python-format
+msgid ""
+"A series of text files containing the base simulation, the minimum, "
+"maximum, and the percentiles 5%, 25%, 50%, 75% and 95% of the simulations"
+" in the :file:`sweep_out.csv` file. The names of the output files follow "
+"the pattern \"mc_uncert_<v>.txt\", where `v` is the name of the output "
+"variable as used in :file:`sweep_out.csv`. In addition, if `ptl_avg` is "
+"specified, another series of files is created, which contains the partial"
+" averages of one variable (`vpa`) by percentile group of another variable"
+" (`v`). In this case, the output files follow the pattern "
+"\"mc_pavg_<vpa>_by_<v>.txt\"."
+msgstr "Une série de fichiers texte qui contiennent la simulation de base, le minimum, le maximum et les percentiles 5%, 25%, 50%, 75% et 95% des simulations dans le fichier :file:`sweep_out.csv`. Les noms des fichiers de sortie suivent le modèle \"mc_uncert_<v>.txt\", où `v` est le nom de la variable de sortie telle quelle est utilisée dans :file:`sweep_out.csv`. De plus, si `ptl_avg` est spécifiée, une autre série de fichiers est créée, contenant les moyennes partielles d'une variable (`vpa`) par groupe de percentile d'une autre variable (`v`). Dans ce cas, les fichiers de sortie suivent le modèle \"mc_pavg_<vpa>_by_<v>.txt\"."
+
+#: input_output.write_dict:1 of
+msgid "Write dictionary to file."
+msgstr "Écrit dictionnaire à un fichier."
+
+#: input_output.write_dict:3 of
+msgid ""
+"This function writes a Python dictionary to a file. The file is organised"
+" in two columns, the first containing keys, and the second one containing"
+" values."
+msgstr "Cette fonction écrit un dictionnaire Python à un fichier. Le fichier est organisé en deux colonnes, la première contient les clés et la seconde contient les valeurs."
+
+#: input_output.write_dict:7 of
+msgid "a Python dictionary."
+msgstr "un dictionnaire Python."
+
+#: input_output.write_dict:8 of
+msgid "path of the text file to write the data."
+msgstr "chemin du fichier texte où écrire les données."
+
+#: input_output.write_dict:10 of
+msgid "A file located at `path` where the dictionary data is written."
+msgstr "Un fichier situé à \"path\" où le contenu du dictionnaire data est écrit."
+
+#: input_output.write_dummy_pred_file:1 of
+msgid "Write predictions file filled with dummy values."
+msgstr "Écrit un fichier de prédictions avec des valeurs fictives."
+
+#: input_output.write_dummy_pred_file:3 of
+msgid "File name."
+msgstr "Nom du fichier."
+
+#: input_output.write_dummy_pred_file:4 of
+msgid ""
+"List or array of time stamps corresponding to the data in the predictions"
+" file."
+msgstr "Liste ou array de données de temps correspondantes aux données dans le fichier de prédictions."
+
+#: input_output.write_dummy_pred_file:6 of
+msgid "Nomes of the columns in the predictions file."
+msgstr "Noms des colonnes du fichier de prédictions."
+
+#: input_output.write_dummy_pred_file:7 of
+msgid ""
+"Name of the column containing time data (provided through the argument "
+"`time_stamps`."
+msgstr "Nom de la colonne qui contient les données de temps (données par le biais de l'argument `time_stamps`)."
+
+#: input_output.write_dummy_pred_file:9 of
+msgid "Value used to fill the predictions file (except time data)."
+msgstr "Valeur utilisée pour remplir le fichier de prédictions (à exception des données de temps)."
+
+#: input_output.write_dummy_pred_file:11 of
+msgid "Column separator of the output file."
+msgstr "Séparateur de colonnes du fichier de sortie."
+
+#: input_output.write_dummy_pred_file:13 of
+msgid "A file with the same format as the output file, filled with dummy values."
+msgstr "Un fichier avec le même format que le fichier de sortie, rempli avec des données fictives."
+
+#: input_output.write_dummy_pred_file:18 of
+msgid ""
+"A predictions file filled with dummy values may be useful when it is "
+"necessary to obtain simulation results for a certain period and there are"
+" no observations available."
+msgstr "Un fichier de prédictions rempli avec des données fictives peut être utile quand on veut obtenir des résultats de simulation pour une période de temps pour lequel il n'y a pas d'observations disponibles."
+
+#: input_output.write_ins_file:1 of
+msgid "Write PEST instruction file."
+msgstr "Écrit le fichier PEST d'instructions."
+
+#: input_output.write_ins_file:3 of
+msgid ""
+"This function is used to write a PEST(++) instruction file, a text file "
+"used to specify how PEST should read a model's output file. Detailed "
+"instructions on how to format an instructions file can be found in White "
+"et al. (2019)."
+msgstr "Cette fonction sert à écrire un fichier d'instructions de PEST(++), un fichier texte utilisé pour spécifier comment PEST doit lire le fichier de sortie d'un modèle. Des instructions détaillées sur comment formater un fichier d'instructions peuvent être trouvées dans White et al. (2019)."
+
+#: input_output.write_ins_file:8 of
+msgid "a file name. It is recommended to use the extension .ins."
+msgstr "un nom de fichier. Il est conseillé d'utiliser l'extension .ins."
+
+#: input_output.write_ins_file:9 of
+msgid ""
+"list of tuples (x, y, obsname) indicating the row index (x), column index"
+" (y) and name (obsname) corresponding to observations in the model output"
+" file."
+msgstr "liste de tuples (x, y, obsname) qui indique l'index des files (x), l'index des colonnes (y) et le nom (obsname) qui correspond aux observations dans le fichier de sortie du modèle."
+
+#: input_output.write_ins_file:12 of
+msgid ""
+"list of tuples (x, y, obsname) indicating the row index (x), column index"
+" (y) and name (obsname) corresponding to predictions in the model output "
+"file."
+msgstr "liste de tuples (x, y, obsname) qui indique l'index des files (x), l'index des colonnes (y) et le nom (obsname) qui correspond aux prédictions dans le fichier de sortie du modèle."
+
+#: input_output.write_ins_file:15 of
+msgid "number of columns of the output file."
+msgstr "nombre de colonnes du fichier de sortie."
+
+#: input_output.write_ins_file:16 of
+msgid "number of lines of the file header."
+msgstr "nombre de lignes de l'entête du fichier."
+
+#: input_output.write_ins_file:17 of
+msgid ""
+"width of the field in characters. It must be at least as long as the "
+"observation/prediction name."
+msgstr "largeur du champ en nombre de caractères. Il doit être au moins si long que le nom de l'observation/prédiction."
+
+#: input_output.write_ins_file:19 of
+msgid "delimiter character used in the output file."
+msgstr "caractère délimiteur utilisé dans le fichier de sortie."
+
+#: input_output.write_ins_file:21 of
+msgid ""
+"A PEST(++) instruction file (a text file specifying how to process a "
+"model output file to read the simulation results corresponding to the "
+"observations and predictions of interest)."
+msgstr "Un fichier d'instruction PEST(++) (un fichier texte qui spécifie comment traiter la sortie d'un modèle pour lire les résultats de simulation qui correspondent aux observations et prédictions d’intérêt)."
+
+#: analyses.calibration:28 analyses.gsa:23 analyses.ies:24
+#: analyses.linear_uncertainty:29 analyses.monte_carlo:33
+#: functions.launch_pestpp:30 input_output.write_ins_file:26
+#: input_output.write_pest_files:77 input_output.write_tpl_file:16 of
+msgid "References"
+msgstr "Références"
+
+#: analyses.calibration:32 analyses.gsa:28 analyses.ies:29
+#: analyses.monte_carlo:37 functions.launch_pestpp:39
+#: input_output.write_ins_file:27 input_output.write_pest_files:78
+#: input_output.write_tpl_file:17 of
+msgid ""
+"White, J.; Welter, D.; Doherty, J. (2019) *PEST++ Version 4.2.16*. PEST++"
+" Development Team. 175 p."
+msgstr "White, J.; Welter, D.; Doherty, J. (2019) *PEST++ Version 4.2.16*. PEST++ Development Team. 175 p."
+
+#: input_output.write_par_data_file:1 of
+msgid "Write parameter data file."
+msgstr "Écrit le fichier de données des paramètres."
+
+#: input_output.write_par_data_file:3 of
+msgid "List of names of the parameters."
+msgstr "Liste de noms des paramètres."
+
+#: input_output.write_par_data_file:4 of
+msgid "List of initial values of the parameters."
+msgstr "Liste des valeurs initiales des paramètres."
+
+#: input_output.write_par_data_file:5 of
+msgid "List of lower bounds of the parameters."
+msgstr "Liste des seuils inférieurs des paramètres."
+
+#: input_output.write_par_data_file:6 of
+msgid "List of upper bounds of the parameters."
+msgstr "Liste des seuils supérieurs des paramètres."
+
+#: input_output.write_par_data_file:7 of
+msgid ""
+"Transformation applied to all the parameters or list of transformations "
+"applied to each parameter. The possible values are \"none\", \"log\", "
+"\"fixed\" or \"tied\"."
+msgstr "Transformation appliquée à tous les paramètres ou liste de transformations appliquées pour chaque paramètre. Les valeurs possibles sont \"none\", \"log\", \"fixed\" or \"tied\"."
+
+#: input_output.write_par_data_file:10 of
+msgid ""
+"Type of parameter change limit (value to apply to all the parameters or "
+"list of values). The possible values are: \"relative\" and \"factor\"."
+msgstr "Type de limite de changement du paramètre (valeur à appliquer à tous les paramètres ou liste de valeurs). Les valeurs possibles sont : \"relative\" et \"factor\"."
+
+#: input_output.write_par_data_file:13 of
+msgid ""
+"List of parameter group names. If None, the parameter group names are the"
+" same as the parameter names (one parameter group for each parameter)."
+msgstr "Liste de noms des groupes de paramètres. Si c'est None, les noms des groupes de paramètres sont les mêmes que les noms des paramètres (un groupe de paramètres pour chaque paramètre)."
+
+#: input_output.write_par_data_file:16 of
+msgid "Multiplier of list of multipliers of the parameter values."
+msgstr "Multiplicateur ou liste de multiplicateurs des valeurs des paramètres."
+
+#: input_output.write_par_data_file:18 of
+msgid "Offset or list of offsets to aplly to the parameter values."
+msgstr "Écart ou liste d'écarts à appliquer aux valeurs des paramètres."
+
+#: input_output.write_par_data_file:20 of
+msgid ""
+"Number (or list of numbers) of the command line used to calculate the "
+"derivatives of the parameters. It is usually equal to 1."
+msgstr "Numéro (ou liste de numéros) de la ligne de commande utilisée pour calculer les dérivées des paramètres. C'est d'habitude égal à 1."
+
+#: input_output.write_par_data_file:23 of
+msgid "Path of the parameter data file where the data will be written."
+msgstr "Chemin du fichier de données des paramètres où écrire les données."
+
+#: input_output.write_pest_files:1 of
+msgid "Write PEST files"
+msgstr "Écrit les fichiers de PEST."
+
+#: input_output.write_pest_files:3 of
+msgid ""
+"The function :func:`write_pest_files` is used to write the files "
+"necessary to run programs of the PEST(++) suite. This includes the "
+"control file, instructions file and template parameter file. For more "
+"information on the files used by PEST++, please see White et al. (2019)."
+msgstr "La fonction :func:`write_pest_files` sert à écrire les fichiers nécessaires pour tourner des programmes de PEST(++). Ces fichiers incluent le fichier de contrôle, le fichier d'instructions et le fichier de paramètres modèle. Pour plus d'information sur les fichiers utilisés par PEST++, veuillez voire White et al. (2019)."
+
+#: input_output.write_pest_files:9 of
+msgid ""
+"date of start of simulations in str format ('YYYY-mm-dd') or datetime-"
+"like format."
+msgstr "date de début des simulations avec le format str 'AAAA-mm-jj' ou similaire à un format datetime."
+
+#: input_output.write_pest_files:11 of
+msgid ""
+"date of end of simulations in str format ('YYYY-mm-dd') or datetime-like "
+"format."
+msgstr "date de finalisation des simulations avec le format str 'AAAA-mm-jj' ou similaire à un format datetime."
+
+#: input_output.write_pest_files:13 of
+msgid "command used to run the model."
+msgstr "instruction utilisée pour faire tourner le modèle."
+
+#: input_output.write_pest_files:14 of
+msgid ""
+"path of the model's parameter file. It is written by the function using "
+"the parameter values in `par_data_file`."
+msgstr "chemin du fichier de paramètres du modèle. Il est écrit par la fonction en utilisant les valeurs des paramètres dans `par_data_file`."
+
+#: input_output.write_pest_files:16 of
+msgid "path of the model's output file."
+msgstr "chemin du fichier de sortie du modèle."
+
+#: input_output.write_pest_files:17 of
+msgid ""
+"path of a file containing parameter data to configure the parameter "
+"section of the PEST control file."
+msgstr "chemin d'un fichier qui contient des données sur les paramètres nécessaires à configurer la section dédiée aux paramètres dans le fichier de contrôle de PEST."
+
+#: input_output.write_pest_files:19 of
+msgid "path of the observations file. It has the same format as `output_file`."
+msgstr "chemin du fichier d'observations. Il a le même format que `output_file`."
+
+#: input_output.write_pest_files:21 of
+msgid "path of the predictions file. It has the same format as `output_file`."
+msgstr "chemin du fichier de prédictions. Il a le même format que `output_file`."
+
+#: input_output.write_pest_files:23 of
+msgid ""
+"weights assigned to observations. It can be str or float. If str, it "
+"indicates the path to a file with the same format and column names as "
+"`obs_file` containing weights for each measurement. If float, it "
+"indicates a weight to apply to all measurements."
+msgstr "poids assignés aux observations. Il peut être str ou float. Si c'est str, l'argument indique le chemin à un fichier avec les mêmes format et nom des colonnes que obs_file et qui contient les poids pour chaque mesure. Si c'est float, il indique un poids à appliquer à toutes les mesures."
+
+#: input_output.write_pest_files:28 of
+msgid ""
+"groups to which each observation is assigned. It can be a path, a string "
+"or 'default'. If it is a path, group names are read from a file with the "
+"same format and column names as `obs_file`. If 'default', observations "
+"are grouped by variable name. If another str, all observations are "
+"assigned to the same group."
+msgstr "groupes auxquels chaque observation est assignée. Peut être un chemin, une chaîne de caractères ou 'default'. Si c'est un chemin, les noms des groupes sont lus depuis un fichier avec les mêmes format et noms de colonnes que `obs_file`. Si c'est 'default', les observations sont groupées par nom de variable. Si c'est une autre str, toutes les observations sont assignées au même groupe."
+
+#: input_output.write_pest_files:34 of
+msgid ""
+"observation names. It can be a path, a string or 'default'. If it is a "
+"path, observation names are read from a file with the same format and "
+"column names as `obs_file`. If 'default', observation names have the "
+"format \"xxxx_YYYYmmdd\" (xxxx is the corresponding variable name, and "
+"YYYYmmdd is a date string). If another str, the observation names have "
+"the format \"obs_namesNN\", where NN is the index of the observation in "
+"the resulting dataframe."
+msgstr "noms des observations. Peut être un chemin, une chaîne de caractères ou 'default'. Si c'est un chemin, les noms des observations sont lus depuis un fichier avec les mêmes format et noms des colonnes que `obs_file`. Si c'est 'default', les noms des observations ont le format \"xxxx_AAAAmmjj\" (xxxx est le nom de la variable correspondante, et AAAAmmjj est une chaîne de caractères qui représente la date). Si c'est une autre str, les noms des observations ont le format \"obsnamesNN\", où NN est l'index de l'observation dans le dataframe créé."
+
+#: input_output.write_pest_files:42 of
+msgid ""
+"groups to which each prediction is assigned. It can be a path, a string "
+"or 'default'. If it is a path, group names are read from a file with the "
+"same format and column names as `obs_file`. If 'default', predictions are"
+" grouped by variable name. If another str, all predictions are assigned "
+"to the same group."
+msgstr "groupes auxquels chaque prédiction est assignée. Peut être un chemin, une chaîne de caractères ou 'default'. Si c'est un chemin, les noms des groupes sont lus depuis un fichier avec les mêmes format et noms de colonnes que `obs_file`. Si c'est 'default', les prédictions sont groupées par nom de variable. Si c'est une autre str, toutes les prédictions sont assignées au même groupe."
+
+#: input_output.write_pest_files:48 of
+msgid ""
+"prediction names. It can be a path, a string or 'default'. If it is a "
+"path, prediction names are read from a file with the same format and "
+"column names as `pred_file`. If 'default', prediction names have the "
+"format \"xxxx_YYYYmmdd\" (xxxx is the corresponding variable name, and "
+"YYYYmmdd is a date string). If another str, the prediction names have the"
+" format \"pred_namesNN\", where NN is the index of the prediction in the "
+"resulting dataframe."
+msgstr "noms des prédictions. Peut être un chemin, une chaîne de caractères ou 'default'. Si c'est un chemin, les noms des prédictions sont lus depuis un fichier avec les mêmes format et noms des colonnes que `pred_file`. Si c'est 'default', les noms des prédictions ont le format \"xxxx_AAAAmmjj\" (xxxx est le nom de la variable correspondante, et AAAAmmjj est une chaîne de caractères qui représente la date). Si c'est une autre str, les noms des prédictions ont le format \"pred_namesNN\", où NN est l'index de la prédiction dans le dataframe créé."
+
+#: input_output.write_pest_files:56 of
+msgid ""
+"path of the template parameter file. It is written by the function using "
+"the parameter names in `par_data_file`."
+msgstr "chemin du fichier de paramètres modèle. Il est écrit par la fonction en utilisant les noms des paramètres dans `par_data_file`."
+
+#: input_output.write_pest_files:58 of
+msgid ""
+"path of the pest instruction file. It is written by the function by using"
+" the data in `obs_file` and `pred_file`."
+msgstr "chemin du fichier d'instructions de pest. Il est écrit par la fonction en utilisant les données dans `obs_file` et `pred_file`."
+
+#: input_output.write_pest_files:60 of
+msgid ""
+"path of the PEST control file. It is written by the function using the "
+"data it has been passed to it."
+msgstr "chemin du fichier de contrôle PEST. Il est écrit par la fonction en utilisant les données que lui ont été passées."
+
+#: input_output.write_pest_files:62 of
+msgid ""
+"a dictionary defining options in the control data section of the PEST "
+"control file."
+msgstr "un dictionnaire où sont définies les de la section de contrôle du fichier de contrôle PEST."
+
+#: input_output.write_pest_files:64 of
+msgid ""
+"a dictionary used to pass options to the SVD section of the PEST control "
+"file."
+msgstr "un dictionnaire utilisé pour configurer des options de la section SVD du fichier de contrôle PEST."
+
+#: input_output.write_pest_files:66 of
+msgid ""
+"a dictionary used to pass options to the regularization section of the "
+"PEST control file."
+msgstr "un dictionnaire utilisé pour configurer des options de la section de régularisation du fichier de contrôle PEST."
+
+#: input_output.write_pest_files:68 of
+msgid "a dictionary used to pass PEST++ options to the PEST control file."
+msgstr "un dictionnaire utilisé pour configurer des options de PEST++ du fichier de contrôle PEST."
+
+#: input_output.write_pest_files:70 of
+msgid "delimiter character used in the `output_file`, `obs_file` and `pred_file`."
+msgstr "caractère délimiteur utilisé dans `output_file`, `obs_file` et `pred_file`."
+
+#: input_output.write_pest_files:73 of
+msgid ""
+"A series of PEST files (control file, instructions file and template "
+"parameter file) and a parameter file."
+msgstr "Une série de fichiers PEST (fichier de contrôle, fichier d'instructions et fichier de paramètres modèle) et un fichier de paramètres."
+
+#: input_output.write_tpl_file:1 of
+msgid "Write PEST template parameter file."
+msgstr "Écrit le fichier de paramètres modèle de PEST."
+
+#: input_output.write_tpl_file:3 of
+msgid ""
+"This function writes a PEST template parameter file, a text file used to "
+"specify the format of the parameter file. The parameter file is a text "
+"file where the values of the parameters used by the model are written."
+msgstr "Cette fonction écrit un fichier de paramètres modèle de PEST, un fichier texte utilisé pour spécifier le format du fichier de paramètres. Le fichier de paramètres est un fichier texte où sont écrites les valeurs des paramètres utilisés par le modèle."
+
+#: input_output.write_tpl_file:8 of
+msgid "a file name. It is recommended to use the extension .tpl."
+msgstr "un nom de fichier. Il est conseillé d'utiliser l'extension .tpl."
+
+#: input_output.write_tpl_file:9 of
+msgid "list of parameter names in the order they appear in the parameter file."
+msgstr "liste de noms des paramètres dans l'ordre dans lequel ils se présentent dans le fichier de paramètres."
+
+#: input_output.write_tpl_file:12 of
+msgid ""
+"A PEST(++) template parameter file (a text file specifying the format of "
+"the parameter file)."
+msgstr "Un fichier de paramètres modèle de PEST(++) (un fichier texte qui spécifie le format du fichier de paramètres)."
+
+#: ../../source/modules.rst:9
+msgid "Module ``functions``"
+msgstr "Module ``functions``"
+
+#: functions:1 of
+msgid "Useful functions."
+msgstr "Fonctions d'utilité."
+
+#: functions:3 of
+msgid "The function in this module is used to launch the PEST++ executable."
+msgstr "La fonction dans cette module sert à lancer l'exécutable de PEST++."
+
+#: functions:5 of
+msgid "This module contains the following function:"
+msgstr "Ce module contient les fonctions suivantes :"
+
+#: functions:7 of
+msgid ":func:`launch_pestpp`: launch PEST++ executable"
+msgstr ":func:`launch_pestpp`: lance l'exécutable PEST++"
+
+#: functions.launch_pestpp:1 of
+msgid "Launch PEST++ executable."
+msgstr "Lance l'exécutable PEST++."
+
+#: functions.launch_pestpp:3 of
+msgid ""
+"This function launches the requested PEST++ executable, either making "
+"calculations on line or in parallel. The PEST++ executables and uses are:"
+msgstr "Cette fonction lance l'exécutable PEST++ sollicité, soit faisant les calcules en séquentiellement ou en parallèle. Les exécutables de PEST++ et leurs utilisations sont :"
+
+#: functions.launch_pestpp:7 of
+msgid ""
+"PESTPP-GLM: highly parameterized inversion and global optimization (i.e.,"
+" parameter optimization, calibration)."
+msgstr "PESTPP-GLM: inversion avec un grand nombre de paramètres et optimisation globale (c'est-à-dire, optimisation de paramètres, calibration)."
+
+#: functions.launch_pestpp:9 of
+msgid "PESTPP-SEN: global sensitivity analysis."
+msgstr "PESTPP-SEN: analyse de sensitivité globale."
+
+#: functions.launch_pestpp:10 of
+msgid ""
+"PESTPP-OPT: constrained optimization under uncertainty (White et al. "
+"2018)."
+msgstr "PESTPP-OPT: optimisation contrainte sous incertitude (White et al. 2018)."
+
+#: functions.launch_pestpp:12 of
+msgid "PESTPP-IES: interative ensemble smoothing (White 2018)."
+msgstr "PESTPP-IES: lissage itératif d'ensemble (White 2018)."
+
+#: functions.launch_pestpp:13 of
+msgid "PESTPP-SWP: Monte Carlo simulations."
+msgstr "PESTPP-SWP: simulations de Monte Carlo."
+
+#: functions.launch_pestpp:15 of
+msgid ""
+"For more details on the PEST++ executables, please see White et al. "
+"(2019)."
+msgstr "Pour plus d'information sur les exécutables de PEST++, veuillez voire White et al. (2019)."
+
+#: functions.launch_pestpp:18 of
+msgid "path of pest control file (.pst)."
+msgstr "chemin du fichier de contrôle pest (.pst)."
+
+#: analyses.calibration:9 analyses.gsa:15 analyses.ies:5
+#: analyses.linear_uncertainty:9 analyses.monte_carlo:13
+#: functions.launch_pestpp:19 of
+msgid "folder containing the PEST++ executables."
+msgstr "dossier qui contient les exécutables de PEST++."
+
+#: functions.launch_pestpp:20 of
+msgid ""
+"PEST++ executable. The PEST++ executables are: \"pestpp-glm\", \"pestpp-"
+"sen\", \"pestpp-opt\", \"pestpp-ies\" and \"pestpp-swp\"."
+msgstr "Exécutable de PEST++. Les exécutables de PEST++ sont: \"pestpp-glm\", \"pestpp-sen\", \"pestpp-opt\", \"pestpp-ies\" et \"pestpp-swp\"."
+
+#: analyses.ies:17 analyses.monte_carlo:23 functions.launch_pestpp:23 of
+msgid "parallelize calculations."
+msgstr "parallélise les calculs."
+
+#: functions.launch_pestpp:25 of
+msgid ""
+"The output of the PEST++ command is shown on screen. In addition, the "
+"`pestpp_cmd` output files are written in the folder containing the "
+"`pst_file`."
+msgstr "Le retour de l'instruction de PEST++ es montrée sur l'écran. De plus, les fichiers de sortie de `pestpp_cmd` sont écrit dans le dossier qui contient le `pst_file`."
+
+#: functions.launch_pestpp:31 of
+msgid ""
+"White, J.T. (2018) A model-independent iterative ensemble smoother for "
+"efficient history matchingh and uncertainty quantification in very high "
+"dimensions. *Environmental Modelling and Software* 109,  191-201."
+msgstr "White, J.T. (2018) A model-independent iterative ensemble smoother for efficient history matchingh and uncertainty quantification in very high dimensions. *Environmental Modelling and Software* 109,  191-201."
+
+#: functions.launch_pestpp:35 of
+msgid ""
+"White, J.T.; Fienen, M.N.; Barlow, P.M.; Welter, D.E. (2018) A tool for "
+"efficient, model-independent management optimization under uncertainty. "
+"*Environmental Modelling and Software* 100, 2013-221."
+msgstr "White, J.T.; Fienen, M.N.; Barlow, P.M.; Welter, D.E. (2018) A tool for efficient, model-independent management optimization under uncertainty. *Environmental Modelling and Software* 100,  2013-221."
+
+#: ../../source/modules.rst:14
+msgid "Module ``analyses``"
+msgstr "Module ``analyses``"
+
+#: analyses:1 of
+msgid "Functions to make analyses based on PEST++."
+msgstr "Fonctions pour réaliser des analyses basées sur PEST++."
+
+#: analyses:3 of
+msgid ""
+"The functions in this module carry the different type of analyses "
+"implemented in the package."
+msgstr "Les fonctions dans ce module réalisent les différents types d'analyse implémentées dans le paquet."
+
+#: analyses:8 of
+msgid ":func:`calibration`: calibrate model."
+msgstr ":func:`calibration` : calibre le modèle."
+
+#: analyses:9 of
+msgid ":func:`gsa`: Global Sensitivity Analysis."
+msgstr ":func:`gsa` : Analyse de Sensitivité Globale."
+
+#: analyses:10 of
+msgid ":func:`ies`: Iterative Ensemble Smoother."
+msgstr ":func:`ies` : Lissage Itératif d'Ensemble."
+
+#: analyses:11 of
+msgid ":func:`linear_uncertainty`: predictive uncertainty."
+msgstr ":func:`linear_uncertainty` : incertitude prédictive."
+
+#: analyses:12 of
+msgid ":func:`monte_carlo`: Monte Carlo simulations."
+msgstr ":func:`monte_carlo` : simulation de Monte Carlo."
+
+#: analyses.calibration:1 of
+msgid "Calibrate model (GLM or DE methods)."
+msgstr "Calibre le modèle (méthodes GLM ou DE)."
+
+#: analyses.calibration:3 of
+msgid ""
+"method used to calibrate the model. It is 'glm' for the Gauss-Levenberg-"
+"Marquardt algorithm, 'de' for differential evolution."
+msgstr "méthode utilisée pour calibrer le modèle. C'estI 'glm' pour l'algorithme de Gauss-Levenberg-Marquardt, 'de' pour évolution différentielle."
+
+#: analyses.calibration:6 of
+msgid "use Tikhonov regularisation."
+msgstr "utilise la régularisation de Tikhonov."
+
+#: analyses.calibration:7 analyses.gsa:5 analyses.ies:3 analyses.monte_carlo:3
+#: of
+msgid "path of original pest file."
+msgstr "chemin du fichier pest originel."
+
+#: analyses.calibration:8 analyses.gsa:6 analyses.ies:4 analyses.monte_carlo:4
+#: of
+msgid "path of modified pest file."
+msgstr "chemin du fichier pest modifié."
+
+#: analyses.calibration:10 analyses.gsa:7 analyses.ies:9
+#: analyses.monte_carlo:15 of
+msgid ""
+"a dictionary defining options in the control data section of the pest "
+"file."
+msgstr "un dictionnaire où sont définies les options de la section de contrôle du fichier de contrôle pest."
+
+#: analyses.calibration:12 analyses.gsa:9 analyses.ies:11
+#: analyses.monte_carlo:17 of
+msgid "a dictionary used to pass options to the svd section of the pest file."
+msgstr "un dictionnaire utilisé pour configurer des options de la section SVD du fichier de contrôle PEST."
+
+#: analyses.calibration:14 analyses.gsa:11 analyses.ies:13
+#: analyses.monte_carlo:19 of
+msgid ""
+"a dictionary used to pass options to the regularization section of the "
+"pest file."
+msgstr "un dictionnaire utilisé pour configurer des options de la section de régularisation du fichier de contrôle PEST."
+
+#: analyses.calibration:16 of
+msgid "a dictionary used to pass options to configure the DE method."
+msgstr "un dictionnaire utilisé pour configurer les options de la méthode DE."
+
+#: analyses.calibration:18 analyses.gsa:16 of
+msgid "parallelize model runs."
+msgstr "parallélise les exécutions du modèle."
+
+#: analyses.calibration:20 of
+msgid ""
+"A pest instance where the parameter values correspond to the calibrated "
+"values. A pest file (`pst_file1`) and associated files containing the "
+"results of the calibration process are also created."
+msgstr "Une instance PEST où les valeurs des paramètres correspondent aux valeurs calibrées. Un fichier PEST (`pst_file1`) et les fichiers associés qui contiennent les résultats du procès de calibration sont créés aussi."
+
+#: analyses.calibration:25 of
+msgid "This function calls the PEST++ executable `pestpp-glm`."
+msgstr "Cette fonction appelle l'exécutable de PEST++ `pestpp-glm`."
+
+#: analyses.calibration:29 analyses.linear_uncertainty:30 of
+msgid ""
+"Doherty, J. (2010) *Methodologies and Software for PEST-Based Model "
+"Predictive Uncertainty Analysis.* Watermark Numerical Computing. 157 p."
+msgstr "Doherty, J. (2010) *Methodologies and Software for PEST-Based Model Predictive Uncertainty Analysis.* Watermark Numerical Computing. 157 p."
+
+#: analyses.gsa:1 of
+msgid "Carry global sensitivity analysis (Morris or Sobol methods)."
+msgstr "Réalise une analyse de sensitivité globale (méthode de Morris ou de Sobol)."
+
+#: analyses.gsa:3 of
+msgid ""
+"'morris' for Morris's method (one parameter at a time) or 'sobol' for "
+"Sobol's method."
+msgstr "'morris' pour la méthode de Morris (un paramètre à la fois) ou 'sobol' pour la méthode de Sobol."
+
+#: analyses.gsa:13 of
+msgid "a dictionary used to pass options to configure the GSA method."
+msgstr "un dictionnaire utilisé pour configurer les options de la méthode GSA."
+
+#: analyses.gsa:18 of
+msgid "A modified pst file and associated files containing results."
+msgstr "Un fichier pst modifié et ses fichiers associés qui contiennent les résultats."
+
+#: analyses.gsa:20 of
+msgid "This function calls the PEST++ executable `pestpp-sen`."
+msgstr "Cette fonction appelle l'exécutable de PEST++ `pestpp-sen`."
+
+#: analyses.gsa:24 of
+msgid ""
+"Saltelli, A.; Ratto, M.; Andres, T.; Campolongo, F.; Cariboni, J.; "
+"Gatelli, D.; Saisana, M.; Tarantola, S. (2008) *Global Sensitivity "
+"Analysis. The Primer.* John Wiley & Sons, Ltd. 292 p."
+msgstr "Saltelli, A.; Ratto, M.; Andres, T.; Campolongo, F.; Cariboni, J.; Gatelli, D.; Saisana, M.; Tarantola, S. (2008) *Global Sensitivity Analysis. The Primer.* John Wiley & Sons, Ltd. 292 p."
+
+#: analyses.ies:1 of
+msgid "Iterative Ensemble Smoother."
+msgstr "Lissage Itératif d'Ensemble."
+
+#: analyses.ies:6 of
+msgid "number of realizations."
+msgstr "nombre de réalisations."
+
+#: analyses.ies:7 of
+msgid ""
+"name of prior parameter covariance file. If None, parameter covariance is"
+" estimated from parameter bounds."
+msgstr "nom du fichier de covariance des paramètres a priori. Si None, la covariance des paramètres est estimée depuis le rang de valeurs des paramètres."
+
+#: analyses.ies:15 of
+msgid "a dictionary containing additional options to pass to `pestpp-ies`."
+msgstr "un dictionnaire qui contient options additionnelles à passer à `pestpp-ies`."
+
+#: analyses.ies:19 analyses.monte_carlo:28 of
+msgid "A modified pest control file and the associated output files."
+msgstr "Un fichier de contrôle PEST modifié et ses fichiers de sortie associés."
+
+#: analyses.ies:21 of
+msgid "This function calls the PEST++ executable `pestpp-ies`."
+msgstr "Cette fonction appelle l'exécutable de PEST++ `pestpp-ies`."
+
+#: analyses.ies:25 of
+msgid ""
+"White, J. T. (2018) A model-independent iterative ensemble smoother for "
+"efficient history-matching and uncertainty quantification in very high "
+"dimensions. *Environmental Modelling & Software*, 109, 191-201."
+msgstr "White, J. T. (2018) A model-independent iterative ensemble smoother for efficient history-matching and uncertainty quantification in very high dimensions. *Environmental Modelling and Software* 109,  191-201."
+
+#: analyses.linear_uncertainty:1 of
+msgid "Carry linear uncertainty calculations."
+msgstr "Réalise les calculs linéaires d'incertitude."
+
+#: analyses.linear_uncertainty:3 of
+msgid ""
+"Type of predictive uncertainty analysis. It can take the values 'schur', "
+"for Schur's complement analysis for conditional uncertainty propagation; "
+"'err_var', for error variance analysis; or 'prior', prior uncertainty "
+"estimation."
+msgstr "Type d'analyse d'incertitudes prédictives. Il peut prendre les valeurs 'schur', pour l'analyse du complément de Schur pour la propagation conditionnelle d'incertitudes ; 'err_var', pour l'analyse de la variance de l'erreur ; ou 'prior', pour l'estimation de l'incertitude a priori."
+
+#: analyses.linear_uncertainty:7 of
+msgid "Path of the original pest file."
+msgstr "chemin du fichier pest originel."
+
+#: analyses.linear_uncertainty:8 of
+msgid "Path of the modified pest file."
+msgstr "chemin du fichier pest modifié."
+
+#: analyses.linear_uncertainty:10 of
+msgid ""
+"list of predictions names. If None, predictions are read from the "
+"`pst_file0` as the observations with null weight."
+msgstr "liste de noms des prédictions. Si None, les prédictions sont lues depuis le fichier `pst_file0` comme observations avec un poids nul."
+
+#: analyses.linear_uncertainty:14 of
+msgid ""
+"A :class:`LinearAnalysis` object (``analysis='prior'``), a :class:`Schur`"
+" object (``analysis='schur'``) or an :class:`ErrVar` object "
+"(``analysis='err_var'``). A modified PEST control file (`pst_file1`) and "
+"a Jacobian matrix file are also created file in the process."
+msgstr "Un objet :class:`LinearAnalysis` (``analysis='prior'``), un objet :class:`Schur` (``analysis='schur'``) ou un objet :class:`ErrVar` (``analysis='err_var'``). Un fichier de contrôle PEST modifié (`pst_file1`) et une matrice de Jacobi sont aussi créés pendant le procès."
+
+#: analyses.linear_uncertainty:23 of
+msgid ""
+"It is supposed that the model has already been calibrated. Thus, the "
+"original PEST control file `pst_file0` should be in the same folder as "
+"the files created during the calibration process."
+msgstr "On suppose que le modèle a déjà été calibré. Ainsi, le fichier de contrôle PEST originel `pst_file0` devrait être dans le même dossier que les fichiers créés pendant le procès de calibration."
+
+#: analyses.linear_uncertainty:33 analyses.monte_carlo:34 of
+msgid ""
+"White, J.T.; Fienen, M.N.; Doherty, J.E. (2016) A python framework for "
+"environmental model uncertainty analysis. *Environmental Modelling & "
+"Software*, 85, 217-228."
+msgstr "White, J.T.; Fienen, M.N.; Doherty, J.E. (2016) A python framework for environmental model uncertainty analysis. *Environmental Modelling and Software* 85,  217-228."
+
+#: analyses.monte_carlo:1 of
+msgid "Monte Carlo simulations."
+msgstr "Simulations de Monte Carlo."
+
+#: analyses.monte_carlo:5 of
+msgid ""
+"type of distribution; 'prior' for prior distribution or 'post' for "
+"posterior distribution."
+msgstr "type de distribution ; 'prior' pour une distribution a priori ou 'post' pour une distribution a posteriori."
+
+#: analyses.monte_carlo:7 of
+msgid ""
+"'uniform', 'triangular', 'gaussian', 'mixed'. Ignored if ``type = post`` "
+"(gaussian distribution used)."
+msgstr "'uniform', 'triangular', 'gaussian', 'mixed'. Ignoré si ``type = post`` (la distribution normale est utilisée)."
+
+#: analyses.monte_carlo:9 of
+msgid "number of samples to draw."
+msgstr "nombre d'échantillons à extraire."
+
+#: analyses.monte_carlo:10 of
+msgid ""
+"dictionary of parameter names (keys) and distributions (values). Only "
+"used if ``distribution = mixed``."
+msgstr "dictionnaire de noms des paramètres (clés) et distributions (valeurs). Seulement utilisée si ``distribution = mixed``."
+
+#: analyses.monte_carlo:12 of
+msgid "name of the file to save the parameter samples."
+msgstr "nom du fichier où sauvegarder les échantillons de valeurs des paramètres."
+
+#: analyses.monte_carlo:14 of
+msgid "add the `pst_file0` parameter values as a realization."
+msgstr "ajoute les valeurs des paramètres du fichier `pst_file0` comme une réalisation."
+
+#: analyses.monte_carlo:21 of
+msgid "a dictionary used to pass options to configure the `pestpp-swp` options."
+msgstr "un dictionnaire utilisé pour configurer les options de `pestpp-swp`."
+
+#: analyses.monte_carlo:24 of
+msgid ""
+"option to process the sweep_out.csv results file. Observation group names"
+" should correspond to the names of the variables to which the "
+"observations belong."
+msgstr "option pour traiter le fichier de résultats :file:`sweep_out.csv`. Les noms des groupes d'observations devraient correspondre aux noms des variables auxquelles les observations appartiennent."
+
+#: analyses.monte_carlo:30 of
+msgid "This function calls the PEST++ executable `pestpp-swp`."
+msgstr "Cette fonction appelle l'exécutable de PEST++ `pestpp-swp`."
+
+#~ msgid ""
+#~ "A text file containing the base "
+#~ "simulation, and the percentiles 5%, 25%,"
+#~ " 50%, 75% and 95% of the "
+#~ "simulations in the :file:`sweep_out.csv` file."
+#~ msgstr ""
+#~ "Un fichier texte qui contient la "
+#~ "simulation de base, et les percentiles"
+#~ " 5%, 25%, 50%, 75% et 95% des"
+#~ " simulations dans le fichier "
+#~ ":file:`sweep_out.csv`."
+

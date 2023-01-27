@@ -1,0 +1,1025 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Segula Technologies - Office Français de la
+# Biodiversité
+# This file is distributed under the same license as the cuspy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr "Project-Id-Version: cuspy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-09 10:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../source/usage.rst:2
+msgid "Usage"
+msgstr "Utilisation"
+
+#: ../../source/usage.rst:4
+msgid ""
+"The :mod:`cuspy` package can be applied to a large class of models, on "
+"the condition that:"
+msgstr "Le paquet :mod:`cuspy` peut être appliqué à une large variété de modèles, à condition que :"
+
+#: ../../source/usage.rst:7
+msgid ""
+"the model can be run using the command line (e.g., through an executable "
+"that is available in the path or a call to a script)."
+msgstr "le modèle puisse être exécuté avec la ligne de commandes (p. ex., par le biais d'un exécutable disponible dans le chemin ou un appel à un script)."
+
+#: ../../source/usage.rst:9
+msgid ""
+"the communication between the model and the user (output data, parameter "
+"values) is made by means of text files (or the script calling the model "
+"reads data in binary form and creates output in text form)."
+msgstr "la communication entre le modèle et l'utilisateur (données de sortie, valeurs des paramètres) se fait par le moyen de fichiers texte (ou le script qui appelle le modèle lit des données en forme binaire et créé la sortie en forme de texte)."
+
+#: ../../source/usage.rst:13
+msgid ""
+"In addition, the package has been specially designed to work with dynamic"
+" models the output of which is in several columns, the first of which is "
+"date. Working with models with other type of output is possible, but it "
+"requires more implication of the user in the preparation of the PEST "
+"instruction files."
+msgstr "De plus, le paquet a été spécialement désigné pour travailler avec des modèles dynamiques avec un retour sur plusieurs colonnes, la première desquelles est la date. Il est possible de travailler avec des modèles avec un autre type de sortie, mais il faut une majeure implication de l'utilisateur dans la préparation des fichiers d'instructions PEST."
+
+#: ../../source/usage.rst:19
+msgid "Command line application"
+msgstr "Application en ligne de commande"
+
+#: ../../source/usage.rst:22
+msgid "Python module"
+msgstr "Module Python"
+
+#: ../../source/usage.rst:24
+msgid ""
+"To use :mod:`cuspy` as a Python module you can simply import it and use "
+"the functions within::"
+msgstr "Pour utiliser :mod:`cuspy` comme un module Python vous pouvez simplement l'importer et utiliser les fonctions qu'il contient :"
+
+#: ../../source/usage.rst:29
+msgid ""
+"You can include the previous commands in a Python script (see the scripts"
+" in the folder :file:`tests`). To run a python script from the command "
+"line, type:"
+msgstr "Vous pouvez inclure les commandes précédentes dans un script Python (voyez les scripts d'exemple dans le dossier :file:`tests`). Pour exécuter un script python script en ligne de commande, tapez :"
+
+#: ../../source/usage.rst:37
+msgid "Analysis process"
+msgstr "Le procès d'analyse"
+
+#: ../../source/usage.rst:39
+msgid "Preparation of the model"
+msgstr "Préparation du modèle"
+
+#: ../../source/usage.rst:40
+msgid ""
+"Before starting the analyses, you need to prepare all the input files and"
+" scripts required by the model."
+msgstr "Avant de commencer les analyses, vous devez préparer tous les fichiers d'entrée et les scripts dont le modèle a besoin."
+
+#: ../../source/usage.rst:43
+msgid ""
+"In particular, it must be possible to execute the model using a command "
+"line instruction of the type:"
+msgstr "En particulier, il doit être possible d'exécuter le modèle en utilisant une commande en ligne de commandes comme la suivante :"
+
+#: ../../source/usage.rst:50
+msgid ""
+"Alternatively, if the model has binary output or several output files, "
+"you may need to create a script to process the model output so that it "
+"conforms with the recommended format (text file separated by spaces with "
+"the date in the first column). For example:"
+msgstr "Alternativement, si le modèle a des sorties binaires ou plusieurs fichiers de sortie, vous pourrez avoir besoin de créer un script pour traiter le retour du modèle de façon qu'il soit conforme au format conseillé (fichier texte séparé par des espaces avec la date sur la première colonne). Par exemple :"
+
+#: ../../source/usage.rst:59
+msgid ""
+"Plus, the model must read the values of its parameters from a text file "
+"organised in two columns separated by spaces containing parameter names "
+"and values. For example:"
+msgstr "De plus, le modèle doit lire les valeurs des paramètres depuis un fichier texte organisé en deux colonnes séparées par des espaces et qui contiennent les noms des paramètres et leurs valeurs. Par exemple :"
+
+#: ../../source/usage.rst:77
+msgid "Creation of PEST files"
+msgstr "Création des fichiers PEST"
+
+#: ../../source/usage.rst:78
+msgid ""
+"The first stage in the use of the :mod:`cuspy` package is the creation of"
+" the PEST files. You can do this manually, or you can use the function "
+":func:`write_pest_files`. The following is an example of the instruction "
+"to create the PEST files for the OKP model."
+msgstr "Le premier étage dans l'utilisation du paquet :mod:`cuspy` est la création des fichiers PEST. Vous pouvez faire ça manuellement, ou vous pouvez utiliser la fonction :func:`write_pest_files`. Le suivant est un exemple de la commande pour créer les fichiers PEST pour le modèle OKP."
+
+#: ../../source/usage.rst:96
+msgid "In the previous example, we can notice the following facts:"
+msgstr "Dans l'exemple antérieur, on peut noter deux points :"
+
+#: ../../source/usage.rst:98
+msgid ""
+"``start_date`` and ``end_date`` correspond to the initial and final dates"
+" of the simulation."
+msgstr "``start_date`` et ``end_date`` correspondent aux dates initiale et finale de la simulation."
+
+#: ../../source/usage.rst:100
+msgid ""
+"``par_file`` and ``output_file`` are the names of the model's parameter "
+"and output files."
+msgstr "``par_file`` et ``output_file`` sont les noms du fichier de paramètres du modèle et des fichiers de sortie."
+
+#: ../../source/usage.rst:102
+msgid ""
+"``par_data_file``, ``obs_file`` and ``pred_file`` are space-separated "
+"text files used to pass parameter and observation data to the function. "
+"These must be prepared by the user."
+msgstr "``par_data_file``, ``obs_file`` et ``pred_file`` sont des fichiers texte séparés par des espaces utilisés pour passer les données des paramètres et des observations a la fonction. Ces fichiers-ci doivent être préparés par l'utilisateur."
+
+#: ../../source/usage.rst:105
+msgid ""
+"``model_command`` is the command line instruction used to run the model. "
+"In this case, the model OKP is run using the instruction ``run_okp`` of "
+"the :mod:`okplm` package."
+msgstr "``model_command`` est la commande de ligne de commandes utilisée pour exécuter le modèle. Dans ce cas, le modèle OKP est exécuté avec la commande ``run_okp`` du paquet :mod:`okplm`."
+
+#: ../../source/usage.rst:108
+msgid ""
+"``control_data``, ``svd_data`` and ``pestpp_opts`` are dictionaries used "
+"to set the values of variables in the control data, singular value "
+"decomposition and PEST++ control data sections of the pest control file."
+msgstr "``control_data``, ``svd_data`` et ``pestpp_opts`` sont des dictionnaires utilisés pour configurer les valeurs des variables dans les sections dédiées aux données de contrôle, à la décomposition en valeurs singulières et aux données de contrôle de PEST++ du fichier de contrôle PEST."
+
+#: ../../source/usage.rst:111
+msgid ""
+"``tpl_file``, ``ins_file`` and ``pst_file`` are the names of PEST files "
+"created by the function. The ``tpl_file`` is a template of the parameter "
+"file ``par_file`` used by PEST++ to modify it. The ``ins_file`` is a file"
+" indicating PEST++ which values in the ``output_file`` correspond to "
+"observations and predictions. The ``pst_file`` controls the execution of "
+"the PEST++ executables."
+msgstr "``tpl_file``, ``ins_file`` and ``pst_file`` sont les noms des fichiers PEST créés par la fonction. Le fichier ``tpl_file`` est un fichier modèle du fichier de paramètres ``par_file`` utilisé par PEST++ pour le modifier. Le ``ins_file`` est un fichier qui indique à PEST++ quelles valeurs du fichier ``output_file`` correspondent aux observations et quelles aux prédictions. Le ``pst_file`` contrôle l'exécution des exécutables de PEST++."
+
+#: ../../source/usage.rst:117
+msgid ""
+"We describe next some of the files used by :func:`write_pest_files`. For "
+"more information on other arguments (including some not used above), "
+"please see the function's description in the Modules section."
+msgstr "On décrit à continuation quelques-uns des fichiers utilisés par :func:`write_pest_files`. Pour plus d'information sur les autres arguments (incluant quelques-uns non-utilisés ci-dessus), veuillez voire la description de la fonction dans la section Modules."
+
+#: ../../source/usage.rst:122
+msgid "The PEST control file (``pst_file``)"
+msgstr "Le fichier de contrôle (``pst_file``)"
+
+#: ../../source/usage.rst:123
+msgid ""
+"The PEST control file contains all the information necessary to control "
+"the execution of the PEST++ executables. It is automatically written by "
+"the function :func:`write_pest_files` and it is divided in the following "
+"sections:"
+msgstr "Le fichier de contrôle PEST contient toute l'information nécessaire pour contrôler l'exécution des exécutables de PEST++. Il est écrit automatiquement par la fonction :func:`write_pest_files` et il contient les sections suivantes :"
+
+#: ../../source/usage.rst:127
+msgid "**control data** (mandatory)"
+msgstr "**control data** (obligatoire)"
+
+#: ../../source/usage.rst:128
+msgid "automatic user intervention (optional)"
+msgstr "automatic user intervention (optionnelle)"
+
+#: ../../source/usage.rst:129
+msgid "**singular value decomposition** (optional)"
+msgstr "**singular value decomposition** (optionnelle)"
+
+#: ../../source/usage.rst:130
+msgid "lsqr (optional)"
+msgstr "lsqr (optionnelle)"
+
+#: ../../source/usage.rst:131
+msgid "sensitivity reuse (optional)"
+msgstr "sensitivity reuse (optionnelle)"
+
+#: ../../source/usage.rst:132
+msgid "svd assist (optional)"
+msgstr "svd assist (optionnelle)"
+
+#: ../../source/usage.rst:133
+msgid "**parameter groups** (mandatory)"
+msgstr "**parameter groups** (obligatoire)"
+
+#: ../../source/usage.rst:134
+msgid "**parameter data** (mandatory)"
+msgstr "**parameter data** (obligatoire)"
+
+#: ../../source/usage.rst:135
+msgid "**observation groups** (mandatory)"
+msgstr "**observation groups** (obligatoire)"
+
+#: ../../source/usage.rst:136
+msgid "**observation data** (mandatory)"
+msgstr "**observation data** (obligatoire)"
+
+#: ../../source/usage.rst:137
+msgid "derivatives command line (optional)"
+msgstr "derivatives command line (optionnelle)"
+
+#: ../../source/usage.rst:138
+msgid "**model command line** (mandatory)"
+msgstr "**model command line** (obligatoire)"
+
+#: ../../source/usage.rst:139
+msgid "**model input** (mandatory)"
+msgstr "**model input** (obligatoire)"
+
+#: ../../source/usage.rst:140
+msgid "**model output** (mandatory)"
+msgstr "**model output** (obligatoire)"
+
+#: ../../source/usage.rst:141
+msgid "prior information (optional)"
+msgstr "prior information (optionnelle)"
+
+#: ../../source/usage.rst:142
+msgid "predictive analysis (optional)"
+msgstr "predictive analysis (optionnelle)"
+
+#: ../../source/usage.rst:143
+msgid "**regularization** (optional)"
+msgstr "**regularization** (optionnelle)"
+
+#: ../../source/usage.rst:144
+msgid "pareto (optional)"
+msgstr "pareto (optionnelle)"
+
+#: ../../source/usage.rst:145
+msgid "**PEST++ variables** (optional) [#first]_"
+msgstr "**PEST++ variables** (optionnelle) [#first]_"
+
+#: ../../source/usage.rst:147
+msgid ""
+"At the moment :mod:`cuspy` functions can be used to configure the "
+"sections in bold, which include all mandatory sections and some optional "
+"ones. If necessary, the other sections can be configured manually. For "
+"details on the file structure and variables, please see PEST++ user "
+"manual."
+msgstr "Pour le moment les fonctions de :mod:`cuspy` peuvent être utilisées pour configurer les sections en graisse, et elles incluent toutes les sections obligatoires et quelques-unes d'optionnelles. Si c'est nécessaire, les autres sections peuvent être configurées manuellement. Pour des détails sur la structure du fichier et ses variables, veuillez voire le manuel d'utilisation de PEST++."
+
+#: ../../source/usage.rst:152
+msgid ""
+"Declarations of PEST++ variables (the string \"++\" followed by the "
+"variable name and value) can be located anywhere in the PEST control "
+"file, but they are placed at the end of the file by "
+":func:`write_pest_files`."
+msgstr "Les déclarations des variables de PEST++ (la chaîne \"++\" suivie par le nom et valeur de la variable) peuvent être localisées n'importe où dans le fichier de contrôle de PEST, mais elles sont placées à la fin du fichier par :func:`write_pest_files`."
+
+#: ../../source/usage.rst:157
+msgid "The parameter data file (``par_data_file``)"
+msgstr "Le fichier de données des paramètres (``par_data_file``)"
+
+#: ../../source/usage.rst:159
+msgid ""
+"In the example above, ``par_data_file`` is a text file separated by "
+"spaces containing the data of the parameter section of the PEST control "
+"file. This file must be provided by the users, based on their previous "
+"knowledge of the optimum parameter values and acceptable ranges of "
+"variation."
+msgstr "Dans l'exemple ci-dessus, ``par_data_file`` est un fichier texte séparé par des espaces qui contiennent les données de la section des paramètres du fichier de contrôle de PEST. Ce fichier doit être donné par l'utilisateur, sur la base de ses connaissances antérieures des valeurs des paramètres optimales et des rangs de variation acceptables."
+
+#: ../../source/usage.rst:164
+msgid "An example is shown below."
+msgstr "On montre un exemple ci-dessous."
+
+#: ../../source/usage.rst:180
+msgid "The first line of the file contains the column names, described below:"
+msgstr "La première ligne du fichier contient les noms des colonnes, décrits ci-dessous :"
+
+#: ../../source/usage.rst:182
+msgid "``parnme``: parameter name (up to 200 characters, case insensitive)."
+msgstr "``parnme`` : nom du paramètre (jusqu'à 200 caractères, sans distinction de majuscules et minuscules)."
+
+#: ../../source/usage.rst:183
+msgid ""
+"``partrans``: parameter transformation. It takes one of four possible "
+"values:"
+msgstr "``partrans`` : transformation du paramètre. Elle prend une de quatre valeurs possibles :"
+
+#: ../../source/usage.rst:185
+msgid "``'none'``: no transformation applied to the parameter."
+msgstr "``'none'`` : aucune transformation n'est appliquée au paramètre."
+
+#: ../../source/usage.rst:186
+msgid "``'log'``: the parameter is log-transformed."
+msgstr "``'log'`` : on applique une transformation logarithmique au paramètre."
+
+#: ../../source/usage.rst:187
+msgid "``'fixed'``: constant or non-adjustable parameter."
+msgstr "``'fixed'`` : paramètre constant ou non-ajustable."
+
+#: ../../source/usage.rst:188
+msgid ""
+"``'tied'``: the parameter is tied to another parameter (not implemented "
+"in :mod:`cuspy`)."
+msgstr "``'tied'`` : le paramètre est lié à un autre paramètre (option non implémentée dans :mod:`cuspy`)."
+
+#: ../../source/usage.rst:190
+msgid ""
+"``parchglim``: parameter change limit. It is used by the PEST++ "
+"executables `pestpp-glm` and (optionally) `pestpp-ies` to limit the "
+"change a parameter can suffer at each iteration of the optimization "
+"process. It can take the values:"
+msgstr "``parchglim`` : limite de changement du paramètre. Elle est utilisée par les exécutables de PEST++ `pestpp-glm` et (en option) `pestpp-ies` pour limiter le changement qu'un paramètre peut subir à chaque itération du procès d'optimisation. Elle peut prendre les valeurs :"
+
+#: ../../source/usage.rst:195
+msgid ""
+"``'relative'``: a relative limit is used, i.e., the value of the "
+"parameter :math:`b` must fulfill the condition :math:`|b-b_0|/|b_0| \\leq"
+" r`, where :math:`b_0` is the parameter value at the start of the "
+"iteration and :math:`r` is the value of the PEST control variable "
+"``relparmax`` (=10 by default)."
+msgstr "``'relative'`` : une limite relative est utilisée, soit, la valeur du paramètre :math:`b` doit avérer la condition :math:`|b-b_0|/|b_0| \\leq r`, où :math:`b_0` est la valeur du paramètre au début de l'itération et :math:`r` est la valeur de la variable de contrôle de ``relparmax`` (=10 par défaut)."
+
+#: ../../source/usage.rst:199
+msgid ""
+"``'factor'``: a factor limit is used,, i.e., the value of the parameter "
+":math:`b` must be within the limits :math:`|b_0/f| \\leq b \\leq |fb_0|`,"
+" where :math:`b_0` is the parameter value at the start of the iteration "
+"and :math:`f` is the value of the PEST control variable ``facparmax`` "
+"(=10 by default)."
+msgstr "``'factor'`` : un facteur est utilisé comme limite, soit, la valeur du paramètre :math:`b` doit être dans les limites :math:`|b_0/f| \\leq b \\leq |fb_0|`, où :math:`b_0` est la valeur du paramètre au début de l'itération et :math:`f` est la valeur de la variable de contrôle de PEST ``facparmax`` (=10 par défaut)."
+
+#: ../../source/usage.rst:204
+msgid ""
+"``parval1``: initial parameter value. It should be the best estimate of "
+"the parameter value before calibration based on expert knowledge."
+msgstr "``parval1`` : valeur initiale du paramètre. Elle devrait être la meilleure estimation de la valeur du paramètre avant de la calibration sur la base de l'avis d'expert."
+
+#: ../../source/usage.rst:206
+#, python-format
+msgid ""
+"``parlbnd`` and ``parubnd``: lower and upper bounds of the parameter "
+"value. If an uncertainty file is provided [#second]_, they represent the "
+"minimum and maximum values that the parameter can take. If an uncertainty"
+" file is not provided, they are understood to represent the 95% "
+"confidence interval (a width of 4 standard deviations) [#third]_ of the "
+"parameter value."
+msgstr "``parlbnd`` et ``parubnd`` : seuils inférieur et supérieur de la valeur du paramètre. Si un fichier d'incertitude est donné [#second]_, ils représentent les valeurs minimales et maximales que le paramètre peut prendre. Si un fichier d'incertitudes n'est pas donné, ils représentent l’intervalle de confidence du 95 % (une largeur de 4 déviations standard) [#third]_ de la valeur du paramètre."
+
+#: ../../source/usage.rst:210
+msgid "``pargp``: parameter group name to which the parameter has been assigned."
+msgstr "``pargp`` : nom du groupe de paramètres auquel appartient le paramètre."
+
+#: ../../source/usage.rst:211
+msgid ""
+"``scale`` and ``offset``: multiplier (1.0 by default) and offset (0.0 by "
+"default) to apply to a parameter before being written to a model input "
+"file. It can be used to modify the parameter range of a parameter to a "
+"more convenient one (e.g., if the parameters takes negative values and a "
+"log transformation is envisaged)."
+msgstr "``scale`` et ``offset`` : multiplicateur (1.0 par défaut) et écart (0.0 par défaut) qu'on applique au paramètre avant de l'écrire dans le fichier d'entrée du modèle. Ils peuvent être utilisés pour modifier le rang d'un paramètre pour un de plus intéressant (p. ex., si le paramètre prend des valeurs négatives et on veut utiliser une transformation logarithmique)."
+
+#: ../../source/usage.rst:215
+msgid ""
+"``dercom``: integer indicating the line of the \"model command line\" "
+"section in the PEST control file that is used to calculate derivatives "
+"for a given parameter. Usually there is only one command (``dercom=1``)."
+msgstr "``dercom`` : entier qui indique la ligne de la section \"model command line\" du fichier de contrôle de PEST utilisée pour calculer les dérivées pour un paramètre donné. D'habitude il y a une seule commande (``dercom=1``)."
+
+#: ../../source/usage.rst:219
+msgid ""
+"An uncertainty file can be provided with the PEST++ control variable "
+"``parcov``."
+msgstr "Un fichier d'incertitude peut être donné avec la variable de contrôle de PEST++ ``parcov``."
+
+#: ../../source/usage.rst:221
+msgid ""
+"The width of the interval can be modified with the PEST++ control "
+"variable ``par_sigma_range``."
+msgstr "La largeur de l'intervalle peut être modifiée avec la variable de contrôle de PEST++ ``par_sigma_range``."
+
+#: ../../source/usage.rst:225
+msgid "The observations"
+msgstr "Les observations"
+
+#: ../../source/usage.rst:227
+msgid ""
+"The files :file:`obs.txt` and :file:`pred.txt` contain observations or "
+"measurements. They have the same format as the model output file, but "
+"include only the available observations. It is necessary to provide at "
+"least one of these files."
+msgstr "Les fichiers :file:`obs.txt` et :file:`pred.txt` contiennent des observations ou mesures. Ils doivent avoir le même format que le fichier de sortie du modèle, mais ils incluent seulement les observations disponibles. Il faut donner au moins un de ces fichiers."
+
+#: ../../source/usage.rst:231
+msgid ""
+"One way of looking at the data in :file:`obs.txt` is as the data used in "
+"the calibration or history matching process. The observations in "
+":file:`obs.txt` receive a positive weight (1 by default) and if there is "
+"missing data (coded as NA, NaN or nan), the corresponding rows will be "
+"ignored. The observation weights can be modified with the argument "
+"``obs_weights``. This is useful when some measurements are more uncertain"
+" than others."
+msgstr "Une façon d'interpréter les données dans :file:`obs.txt` est de les considérer comme les données utilisées dans le procès de calibration. Les observations dans :file:`obs.txt` prennent un poids positif (1 par défaut) et s'il y a des données manquantes (codées comme NA, NaN ou nan), les files correspondantes seront ignorées. Les poids des observations peuvent être modifiées avec l'argument ``obs_weights``. Ce-ci est d'utilité quand quelques mesures sont plus incertaines que d'autres."
+
+#: ../../source/usage.rst:238
+msgid ""
+"Instead, the observations in the :file:`pred.txt` file or predictions, "
+"may be seen as validation data or dates for which a forecast is desired. "
+"They receive a null weight and their value is not used in calculations."
+msgstr "Par contre, les observations dans le fichier :file:`pred.txt` ou prédictions, peuvent être vues comme les données de validation ou les dates pour lesquelles on désire d'avoir une prévision. Elles prennent un poids nul et leur valeur n'est pas utilisée dans les calculs."
+
+#: ../../source/usage.rst:242
+msgid ""
+"Observations can be assigned to different groups using the arguments "
+"``obs_groups`` and ``pred_groups``. By assigning observations to "
+"different groups, we obtain a multiple-component objective function. For "
+"example, in the OKP model, that estimates epilimnion and hypolimnion "
+"temperatures, measurements for each of these two compartments may be "
+"placed in different groups."
+msgstr "Les observations peuvent être assignées à des différents groupes avec les arguments ``obs_groups`` et ``pred_groups``. Si on assigne les observations à différents groupes, on obtient une fonction d'objectifs multiples. Par exemple, pour le modèle OKP, qu'estime la température de l'épilimnion et de l'hypolimnion, les mesures pour chaque de ces deux compartiments peuvent être placées dans de groupes différents."
+
+#: ../../source/usage.rst:248
+msgid ""
+"For more complex models this is still more useful. For example, in the "
+"GLM model, the user could have temperature measurements taken within the "
+"lake, water temperatures at the outlet, satellite temperatures at the "
+"surface, water level measurements, salinity measured within the lake and "
+"salinity at the outlet. All these different types of measurement could be"
+" assigned to different groups. Or, if the study is interested in only one"
+" aspect, use only one of those sets of data (and only one group) to "
+"calibrate the model."
+msgstr "Pour des modèles plus complexes ce-ci est encore de majeur utilité. Par exemple, pour le modèle GLM, l'utilisateur pourrait avoir des mesures de température prises dans le lac, température de l'eau à l'exutoire, températures à la surface mesurées par satellite, mesures du niveau d'eau, salinité mesurée dans le lac et salinité à l'exutoire. Tous ces différents types de mesures pourraient être assignés à des différents groupes. Ou, si l'étude s'intéresse d'un seul aspect, un seul de ces jeux de données (et un seul groupe) pourrait être utilisé pour calibrer le modèle."
+
+#: ../../source/usage.rst:256
+msgid ""
+"Still, Doherty & Welter (2010) recommend using multiple-component "
+"objective functions as a way of reducing the influence of model "
+"structural error on the calibration."
+msgstr "Cependant, Doherty & Welter (2010) recommandent d'utiliser des fonctions d'objectifs multiples comme à moyen pour réduire l'influence de l'erreur structurale du modèle sur la calibration."
+
+#: ../../source/usage.rst:260
+msgid "The uncertainty file"
+msgstr "Le fichier d'incertitude"
+
+#: ../../source/usage.rst:261
+msgid ""
+"Information on prior parameter uncertainty can be provided to PEST++ "
+"through an uncertainty file using the PEST++ control variable ``parcov``."
+" This file can take several forms:"
+msgstr "On peut passer de l'information à PEST++ sur l'incertitude a priori des paramètres par le moyen d'un fichier d'incertitude avec la variable de contrôle de PEST++ ``parcov``. Ce fichier peut prendre plusieurs formes :"
+
+#: ../../source/usage.rst:264
+msgid ""
+"A parameter uncertainty file (.unc). It contains standard deviations for "
+"individual parameters that have no statistical correlation with other "
+"parameters and/or indicates the name of covariance matrix files for other"
+" parameters."
+msgstr "Un fichier d'incertitude des paramètres (.unc). Il contient des déviations standard pour des paramètres individuels que ne sont corrélés à d'autres paramètres et/ou indique le nom de la matrice de covariances pour les autres paramètres."
+
+#: ../../source/usage.rst:267
+msgid ""
+"A single prior covariance matrix file (.cov). It contains a covariance "
+"matrix of all the model's parameters. The file is written according to "
+"the PEST matrix file specifications."
+msgstr "Un unique fichier de matrice de covariances a priori (.cov). Il contient une matrice de covariances de tous les paramètres du modèle. Le fichier est écrit d'après les spécifications du fichier de matrice de PEST."
+
+#: ../../source/usage.rst:270
+msgid ""
+"A binary covariance matrix file (.jco or .jcb). It is a file used by "
+"PEST++ to write a Jacobian matrix."
+msgstr "Un fichier binaire de matrice de covariances (.jco or .jcb). C'est un fichier utilisé par PEST++ pour écrire une matrice de Jacobi."
+
+#: ../../source/usage.rst:273
+msgid ""
+"For more information on the specification of these types of file see the "
+"PEST++ user guide."
+msgstr "Pour plus de renseignements sur la spécification de ces types de fichier voyez le manuel d'utilisation de PEST++."
+
+#: ../../source/usage.rst:276
+msgid ""
+"If an uncertainty file is not provided, parameter uncertainty is "
+"estimated from the parameter bounds by assuming the interval covers 4 "
+"standard deviations."
+msgstr "Si un fichier d'incertitude n'est pas donné, l'incertitude des paramètres est estimée depuis les limites des paramètres en supposant que l'intervalle couvre 4 déviations standard."
+
+#: ../../source/usage.rst:280
+msgid "Carry the analyses"
+msgstr "Réalisation des analyses"
+
+#: ../../source/usage.rst:281
+msgid "This package allows you to carry several types of analysis:"
+msgstr "Ce paquet vous permet de réaliser plusieurs types d'analyses :"
+
+#: ../../source/usage.rst:283
+msgid ""
+"Model calibration (aka parameter estimation, history matching). There are"
+" four possible options:"
+msgstr "Calibration du modèle (ou estimation des paramètres). Il y a quatre options possibles :"
+
+#: ../../source/usage.rst:286
+msgid ""
+"Gauss-Levenberg-Marquardt (GLM) algorithm, using the function "
+":func:`calibration`. It is a gradient algorithm for overdetermined cases."
+msgstr "Algorithme de Gauss-Levenberg-Marquardt (GLM), en utilisant la fonction :func:`calibration`. Est algorithme de descente de gradient pour des cas surdéterminés."
+
+#: ../../source/usage.rst:289
+msgid ""
+"GLM algorithm with Tikhonov regularisation, using the function "
+":func:`calibration`. For under-determined cases."
+msgstr "Algorithme GLM avec régularisation de Tikhonov, en utilisant la fonction :func:`calibration`. Pour des cas sous-déterminés."
+
+#: ../../source/usage.rst:291
+msgid ""
+"Differential Evolution (DE), using the function :func:`calibration`. It "
+"is a global algorithm with longer time of computation than the previous "
+"two options."
+msgstr "Évolution Différentielle (DE), en utilisant la fonction :func:`calibration`. C'est un algorithme global avec un temps de calcul plus long que les deux options antérieures."
+
+#: ../../source/usage.rst:294
+msgid ""
+"Iterative ensemble smoother, using the function :func:`ies`. It is also a"
+" global algorithm, especially useful for nonlinear models with a large "
+"number of parameters, that obtains several sets of parameter values that "
+"can be considered to be calibrated."
+msgstr "Lissage itératif d'ensemble, en utilisant la fonction :func:`ies`. Il est aussi un algorithme global, spécialement utile pour des modèles non-linéaires avec un grand nombre de paramètres, qui obtient plusieurs jeux de valeurs des paramètres qui peuvent être considérés comme des valeurs calibrées."
+
+#: ../../source/usage.rst:299
+msgid ""
+"Prior (before calibration) and posterior (after calibration) uncertainty "
+"analysis. There are the following options:"
+msgstr "Analyse d'incertitudes a priori (avant calibration) et a posteriori (après calibration). Il y a les options suivantes :"
+
+#: ../../source/usage.rst:302
+msgid ""
+"Linear uncertainty analysis, using the function "
+":func:`linear_uncertainty`. Appropriate for linear or quasi-linear "
+"models. It may be applicable to a nonlinear model if the behaviour of the"
+" model in the parameter space is approximately linear (:math:`R^2 > "
+"0.7`). It requires a low computation time, once the model is calibrated. "
+"The following options are available:"
+msgstr "Analyse linéaire d'incertitudes, avec la fonction :func:`linear_uncertainty`. Approprié pour des modèles linéaires ou presque linéaires. Il peut être appliquée à des modèles non-linéaires si le comportement du modèle dans l'espace des paramètres est approximativement linéaire (:math:`R^2 > 0.7`). Il a besoin d'un court temps de calcul une fois le modèle calibré. Les options suivantes sont disponibles :"
+
+#: ../../source/usage.rst:309
+msgid "Prior linear uncertainty analysis."
+msgstr "Analyse linéaire d'incertitudes a priori."
+
+#: ../../source/usage.rst:310
+msgid "Schur's complement analysis for conditional uncertainty propagation."
+msgstr "Analyse du complément de Schur pour la propagation d'incertitude conditionnelle."
+
+#: ../../source/usage.rst:311
+msgid "Error variance analysis. It also includes identifiability estimation."
+msgstr "Analyse de la variance de l'erreur. Il inclue aussi l'estimation de l'identifiabilité."
+
+#: ../../source/usage.rst:313
+msgid ""
+"Nonlinear uncertainty analysis. Preferable when the model is not linear. "
+"However, calculation times are longer."
+msgstr "Analyse non-linéaire d'incertitudes Préférable quand le modèle est non-linéaire. Pourtant, les temps de calcul sont plus longs."
+
+#: ../../source/usage.rst:316
+msgid ""
+"Monte Carlo simulations, using the function :func:`monte_carlo`. It "
+"usually requires a large number of simulations (>1000)."
+msgstr "Simulations de Monte Carlo, avec la fonction :func:`monte_carlo`. D'habitude il a besoin d'un grand nombre de simulations (>1000)."
+
+#: ../../source/usage.rst:318
+msgid ""
+"Iterative ensemble smoother, using the function :func:`ies`. It requires "
+"a much lower number of simulations than Monte Carlo methods."
+msgstr "Lissage itératif d'ensemble, en utilisant la fonction :func:`ies`. Il a besoin d'un nombre de simulations beaucoup moindre que les méthodes de Monte Carlo."
+
+#: ../../source/usage.rst:322
+msgid "Sensitivity analysis. There are two options:"
+msgstr "Analyse de sensitivité Il y a deux options :"
+
+#: ../../source/usage.rst:324
+msgid ""
+"Local sensitivity analysis. Low computation time. It is calculated during"
+" calibration using the function :func:`calibration`."
+msgstr "Analyse de sensitivité locale. Court temps de calcul. Les calculs sont réalisés pendant la calibration en utilisant la fonction :func:`calibration`."
+
+#: ../../source/usage.rst:326
+msgid ""
+"Global sensitivity analysis (GSA). Applied using the function "
+":func:`gsa`. Two implemented methods:"
+msgstr "Analyse de sensitivité globale (GSA). Appliqué en utilisant la fonction :func:`gsa`. Deux méthodes implémentées :"
+
+#: ../../source/usage.rst:329
+msgid "Morris's method (one parameter at a time). Low computation time."
+msgstr "Méthode de Morris (un paramètre à la fois). Court temps de calcul."
+
+#: ../../source/usage.rst:330
+msgid ""
+"Sobol's method (all parameters vary at the same time). High computation "
+"time."
+msgstr "Méthode de Sobol (tous les paramètres varient au même temps). Long temps de calcul."
+
+#: ../../source/usage.rst:333
+msgid ""
+"In all cases calculations can be parallelized using the argument "
+"``parallel=True``."
+msgstr "Dans tous les cas les calculs peuvent être parallélisés en utilisant l'argument ``parallel=True``."
+
+#: ../../source/usage.rst:335
+msgid ""
+"The following table shows the computational cost of several :mod:`cuspy` "
+"functions in terms of number of model runs and run time. Run time "
+"calculations are based on the cases presented in the :file:`tests` folder"
+" and were made using an Ubuntu virtual machine with 4 processors of 3067 "
+"MHz. These tests consist in the application of different :mod:`cuspy` "
+"functions to the OKP water temperature model with 8 adjustable "
+"parameters."
+msgstr "La table suivante montre le coût computationnel de plusieurs fonctions de :mod:`cuspy` en nombre d'exécutions du modèle et de temps de calcul. Les valeurs de temps de calcul sont basées sur les cas du dossier :file:`tests` et ont été obtenues pour une machine virtuelle Ubuntu avec 4 processeurs de 3067 MHz. Ces tests consistent en l'application de différentes fonctions :mod:`cuspy` au modèle OKP de température de l'eau avec 8 paramètres ajustables."
+
+#: ../../source/usage.rst:342
+msgid "Computational cost of different types of analyses"
+msgstr "Coût computationnel de différents types d'analyse"
+
+#: ../../source/usage.rst:1
+msgid "**Function**"
+msgstr "**Fonction**"
+
+#: ../../source/usage.rst:1
+msgid "**Details**"
+msgstr "**Détails**"
+
+#: ../../source/usage.rst:1
+msgid "**Parallelized**"
+msgstr "**Parallélisé**"
+
+#: ../../source/usage.rst:1
+msgid "**N. runs**"
+msgstr "**N. exécutions**"
+
+#: ../../source/usage.rst:1
+msgid "**Run time (s)**"
+msgstr "**Temps calcul (s)**"
+
+#: ../../source/usage.rst:1
+msgid ":func:`calibration`"
+msgstr ":func:`calibration`"
+
+#: ../../source/usage.rst:1
+msgid "``method='glm'``, ``noptmax=10``"
+msgstr "``method='glm'``, ``noptmax=10``"
+
+#: ../../source/usage.rst:1
+msgid "Yes"
+msgstr "Oui"
+
+#: ../../source/usage.rst:1
+msgid "95"
+msgstr "95"
+
+#: ../../source/usage.rst:1
+msgid "101.3"
+msgstr "101,3"
+
+#: ../../source/usage.rst:1
+msgid "No"
+msgstr "Non"
+
+#: ../../source/usage.rst:1
+msgid "192.1"
+msgstr "192,1"
+
+#: ../../source/usage.rst:1
+msgid "``method='glm'``, ``noptmax=10``, ``reg=True``"
+msgstr "``method='glm'``, ``noptmax=10``, ``reg=True``"
+
+#: ../../source/usage.rst:1
+msgid "145"
+msgstr "145"
+
+#: ../../source/usage.rst:1
+msgid "146.6"
+msgstr "146,6"
+
+#: ../../source/usage.rst:1
+msgid "292.6"
+msgstr "292,6"
+
+#: ../../source/usage.rst:1
+msgid "``method='de'``, ``de_max_gen=20``"
+msgstr "``method='de'``, ``de_max_gen=20``"
+
+#: ../../source/usage.rst:1
+msgid "801"
+msgstr "801"
+
+#: ../../source/usage.rst:1
+msgid "707.3"
+msgstr "707,3"
+
+#: ../../source/usage.rst:1
+msgid "1694.7"
+msgstr "1694,7"
+
+#: ../../source/usage.rst:1
+msgid ":func:`gsa`"
+msgstr ":func:`gsa`"
+
+#: ../../source/usage.rst:1
+msgid "``method='morris'``"
+msgstr "``method='morris'``"
+
+#: ../../source/usage.rst:1
+msgid "36"
+msgstr "36"
+
+#: ../../source/usage.rst:1
+msgid "37.0"
+msgstr "37,0"
+
+#: ../../source/usage.rst:1
+msgid "72.8"
+msgstr "72,8"
+
+#: ../../source/usage.rst:1
+msgid "``method='sobol'``, ``gsa_sobol_samples=50``"
+msgstr "``method='sobol'``, ``gsa_sobol_samples=50``"
+
+#: ../../source/usage.rst:1
+msgid "500"
+msgstr "500"
+
+#: ../../source/usage.rst:1
+msgid "413.4"
+msgstr "413,4"
+
+#: ../../source/usage.rst:1
+msgid "1009.1"
+msgstr "1009,1"
+
+#: ../../source/usage.rst:1
+msgid ":func:`monte_carlo`"
+msgstr ":func:`monte_carlo`"
+
+#: ../../source/usage.rst:1
+msgid "``n_samples=50`` [#fourth]_"
+msgstr "``n_samples=50`` [#fourth]_"
+
+#: ../../source/usage.rst:1
+msgid "50"
+msgstr "50"
+
+#: ../../source/usage.rst:1
+msgid "50.9"
+msgstr "50,9"
+
+#: ../../source/usage.rst:1
+msgid "103.5"
+msgstr "103,5"
+
+#: ../../source/usage.rst:1
+msgid ":func:`ies`"
+msgstr ":func:`ies`"
+
+#: ../../source/usage.rst:1
+msgid "``noptmax=10``, ``n_reals=50``"
+msgstr "``noptmax=10``, ``n_reals=50``"
+
+#: ../../source/usage.rst:1
+msgid "788"
+msgstr "788"
+
+#: ../../source/usage.rst:1
+msgid "672.2"
+msgstr "672,2"
+
+#: ../../source/usage.rst:1
+msgid "1590.0"
+msgstr "1590,0"
+
+#: ../../source/usage.rst:360
+msgid ""
+"The number of simulations (``n_reals``) used in Monte Carlo experiences "
+"is usually of the order of thousands and greater. Thus calculation time "
+"is usually much greater than shown here."
+msgstr "Le nombre de simulations (``n_reals``) utilisé dans des expériences de Monte Carlo est d'habitude de l'ordre de milliers ou plus. En conséquence le temps de calcul est beaucoup plus grand que celui montré ici."
+
+#: ../../source/usage.rst:365
+msgid "Calibration with GLM or DE"
+msgstr "Calibration avec GLM ou DE"
+
+#: ../../source/usage.rst:366
+msgid ""
+"To calibrate a model you can use the function :func:`calibration`. For "
+"example:"
+msgstr "Pour calibrer un modèle vous pouvez utiliser la fonction :func:`calibration`. Par exemple :"
+
+#: ../../source/usage.rst:376
+msgid ""
+"The pest instance returned by the function can be used to access the "
+"results of the calibration. To obtain the calibrated parameter values, "
+"type:"
+msgstr "L'instance PEST retournée par la fonction peut être utilisées pour accéder aux résultats de la calibration. Pour obtenir les valeurs des paramètres calibrées, tapez :"
+
+#: ../../source/usage.rst:383
+msgid "To obtain the simulated values and residuals, type:"
+msgstr "Pour obtenir les valeurs simulées et les résidus, tapez :"
+
+#: ../../source/usage.rst:389
+msgid "And to obtain a summary of these, type:"
+msgstr "Et pour en obtenir un résumé, tapez :"
+
+#: ../../source/usage.rst:395
+msgid "You may plot the results using:"
+msgstr "Vous pouvez tracer les résultats en utilisant :"
+
+#: ../../source/usage.rst:401
+msgid ""
+"In addition, a certain number of useful files is written by PEST++. "
+"Please, see the PEST++ user guide to obtain information on these files."
+msgstr "De plus, un a certain nombre de fichiers utiles sont écrits par PEST++. Veuillez voire le manuel d'utilisation de PEST++ pour vous renseigner sur ces fichiers."
+
+#: ../../source/usage.rst:405
+msgid "Global sensitivity analysis"
+msgstr "Analyse de sensitivité globale"
+
+#: ../../source/usage.rst:406
+msgid ""
+"Two methods can be used to carry a global sensitivity analysis: Morris's "
+"method and Sobol's method. You need to use the function :func:`gsa`, by "
+"choosing the desired method ('sobol' or 'morris') and configuring the "
+"method using the `pestpp_opts` argument. For example:"
+msgstr "Deux méthodes peuvent être utilisées pour réaliser un analyse de sensitivité globale : méthode de Morris et méthode de Sobol. Vous devez utiliser la fonction :func:`gsa`, et choisir la méthode désirée ('sobol' ou 'morris') et configurer la méthode en utilisant l'argument `pestpp_opts`. Par exemple :"
+
+#: ../../source/usage.rst:419
+msgid "Linear uncertainty analysis"
+msgstr "Analyse linéaire d'incertitudes"
+
+#: ../../source/usage.rst:421
+msgid ""
+"Once the function is calibrated, you can make a linear uncertainty "
+"analysis using the function :func:`linear_uncertainty`. For example:"
+msgstr "Une fois la fonction a été calibrée, vous pouvez réaliser un analyse linéaire d'incertitudes avec la fonction :func:`linear_uncertainty`. Par exemple :"
+
+#: ../../source/usage.rst:431
+msgid "Prior uncertainty"
+msgstr "Incertitude a priori"
+
+#: ../../source/usage.rst:433
+msgid ""
+"The :class:`LinearAnalysis` object returned by the function can be used "
+"to access the results of the uncertainty analysis. To obtain the prior "
+"uncertainty of predictions, type:"
+msgstr "L'objet :class:`LinearAnalysis` retourné par la fonction peut être utilisé pour accéder aux résultats de l'analyse d'incertitudes. Pour obtenir l'incertitude a priori des prédictions, tapez :"
+
+#: ../../source/usage.rst:442
+msgid "Posterior uncertainty"
+msgstr "Incertitude a posteriori"
+
+#: ../../source/usage.rst:443
+msgid ""
+"To carry a Schur's complement analysis, you need to set "
+"``analysis='schur'``. For example:"
+msgstr "Pour réaliser un analyse du complément de Schur, vous devez le choisir avec ``analysis='schur'``. Par exemple :"
+
+#: ../../source/usage.rst:452
+msgid ""
+"With Schur's complement analysis you can obtain the posterior uncertainty"
+" typing:"
+msgstr "Avec l'analyse du complément de Schur vous pouvez obtenir l'incertitude a posteriori si vous tapez :"
+
+#: ../../source/usage.rst:459
+msgid ""
+"To obtain prior and posterior uncertainties for the predictions of "
+"interest and the reduction in uncertainty due to calibration ('schur'), "
+"type:"
+msgstr "Pour obtenir les incertitudes a priori et a posteriori pour les prédictions d'intérêt et la réduction de l'incertitude due à la calibration ('schur'), tapez :"
+
+#: ../../source/usage.rst:466
+msgid ""
+"Similarly, you can obtain information on the reduction of parameter "
+"uncertainty through calibration by typing:"
+msgstr "De façon similaire, vous pouvez obtenir information sur la réduction de l'incertitude des paramètres par la calibration si vous tapez :"
+
+#: ../../source/usage.rst:474
+msgid "Data worth"
+msgstr "Valeur des données"
+
+#: ../../source/usage.rst:476
+msgid ""
+"It is possible to analyse data worth with the :class:`Schur` object "
+"returned by the function :func:`linear_uncertainty`. The following "
+"instructions return the variance of the predictions after adding a new "
+"observation or group of observations:"
+msgstr "Il est possible d'analyser la valeur des données avec l'objet :class:`Schur` retourné par la fonction :func:`linear_uncertainty`. Les instructions suivantes retournent la variance des prédictions après l'ajout d'une nouvelle observation ou groupe d'observations :"
+
+#: ../../source/usage.rst:486
+msgid ""
+"A similar analysis can be made by removing observations or groups of "
+"observations with the methods :meth:`get_removed_obs_importance` and "
+":meth:`get_removed_obs_group_importance`."
+msgstr "Un analyse similaire peut être fait par l'élimination d'observations ou groupes d'observations avec les méthodes :meth:`get_removed_obs_importance` et :meth:`get_removed_obs_group_importance`."
+
+#: ../../source/usage.rst:490
+msgid ""
+"To obtain the contribution of each parameter to prediction uncertainty, "
+"type:"
+msgstr "Pour obtenir la contribution de chaque paramètre à l'incertitude de prédiction, tapez :"
+
+#: ../../source/usage.rst:498
+msgid "Predictive error"
+msgstr "Erreur prédictive"
+
+#: ../../source/usage.rst:499
+msgid ""
+"To analyse predictive error with an error variance analysis you need to "
+"set ``analysis='err_var'``. For example:"
+msgstr "Pour analyser l'erreur prédictive avec un analyse de la variance de l'erreur vous devez le configurer avec ``analysis='err_var'``. Par exemple :"
+
+#: ../../source/usage.rst:509
+msgid ""
+"The :class:`ErrVar` object returned by the function "
+":func:`linear_uncertainty` allows to access the results of the error "
+"variance analysis:"
+msgstr "L'objet :class:`ErrVar` retourné par la fonction :func:`linear_uncertainty` peut être utilisé pour accéder aux résultats de l'analyse de la variance de l'erreur :"
+
+#: ../../source/usage.rst:517
+msgid "Identifiability"
+msgstr "Identifiabilité"
+
+#: ../../source/usage.rst:518
+msgid ""
+"With the :class:`ErrVar` object, it is also possible to access the "
+"results of the identifiability analysis with:"
+msgstr "Avec l'objet :class:`ErrVar`, il est possible aussi d'accéder aux résultats de l'analyse d'identifiabilité avec :"
+
+#: ../../source/usage.rst:526
+msgid "Monte Carlo simulations"
+msgstr "Simulations de Monte Carlo"
+
+#: ../../source/usage.rst:527
+msgid ""
+"To carry Monte Carlo simulations with the :mod:`cuspy` package you can "
+"use the function :func:`monte_carlo`. For example:"
+msgstr "Pour réaliser des simulations de Monte Carlo avec le paquet :mod:`cuspy` vous pouvez utiliser la fonction :func:`monte_carlo`. Par exemple :"
+
+#: ../../source/usage.rst:537
+msgid ""
+"The sets of parameter values drawn from the specified distribution are "
+"saved in the `csv_in` file (:file:`sweep_in.csv` by default). The "
+"simulation results are also saved to a csv file, named "
+":file:`sweep_out.csv` by default. The name of the output csv file can be "
+"modified using the `pestpp_opts` argument:"
+msgstr "Les jeux de valeurs des paramètres extraits de la distribution spécifiée sont sauvegardés dans le fichier `csv_in` (:file:`sweep_in.csv` par défaut). Les résultats de simulation sont sauvegardés aussi dans un fichier csv, qui s'appelle :file:`sweep_out.csv` par défaut. Le nom du fichier de sortie csv peut être modifié en utilisant l'argument `pestpp_opts` :"
+
+#: ../../source/usage.rst:550
+msgid ""
+"Monte Carlo simulations can have several uses, including calibration, "
+"global sensitivity analyses and uncertainty analyses, depending on how "
+"the simulation results are analysed. No particular type of analysis is "
+"implemented in this package, but they can be easily implemented based on "
+"the treatment of the input and output csv files (`csv_in` and "
+"`sweep_output_csv_file`)."
+msgstr "Les simulations de Monte Carlo peuvent être utiles à plusieurs finalités, incluses calibration, analyse de sensitivité global et analyse d'incertitude, en fonction du traitement qu'on fait des résultats de simulations. Aucun type particulier d'analyse n'est implémenté dans ce paquet, mais ils peuvent être implémentés facilement par le biais du traitement des fichiers csv d'entrée et de sortie (`csv_in` et `sweep_output_csv_file`)."
+
+#: ../../source/usage.rst:558
+msgid "Iterative Ensemble Smoothing"
+msgstr "Lissage Itératif d'Ensemble"
+
+#: ../../source/usage.rst:559
+msgid ""
+"To apply the IES method, you need to use the function :func:`ies`. For "
+"example:"
+msgstr "Pour appliquer la méthode, vous devez utiliser la fonction :func:`ies`. Par exemple :"
+
+#: ../../source/usage.rst:568
+msgid ""
+"The implementation of the IES method uses the GLM algorithm (called with "
+"`pestpp-glm`), which can be configured using the `pst_file0` and "
+"`control_data` arguments. The IES method can be configured with the "
+"`pestpp_opts` argument."
+msgstr "L'implémentation de la méthode IES utilise l'algorithme GLM (appelé avec `pestpp-glm`), qui peut être configuré en utilisant les arguments `pst_file0` et `control_data`. La méthode IES peut être configurée avec l'argument `pestpp_opts`."
+
+#: ../../source/usage.rst:573
+msgid ""
+"The output of the :func:`ies` function can be found in a series of csv "
+"files. The optimized parameter value sets can be found in the file "
+":file:`case.N.par.csv`, where \"case\" is the name of the pest file "
+"`pst_file1` and \"N\" is the number of the latest iteration. The "
+"simulation results for each parameter set can be found in the file "
+":file:`case.N.obs.csv`. The objective function results during all "
+"iterations can be found in the files :file:`case.phi.actual.csv` "
+"(objective function calculated from differences between forecasts and "
+"observations), :file:`case.phi.meas.csv` (objective function calculated "
+"from differences between forecasts and noisy observations), "
+":file:`case.phi.group.csv` (objective function calculated by parameter "
+"and observation groups) and :file:`case.phi.regul.csv` (regularization "
+"objective functions)."
+msgstr "Le retour de la fonction :func:`ies` peut être trouvé dans une série de fichiers csv. Les jeux de valeurs des paramètres optimisées se trouvent dans le fichier :file:`cas.N.par.csv`, où \"cas\" est le nom du fichier PEST `pst_file1` et \"N\" est le numéro de la dernière itération. Les résultats de simulation pour chaque jeu de paramètres se trouve dans le fichier :file:`case.N.obs.csv`. Les résultats de la fonction d'objectifs pour toutes les itérations se trouve dans les fichiers :file:`case.phi.actual.csv` (fonction d'objectifs calculée par rapport aux différences entre prédictions et observations), :file:`case.phi.meas.csv` (fonction d'objectifs calculée par rapport aux différences entre prédictions et observations avec du bruit), :file:`case.phi.group.csv` (fonction d'objectifs calculée par paramètre et groupe d'observation) et :file:`case.phi.regul.csv` (fonction d'objectifs avec régularisation)."
+
+#: ../../source/usage.rst:587
+msgid "References"
+msgstr "Références"
+
+#: ../../source/usage.rst:589
+msgid ""
+"Doherty, J.; Welter, D. (2010) A short exploration of structural noise. "
+"*Water Resources Research*, 46, W05525."
+msgstr "Doherty, J.; Welter, D. (2010) A short exploration of structural noise. *Water Resources Research*, 46, W05525."
+

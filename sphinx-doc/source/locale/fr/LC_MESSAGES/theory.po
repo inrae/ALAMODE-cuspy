@@ -1,0 +1,1892 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Segula Technologies - Office Français de la
+# Biodiversité
+# This file is distributed under the same license as the cuspy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr "Project-Id-Version: cuspy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-07 12:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../source/theory.rst:2
+msgid "A bit of theory"
+msgstr "Un peu de théorie"
+
+#: ../../source/theory.rst:4
+msgid ""
+"In order to help the user understand better the utilisation and "
+"functionalities of this package, we make a short introduction to "
+"calibration and uncertainty analysis."
+msgstr "De façon à aider l'utilisateur à mieux comprendre l'utilisation et fonctionnalités de ce paquet, nous faisons une petite introduction à la calibration et l'analyse d'incertitudes."
+
+#: ../../source/theory.rst:9
+msgid "Models and simulations"
+msgstr "Simulations et modèles"
+
+#: ../../source/theory.rst:11
+msgid "Definitions"
+msgstr "Définitions"
+
+#: ../../source/theory.rst:12
+msgid ""
+"Models can be considered as approximations of reality based on "
+"mathematical relations and inferences based on data. A model receives "
+"forcing data (input data) and transforms it into output data (simulation)"
+" by applying a series of mathematical procedures. The output of a model "
+"can be of several types, defined in the following table:"
+msgstr "On peut considérer les modèles comme des approximations de la réalité basées sur des relations mathématiques et sur des inférences dérivées des données. Un modèle reçoit des données de forçage (données d'entrée) et les transforme en données de sortie (simulation) par l'application d'une série de procédures mathématiques. Le retour d'un modèle peut être de plusieurs types, définis dans la table suivante :"
+
+#: ../../source/theory.rst:18
+msgid "Definitions of types of model output [#]_"
+msgstr "Définitions des types de retour d'un modèle [#]_"
+
+#: ../../source/theory.rst:1
+msgid "**Term**"
+msgstr "**Terme**"
+
+#: ../../source/theory.rst:1
+msgid "**Definition**"
+msgstr "**Définition**"
+
+#: ../../source/theory.rst:1
+msgid "Simulation"
+msgstr "Simulation"
+
+#: ../../source/theory.rst:1
+msgid ""
+"Quantitative reproduction of the behaviour of a system, given some "
+"defined inputs but without reference to any observed outputs."
+msgstr "Reproduction quantitative du comportement d'un système, données quelques entrées mais sans faire référence à aucun retour observé."
+
+#: ../../source/theory.rst:1
+msgid "Forecast"
+msgstr "Prédiction"
+
+#: ../../source/theory.rst:1
+msgid ""
+"Quantitative reproduction of the behaviour of a system ahead of time, but"
+" given observations of the inputs, state variables, and outputs up to the"
+" forecast origin."
+msgstr "Reproduction quantitative du comportement d'un système à l'avance, mais avec des observations des entrées, variables d'état, et sorties jusqu'au départ de la prédiction."
+
+#: ../../source/theory.rst:1
+msgid "Hindcast"
+msgstr "Simulation rétrospective"
+
+#: ../../source/theory.rst:1
+msgid ""
+"Application of forecasting to past data as if the inputs and outputs were"
+" only available up to a certain point in time."
+msgstr "Application de la technique de prédiction à données dans le passé comme si les entrées et sorties n'était disponibles que jusqu'à un certain point dans le temps."
+
+#: ../../source/theory.rst:1
+msgid "Projection"
+msgstr "Projection"
+
+#: ../../source/theory.rst:1
+msgid ""
+"Simulation of the future behaviour of a system given prior assumptions "
+"about future input data."
+msgstr "Simulation du comportement future d'un système depuis des suppositions a priori sur les données d'entrée futures."
+
+#: ../../source/theory.rst:32
+msgid "Based on Beven & Young (2013)."
+msgstr "Basé sur Beven & Young (2013)."
+
+#: ../../source/theory.rst:34
+msgid ""
+"As approximations of reality, models are often used to inform management "
+"decisions and to understand better the behaviour of the systems they try "
+"to reproduce. By comparing the simulation results to observations it is "
+"possible to detect circumstances when the model does not perform well. By"
+" analysing these cases, and collecting complementary data, the models may"
+" also be used to improve our knowledge of the modelled system."
+msgstr "En fonction d'approximations de la réalité, les modèles sont souvent utiliser pour donner support à des décisions de gestion et pour comprendre mieux le comportement des systèmes qu'ils essayent de reproduire. À travers la comparaison des résultats de simulation aux observations il est possible d'identifier des cas où le comportement du modèle est pire. Par l'analyse de ces cas, et la récollection de données complémentaires, les modèles peuvent être utilisés aussi pour améliorer notre compréhension du système modélisé."
+
+#: ../../source/theory.rst:43
+msgid ""
+"Models are useful tools to analyse the behaviour of a system and to "
+"increase our understanding of it."
+msgstr "Les modèles sont des instruments utiles pour analyser le comportement d'un système et pour en incrémenter notre compréhension."
+
+#: ../../source/theory.rst:47
+msgid "The modelling process"
+msgstr "Le procès de modélisation"
+
+#: ../../source/theory.rst:48
+msgid "The modelling process can be divided in 10 stages (Jakeman et al., 2006):"
+msgstr "Le procès de modélisation peut être sous-divisé en 10 étapes (Jakeman et al., 2006) :"
+
+#: ../../source/theory.rst:50
+msgid "Definition of the model purpose"
+msgstr "Définition du but du modèle"
+
+#: ../../source/theory.rst:51
+msgid "Specification of the modelling context: scope and resources"
+msgstr "Spécification du contexte de modélisation : portée et ressources"
+
+#: ../../source/theory.rst:52
+msgid "Conceptualisation of the system, specification of data and prior knowledge"
+msgstr "Conceptualisation du système, spécification de données et des connaissances a priori"
+
+#: ../../source/theory.rst:53
+msgid "Selection of model features"
+msgstr "Sélection des caractéristiques du modèle"
+
+#: ../../source/theory.rst:54
+msgid ""
+"Determination of the method to identify model structure and parameter "
+"values"
+msgstr "Détermination de la méthode pour identifier la structure du modèle et les valeurs des paramètres"
+
+#: ../../source/theory.rst:55
+msgid "Selection of the performance criteria and algorithm"
+msgstr "Sélection des critères de performance et algorithmes"
+
+#: ../../source/theory.rst:56
+msgid "Identification of the model structure and parameter values"
+msgstr "Identification de la structure du modèle et des valeurs des paramètres"
+
+#: ../../source/theory.rst:57
+msgid "Conditional verification, including diagnostic testing"
+msgstr "Vérification conditionnelle, inclus les tests de diagnose"
+
+#: ../../source/theory.rst:58
+msgid "Quantification of uncertainty"
+msgstr "Quantification de l'incertitude"
+
+#: ../../source/theory.rst:59
+msgid "Model evaluation"
+msgstr "Évaluation du modèle"
+
+#: ../../source/theory.rst:61
+msgid ""
+"Of these stages, we are interested here in the last ones. However, some "
+"of the techniques presented in this document may inform other stages of "
+"the process too. Also, the calibrated model may be useful to inform "
+"initial stages of the modelling process (e.g., which additional "
+"measurements to take) in successive iterations."
+msgstr "De ces étapes, nous sommes intéressés ici aux dernières. Cependant, quelques-unes des techniques présentées dans ce document peuvent apporter information utile pour d'autres étapes du procès aussi. De plus, le modèle calibré peut être d'utilité pour donner support aux étapes initiales du procès de modélisation (p. ex., quelles mesures additionnelles il faudrait prendre) en itérations postérieures."
+
+#: ../../source/theory.rst:67
+msgid ""
+"At the end of the process, we hope to obtain a model that has the "
+"following characteristics (Beck 1987):"
+msgstr "À la fin du procès, on espère d'atteindre un modèle qui ait les caractéristiques suivantes (Beck 1987) :"
+
+#: ../../source/theory.rst:70
+msgid ""
+"The parameters of the model should not vary with time. Parameter values "
+"that vary with time may be indicative of an inadequate model structure or"
+" of processes not taken into account."
+msgstr "Les paramètres du modèle ne devraient varier pas dans le temps. Les valeurs des paramètres qui varient dans le temps peuvent indiquer une structure du modèle imparfaite ou l'existence de procès non pris en considération."
+
+#: ../../source/theory.rst:73
+msgid ""
+"The variance of residuals and the covariance of parameters are low, "
+"indicating that the model parameters have been well identified."
+msgstr "La variance des résidus et la covariance des paramètres sont petites, ce qui indique que les paramètres du modèle ont été bien identifiés."
+
+#: ../../source/theory.rst:75
+msgid ""
+"The residuals are small and are not attributable to any nonrandom causal "
+"mechanism."
+msgstr "Les résidus sont petits et ne sont pas attribuables à aucun mécanisme causal non aléatoire."
+
+#: ../../source/theory.rst:79
+msgid "Evaluation of model performance"
+msgstr "Évaluation de la performance du modèle"
+
+#: ../../source/theory.rst:80
+msgid ""
+"If models are to be used as management tools, to provide evidence on "
+"which to base decisions, it is only natural to assess their ability to "
+"simulate the behaviour of the system. The comparison of simulations to "
+"observations or expectations is known as model evaluation and can take "
+"several forms."
+msgstr "Si les modèles doivent être utilisés comme des outils de gestion, pour apporter de l'information sur laquelle baser des décisions, il est complètement naturel d'évaluer leur capacité de simuler le comportement du système. La comparaison des simulations aux observations ou résultats espérés est connue comme évaluation du modèle et peut prendre plusieurs formes."
+
+#: ../../source/theory.rst:85
+msgid "Definitions on model evaluation [#]_"
+msgstr "Définitions sur l'évaluation de modèles [#]_"
+
+#: ../../source/theory.rst:1
+msgid "Verification"
+msgstr "Vérification"
+
+#: ../../source/theory.rst:1
+msgid ""
+"Only for checks that a model computer code properly reproduces the "
+"equations it purports to solve. Will generally be only conditional "
+"verification dependent on the range of tests carried out."
+msgstr "Seulement pour tester si le code informatique du modèle reproduis de façon correcte les équations qu'il est censé de résoudre. Il s'agit généralement seulement d'une vérification conditionnelle qui dépends de la portée des tests réalisés."
+
+#: ../../source/theory.rst:1 ../../source/theory.rst:335
+#: ../../source/theory.rst:850
+msgid "Validation"
+msgstr "Validation"
+
+#: ../../source/theory.rst:1
+msgid ""
+"Conditional evaluation that a model computer code reproduces some "
+"observed behaviour of the system being studied to an acceptable degree."
+msgstr "Évaluation conditionnelle que le code informatique d'un modèle reproduis quelque comportement observé du système étudié avec une qualité acceptable."
+
+#: ../../source/theory.rst:1
+msgid "Falsification"
+msgstr "Falsification"
+
+#: ../../source/theory.rst:1
+msgid ""
+"An assessment that a model computer code does not reproduce some observed"
+" behaviour of the system to an acceptable degree."
+msgstr "L'appréciation que le code informatique d'un modèle ne reproduis pas quelque comportement observé du système étudié avec une qualité acceptable."
+
+#: ../../source/theory.rst:1
+msgid "Fit-for-purpose"
+msgstr "Apte à l'utilisation prévue"
+
+#: ../../source/theory.rst:1
+msgid ""
+"Conditional evaluation that a computer model code is suitable for use in "
+"a particular type of application."
+msgstr "Évaluation conditionnelle que le code informatique d'un modèle est approprié pour son utilisation dans un certain type particulier d'application."
+
+#: ../../source/theory.rst:100
+msgid "Modified from Beven & Young (2013, Table 3)."
+msgstr "Modifié depuis Beven & Young (2013, Table 3)."
+
+#: ../../source/theory.rst:102
+msgid ""
+"Bennett et al. (2013) propose a five-step procedure to assess the "
+"performance of environmental models:"
+msgstr "Bennett et al. (2013) propose a five-step procedure to assess the performance of environmental models:"
+
+#: ../../source/theory.rst:105
+msgid ""
+"Reassessment of the model's aim, scale and scope. Make sure you have a "
+"clear idea of the model's objective: which are the main variables of "
+"interest and for what they will be used. This includes stating the "
+"desired quality of the simulations, i.e., what constitutes good "
+"performance in your particular modelling setup."
+msgstr "Réanalyse de l'objet, échelle et portée du modèle. Il faut s'assurer d'avoir une idée claire de l'objectif du modèle : quelles sont les variables d'intérêt principales et comment elles seront utilisées. Ça inclue décider quelle est la qualité désirée des simulations, soit, qu'est-ce qui constitue une bonne performance dans le type particulier de scénario de modélisation."
+
+#: ../../source/theory.rst:110
+msgid ""
+"Characterisation of the data for calibrating and testing. Check the "
+"quality of the data (presence of outliers, inhomogeneities, etc.) and its"
+" extension (is it sufficient?). Select data subsets for calibration and "
+"validation."
+msgstr "Caractérisation des données à utiliser pour la calibration et la réalisation de tests. Il faut vérifier la qualité des données (présence de valeurs aberrantes, inhomogénéités, etc.) et leur extension (est-ce qu'elles sont suffisantes ?). Sélection de sous-ensembles de données pour la calibration et pour la validation."
+
+#: ../../source/theory.rst:113
+msgid ""
+"Visual and other analysis to detect bad model behaviour and to "
+"characterise overall performance. Use plots, graphs, animations and other"
+" visual methods to gain an overview of overall performance."
+msgstr "Analyses visuelles et d'autre type pour identifier des mauvais comportements du modèle et pour caractériser la performance globale. Il faut utiliser figures, graphiques, animations et d'autres méthodes visuelles pour acquérir une vision d'ensemble de la performance du modèle."
+
+#: ../../source/theory.rst:116
+msgid ""
+"Selection of basic performance criteria. Select metrics, such as RMSE and"
+" :math:`r^2`, to measure model performance. Bennett et al. (2013) provide"
+" several methods for measuring quantitative model performance. The "
+"selected method needs to take into account the modelling objective and "
+"available data. For a comprehensive evaluation of models it is advisable "
+"to use systems of metrics (or multiple-objective functions) that measure "
+"different aspects of model performance."
+msgstr "Sélection de critères basiques de performance. Il faut choisir des métriques, telles que le RMSE et :math:`r^2`, pour mesurer la performance du modèle. Bennett et al. (2013) provide several methods for measuring quantitative model performance. La méthode choisie doit prendre en considération l'objectif de la modélisation et les données disponibles. Pour une évaluation compréhensive des modèles il est conseillé d'utiliser systèmes de métriques (ou fonctions à objectif multiple) qui mesurent différents aspects de la performance du modèle."
+
+#: ../../source/theory.rst:124
+msgid ""
+"Use of more advanced methods to solve modelling problems. Analyse the "
+"evaluation of model performance and assess whether any refinement is "
+"necessary in the process, going back to previous stages if necessary."
+msgstr "Utilisation de méthodes plus puisées pour résoudre problèmes de modélisation. Il faut analyser l'évaluation de la performance du modèle et voire s'il est nécessaire de faire quelque amélioration dans le procès, retournant aux étapes antérieures s'il le faut."
+
+#: ../../source/theory.rst:128
+msgid "If the model does not perform well, this may indicate:"
+msgstr "Une mauvaise performance du modèle peut indiquer :"
+
+#: ../../source/theory.rst:130
+msgid ""
+"the available data is insufficient to calibrate the model properly, and "
+"more data should be obtained;"
+msgstr "les données disponibles sont insuffisantes pour calibrer le modèle de façon appropriée, et il faudrait obtenir plus de données ;"
+
+#: ../../source/theory.rst:132
+msgid ""
+"there are problems with the input data (there might be unaccounted biases"
+" or other issues);"
+msgstr "il y a des problèmes avec les données d'entrée (il pourrait y avoir des biais non détectés ou d'autres problèmes) ;"
+
+#: ../../source/theory.rst:134
+msgid ""
+"it could be advisable to use another calibration method (a local maximum "
+"might have been attained, instead of the global maximum);"
+msgstr "l'utilisation d'une autre méthode de calibration pourrait être préférable (la méthode pourrait avoir atteint un maximum local, au lieu d'un maximum global) ;"
+
+#: ../../source/theory.rst:136
+msgid "the model structure needs to be improved."
+msgstr "la structure du modèle doit être améliorée."
+
+#: ../../source/theory.rst:139
+msgid "A note of caution"
+msgstr "Une note d'avertissement"
+
+#: ../../source/theory.rst:140
+msgid ""
+"While models are invaluable tools for scientific research and management,"
+" they are not perfect and it is necessary for the modeller to be aware of"
+" their limitations. The absolute validation and verification of numerical"
+" models is impossible for epistemic reasons (Oreskes et al. 1994). A "
+"model cannot reproduce exactly the behaviour of a natural system because "
+"of our limited knowledge of the system. In fact, a model is an incomplete"
+" representation of reality that uses approximations and assumptions. In "
+"addition, measurements capture the state of the system in a limited way: "
+"they are subject to measurement error and there may be limitations in "
+"spatial or temporal resolution."
+msgstr "Bien que les modèles soit des outils inestimable pour la recherche scientifique et la gestion, ils ne sont libres de défauts et il faut que le modélisateur soit conscient de leur limitations. La validation et vérification absolues des modèles numériques est impossible pour des raisons épistémiques (Oreskes et al. 1994). Un modèle ne peut pas reproduire exactement le comportement d'un système naturel à cause de nos connaissances limitées du système. En fait, un modèle est une représentation incomplète de la réalité qui utilise des approximations et des suppositions. De plus, les mesures capturent l'état du système de façon limitée : elles sont susceptibles d'erreurs de mesure et il peut y avoir de limitations à la résolution spatiale ou temporelle."
+
+#: ../../source/theory.rst:151
+msgid ""
+"Thus, validation and verification are only conditional (Boschetti et al. "
+"2011). They are conditional to the ranges of parameter values and input "
+"data used: model or data deficiencies not yet detected might be "
+"discovered in the future, when the model has been tested in other "
+"situations or with more data."
+msgstr "Ainsi, la validation et vérification sont seulement conditionnelles (Boschetti et al. 2011). Elles sont conditionnelles aux rangs des valeurs des paramètres et des données d'entrée utilisés : imperfections du modèle ou des données pourrait être détectées dans un temps futur, quand le modèle a été testé en d'autres situations ou avec plus de données."
+
+#: ../../source/theory.rst:157
+msgid ""
+"The model output also depends on the implicit and explicit assumptions "
+"made in its specification and how the behaviour of the system has been "
+"implemented. In fact, the model will not be able to reproduce a behaviour"
+" that has not been specified in its code. Also, the calibration data "
+"informs the values of the parameters. This means that the model will "
+"perform best when the behaviour of the system is similar to the behaviour"
+" reflected in the calibration data."
+msgstr "Le retour du modèle dépends aussi des suppositions implicites ou explicites faites dans sa spécification et de comment on a implémenté le comportement du système. En fait, le modèle ne sera pas capable de reproduire un comportement que n'a pas été spécifié dans son code. Aussi, les données de calibration conditionnent les valeurs des paramètres. En conséquence, le modèle aura une meilleur performance quand le comportement du système est similaire au comportement imbu dans les données de calibration."
+
+#: ../../source/theory.rst:167
+msgid ""
+"A simulation is only as good as data and model specification allow it to "
+"be."
+msgstr "Une simulation ne peut pas être meilleur que ce que lui permettent les données et la spécification du modèle."
+
+#: ../../source/theory.rst:169
+msgid ""
+"In order to guard against model and data imperfections it is best "
+"practice to estimate and communicate uncertainty."
+msgstr "De façon à se protéger des imperfections du modèle et des données il est une pratique exemplaire d'estimer et communiquer l'incertitude."
+
+#: ../../source/theory.rst:173 ../../source/theory.rst:830
+msgid "Identifiability"
+msgstr "Identifiabilité"
+
+#: ../../source/theory.rst:174
+msgid ""
+"An important concept in the modelling process is that of identifiability."
+" Parameter identifiability analysis assesses whether it is possible to "
+"determine a unique vector of parameter values that optimises model "
+"performance or there are multiple parameter values that result in a "
+"similar model performance. The result of a lack of identifiability is the"
+" absence of a unique optimum combination of parameter values (the model "
+"performs with similar good performance for different combinations of "
+"parameter values) and in high error variances and covariances of "
+"parameters. Good introductions to the concept of identifiability are "
+"given by Beck (1987) and Guillaume et al. (2019)."
+msgstr "Un concept important dans le procès de modélisation est celui d'identifiabilité. L'analyse de l'identifiabilité des paramètres étudie si c'est possible de déterminer un vecteur de valeurs des paramètres unique qui optimise la performance du modèle ou s'il y a multiples valeurs des paramètres qui donnent une performance du modèle comparable. Le résultat d'un manque d'identifiabilité est l'absence d'une combinaison optimale des valeurs des paramètres unique (le modèle donne des simulations similairement bonnes avec différentes combinaisons des valeurs des paramètres) et l'existence de grandes variances de l'erreur et de la covariance des paramètres. Bonnes introductions au concept d'identifiabilité sont données par Beck (1987) et Guillaume et al. (2019)."
+
+#: ../../source/theory.rst:187
+msgid ""
+"\"Parameter identifiability analysis assesses whether it is theoretically"
+" possible to estimate unique parameter values from data, given the "
+"quantities measured, conditions present in the forcing data, model "
+"structure (and objective function), and properties of errors in the model"
+" and observations. In other words, it tackles the problem of whether the "
+"right *type* of data is available to estimate the desired parameter "
+"values.\" Guillaume et al. (2019, p. 418)"
+msgstr "\"L'analyse d'identifiabilité des paramètres étudie si c'est théoriquement possible d'estimer valeurs des paramètres uniques depuis les données, d'après les quantités mesurées, les conditions présentes dans les données de forçage, la structure du modèle (et fonction objectif), et les caractéristiques des erreurs dans le modèle et les observations. Dit autrement, elle s'occupe du problème de si des données du *type* correcte sont disponibles pour estimer les valeurs des paramètres souhaitées.\" Guillaume et al. (2019, p. 418)"
+
+#: ../../source/theory.rst:196
+msgid ""
+"Thus, the analysis of identifiability is related to the design of "
+"experiments and monitoring programs, so that the collected data ensures "
+"optimal identifiability. If the model structure is suitable to the "
+"modelled system, obtaining more data should result in a reduced parameter"
+" uncertainty. However, this only happens if the measure is of the right "
+"type. This is also related to the concept of data worth."
+msgstr "Ainsi, l'analyse d'identifiabilité a relation avec le plan expérimental et les programmes de surveillance, de façon que le mesures enregistrées assurent une identifiabilité optimale. Si la structure du modèle est appropriée au système modélisé, l'acquisition de plus de données devrait contribuer à réduire l'incertitude des paramètres. Cependant, ça ne s'avère que si la mesure est du type correcte. Ceci est lié aussi au concept de valeur des données."
+
+#: ../../source/theory.rst:203
+msgid ""
+"In a linear system of equations, parameter values are identifiable when "
+"the number of unknowns is less than the number of observations. When the "
+"number of unknowns is greater than the number of observations, the system"
+" is underdetermined and the problem is ill-posed (and infinite solutions "
+"are possible)."
+msgstr "Dans un système linéaire d'équations, les valeurs des paramètres sont identifiables quand le nombre d'inconnues est moins que le nombre d'observations. Quand le nombre d'inconnues est majeur que le nombre d'observations, le système est sous-déterminé et le problème n'est pas bien posé (est il y a infinies possibles solutions)."
+
+#: ../../source/theory.rst:209
+msgid ""
+"In a complex nonlinear environmental models, instead, the previous rule "
+"is not applicable and more sophisticated methods are necessary. In this "
+"type of models we often find a lack of identifiability, since the "
+"complexity of the model is usually greater than the available information"
+" about the behaviour of the system. But having as much (or more) "
+"observations as parameters does not ensure they are identifiable. For "
+"example, a model may include descriptions of behaviours not present in "
+"the calibration data set, and thus their parameter values cannot be "
+"informed by observations. In other cases, it may not be possible to "
+"distinguish between several overlapping processes from the available "
+"data. Also, the model may even simulate state variables for which there "
+"are no available observations."
+msgstr "En modèles environnementaux complexes non linéaires, par contre, la règle précédente n'est pas applicable et il faut utiliser des méthodes plus sophistiquées. En ce type de modèles on trouve souvent un manque d'identifiabilité, puisque la complexité du modèle est d'habitude plus importante que l'information disponible sur le comportement du système. Mais le fait d'avoir autant (ou plus) d'observations que paramètres n'assure pas qu'ils soient identifiables. Par exemple, un modèle peut inclure des descriptions de comportements qui ne sont pas représentés dans les données de calibration, et en conséquence les observations n'apportent pas information pour déterminer les valeurs de leurs paramètres. Dans d'autres cas, il peut être difficile de distinguer plusieurs procès qui se superposent depuis les données disponibles. De plus, le modèle peut même simuler variables d'état pour lesquels il n0y a pas des observations disponibles."
+
+#: ../../source/theory.rst:223
+msgid "Sources of unidentifiability"
+msgstr "Sources de la manque d'identifiabilité"
+
+#: ../../source/theory.rst:224
+msgid "We can find several types of unidentifiability:"
+msgstr "On peut trouver plusieurs types de manque d'identifiabilité :"
+
+#: ../../source/theory.rst:226
+msgid ""
+"Structural or a priori unidentifiability. It is due to the model "
+"structure (conceptualisation of the system, equations, objective "
+"function, model of the error structure). This type of unidentifiability "
+"can be analysed irrespective of the availability of data. When there is "
+"structural unidentifiability, there is \"a lack of information about one "
+"or more model parameters and results in unbounded variation of the "
+"parameters even in the absence of noise.\" Solving structural "
+"unidentifiability may involve acquiring data about other model variables "
+"or using a different model structure."
+msgstr "Manque d'identifiabilité structurale ou a priori. Il est dû à la structure du modèle (conceptualisation du système, équations, fonction d'objectifs, modèle de la structure de l'erreur). Ce type de manque d'identifiabilité peut être analysé indépendamment de la disponibilité des données. Quand il y a manque d'identifiabilité, il y a \"un manque d'information sur un ou plusieurs paramètres du modèle et produit une variation non borné des paramètres même en absence de bruit.\" La résolution du problème du manque d'identifiabilité structurale peut comporter l'acquisition de données sur d'autres variables du modèle ou l'utilisation d'une différente structure du modèle."
+
+#: ../../source/theory.rst:235
+msgid ""
+"Practical or a posteriori unidentifiability: it corresponds to "
+"unidentifiability due to other sources than model structure, mainly "
+"forcing dataset and model and observation errors."
+msgstr "Manque d'identifiabilité pratique ou a posteriori : il correspond au manque d'identifiabilité dues à autres causes que la structure du modèle, principalement données de forçage et erreurs du modèle et des observations."
+
+#: ../../source/theory.rst:239
+msgid ""
+"Unidentifiability due to the forcing dataset. Complex models can include "
+"formulations describing different types of behaviours. If one of those "
+"behaviours is not represented in the calibration data, there is no "
+"information to estimate the value of the parameters specifically related "
+"to that behaviour. Solving this issue would require collecting data for "
+"different experimental or environmental conditions."
+msgstr "Manque d'identifiabilité dû aux données de forçage. Les modèles complexes peuvent inclure formulations qui décrivent plusieurs types de comportements. Si un de ces comportements n'est pas représenté par les données de calibration, il n'y a pas d'information pour estimer la valeur des paramètres spécifiquement liés à ce comportement. Pour résoudre ce problème il faudrait collecter des données sous différentes conditions expérimentales ou environnementales."
+
+#: ../../source/theory.rst:245
+msgid ""
+"Unidentifiability due to model and observation errors. The presence of "
+"structural errors and measurement noise/error results in parameter "
+"uncertainty that may affect parameter identifiability. To improve the "
+"situation it may help analysing the influence of measurement error on "
+"parameter estimation."
+msgstr "Manque d'identifiabilité due aux erreurs du modèle et des observations. La présence d'erreurs structurales et bruit/erreur dans les mesures cause une incertitude des paramètres qui peut affecter l'identifiabilité des paramètres. Pour améliorer la situation il peut être utile d'analyser l'influence de l'erreur de mesure sur l'estimation des paramètres."
+
+#: ../../source/theory.rst:254
+msgid ""
+"Structural unidentifiability implies practical unidentifiability. But "
+"structural identifiability does not imply practical identifiability."
+msgstr "Le manque d'identifiabilité structurale implique un manque d'identifiabilité pratique. Mais l'identifiabilité structurale n'implique pas l'identifiabilité pratique."
+
+#: ../../source/theory.rst:259
+msgid "Methods to analyse identifiability"
+msgstr "Méthodes pour analyser l'identifiabilité"
+
+#: ../../source/theory.rst:260
+msgid ""
+"Structural identifiability can be assessed by analysing the model's "
+"equations. For example, in the following equations the parameter values "
+"are unidentifiable:"
+msgstr "L'identifiabilité structurale peut être évaluée par l'analyse des équations du modèle. Par exemple, dans les équations suivantes les valeurs des paramètres ne sont pas identifiables :"
+
+#: ../../source/theory.rst:263
+msgid ""
+"Y = (\\alpha + \\beta)X\n"
+"\n"
+"Y = \\alpha\\beta X"
+msgstr "Y = (\\alpha + \\beta)X\n"
+"\n"
+"Y = \\alpha\\beta X"
+
+#: ../../source/theory.rst:269
+msgid ""
+"Infinite combinations of values for :math:`\\alpha` and :math:`\\beta` "
+"give the same result."
+msgstr "Infinies combinaisons de valeurs pour :math:`\\alpha` et :math:`\\beta` donnent le même résultat."
+
+#: ../../source/theory.rst:272
+msgid ""
+"Identifiability can also be assessed using sensitivity analysis tools. If"
+" a the response of a model is insensitive to a parameter, the parameter "
+"is unidentifiable. However, a model may be sensitive to a given parameter"
+" and it may still not be possible to identify the parameter value."
+msgstr "L'identifiabilité peut être évaluée aussi avec des outils d'analyse de sensitivité. Si la réponse d'un modèle n'est pas sensible à un paramètre, le paramètre n'est pas identifiable. Cependant, un modèle peut être sensible à un certain paramètre et il peut être comme même impossible d'identifier la valeur du paramètre."
+
+#: ../../source/theory.rst:277
+msgid ""
+"Identifiability can also be analysed by visualizing the model's response "
+"surface with real or synthetic data. The existence of flat surfaces "
+"indicates unidentifiability, while different peaks with equal objective "
+"function values are indicative of local identifiability. For simple "
+"models, it is possible to visualize the response surface using 2D or 3D "
+"plots. For more complex models, it is possible to use dotty plots, which "
+"show the variation of the response variable for one or two parameters "
+"while varying all other parameters."
+msgstr "L'identifiabilité peut être analysée aussi par la visualisation de la surface de réponse du modèle avec des données réelles ou synthétiques. L'existence de surfaces plates indique manque d'identifiabilité, alors que différents pics avec valeurs pareilles de la fonction d'objectifs indiquent identifiabilité locale. Pour de modèles simples, il est possible de visualiser la surface de réponse avec de graphiques en 2D ou 3D. Pour des modèles plus complexes, il est possible d'utiliser de graphiques de points, qui montrent la variation de la variable de réponse pour un ou deux paramètres à la fois que varient tous les autres paramètres."
+
+#: ../../source/theory.rst:285
+msgid ""
+"Finally, some indices have also been proposed to evaluate "
+"identifiability. It is the case of identifiability measure proposed by "
+"Doherty & Hunt (2009) based on the error variance analysis."
+msgstr "Finalement, quelques indices ont été proposés pour évaluer l'identifiabilité. C'est le cas de la mesure d'identifiabilité proposé par Doherty & Hunt (2009) basée sur l'analyse de la variance de l'erreur."
+
+#: ../../source/theory.rst:290 ../../source/theory.rst:685
+msgid "Calibration"
+msgstr "Calibration"
+
+#: ../../source/theory.rst:291
+msgid ""
+"Calibration, parameter estimation and history matching are three synonyms"
+" for the process of finding the optimal value of a model's parameters. "
+"Optimality is here defined as the minimisation of an objective function, "
+"representing some kind of distance between simulated and observed values."
+" Usually the modeller aims to obtain a global optimum, and then assesses "
+"parameter and predictive uncertainty with respect to this optimum. The "
+"objective is that parameter and predictive uncertainty should be reduced "
+"after the calibration process."
+msgstr "Calibration, estimation de paramètres et couplage d'historique sont trois synonymes pour le procès d'identification de la valeur optimale des paramètres d'un modèle. L'optimalité est définie ici comme la minimisation d'une fonction d'objectifs, qui représente quelque sorte de distance entre valeurs simulées et observées. D'habitude le modélisateur essaye d'obtenir un optimum global, et après analyse l'incertitude des paramètres et prédictive par rapport à cet optimum. L'objectif est de réussir à réduire l'incertitude prédictive et des paramètres après le procès de calibration."
+
+#: ../../source/theory.rst:302
+msgid "**Global optimum:** best solution across the entire parameter space."
+msgstr "**Optimum global :** meilleure solution au large de l'entier espace des paramètres."
+
+#: ../../source/theory.rst:304
+msgid ""
+"**Local optimum:** best solution in its immediate neighbourhood in the "
+"parameter space."
+msgstr "**Optimum local :** meilleure solution dans le voisinage immédiat dans l'espace des paramètres."
+
+#: ../../source/theory.rst:307
+msgid ""
+"When the conditions are optimal, i.e., there is a clear global optimum "
+"and there are no local optima, an automatic search algorithm may be used."
+msgstr "Quand les conditions sont optimales, c'est-à-dire, il y a un optimum global clair et il n'y a pas d'optimums locaux, un algorithme automatique de descente de pente peut être utilisé."
+
+#: ../../source/theory.rst:310
+msgid ""
+"However, the identification of an optimum may be hampered by the use of "
+"threshold parameters, by correlation between parameters, by "
+"autocorrelation and heteroscedasticity in the residuals and by "
+"insensitive parameters. These effects may cause local minima, valleys and"
+" plateaus in the parameter response surface. In such cases, global "
+"calibration methods (such as Differential Evolution) may be more "
+"appropriate. But there cases when even these methods may have problems in"
+" identifying a simple set of parameter values. Instead of an optimum "
+"there are several optima with similar performance. This is known as "
+"equifinality (Beven & Freer, 2001)."
+msgstr "Cependant, l'identification d'un optimum peut être empêchée par l'utilisation de paramètres de seuil, par la corrélation entre paramètres, par l'autocorrélation et heteroscedasticité dans les résidus et par les paramètres auquel le modèle n'est pas sensible. Ces effets peuvent causer des minimums locaux, des vallées et plateaux dans la surface de réponse des paramètres. Dans de tels cas, les méthodes globales de calibration (telle que l'Évolution Différentielle) peuvent être préférables. Mais il y a des cas où même ces méthodes peuvent avoir des problèmes à identifier un ensemble de valeurs des paramètres unique. Au lieu d'un optimum il y a plusieurs optimums avec performance pareille. Ceci est connu comme equifinalité (Beven & Freer, 2001)."
+
+#: ../../source/theory.rst:320
+msgid ""
+"Some more sophisticated techniques try to address the equifinality "
+"problem. For example, Monte Carlo methods such as GLUE (Generalized "
+"Likelihood Uncertainty Estimation) (Beven & Binley, 1992). The GLUE "
+"method is not implemented in this package, but it can be applied easily "
+"by properly treating the output of the :func:`monte_carlo` function."
+msgstr "Quelques techniques plus sophistiquées essayent d'affronter le problème de l'equifinalité. Par exemple, les méthodes de Monte Carlo comme GLUE (Generalized Likelihood Uncertainty Estimation) (Beven & Binley, 1992). La méthode GLUE n'est pas implémentée dans ce paquet, mais peut être appliquée facilement par un traitement approprié du retour de la fonction :func:`monte_carlo`."
+
+#: ../../source/theory.rst:326
+msgid ""
+"Also, the Iterative Ensemble Smoother, rather than finding an optimum set"
+" of parameter values, obtains several optimum sets of parameter values. "
+"The method draws several random samples of the prior parameter "
+"distributions and adjusts their values iteratively, so that each set of "
+"parameter values can be considered to be calibrated. The ensemble of "
+"optimized sets can be considered as a sampling of the posterior "
+"distribution."
+msgstr "Aussi, le Lissage Itératif d'Ensemble, plutôt que chercher un seul ensemble de valeurs des paramètres optimales, en obtient plusieurs. La méthode extrait plusieurs échantillons aléatoires depuis les distributions des paramètres a priori et ajuste leurs valeurs itérativement, de façon que chaque ensemble de valeurs des paramètres peut être considéré comme calibré. L'ensemble des ensembles optimisés peut être considéré comme un échantillon de la distribution a posteriori."
+
+#: ../../source/theory.rst:336
+msgid ""
+"Validation or, more appropriately, conditional validation consists in the"
+" evaluation of model performance to conditions that differ from "
+"calibration ones. The objective is to test whether the model performs "
+"equally well under a different set of circumstances."
+msgstr "La validation ou, plus adroitement, validation conditionnelle consiste en l'évaluation de la performance du modèle sous des conditions différentes de celles de la calibration. L'objectif est de tester si le comportement du modèle est aussi bon sous un groupe différent de circonstances."
+
+#: ../../source/theory.rst:341
+msgid ""
+"If the simulated behaviour of the system is consistent with the observed "
+"behaviour, we cannot assume the model has been absolutely validated; it "
+"has only been validated for the sets of circumstances included in the "
+"calibration and validation data sets."
+msgstr "Si le comportement simulé du système est cohérent avec le comportement observé, on ne peut pas présumer que le modèle a été absolument validé ; il a été validé seulement pour la série de circonstances inclues dans les jeux de données de calibration et validation."
+
+#: ../../source/theory.rst:346
+msgid ""
+"If the model results are incoherent with the observations, it would be "
+"necessary to review the data, model structure and parameter values to "
+"identify the source of the mismatch. In a sense, rather than confirming "
+"the model validity, the objective of validation may be seen as an attempt"
+" to falsify the model, to find areas where it needs improvement."
+msgstr "Si les résultats du modèle sont incohérents avec les observations, il faudrait réviser les données, la structure du modèle et les valeurs des paramètres pour identifier la source du désaccord. Dans un certain sens, plutôt que confirmer la validité du modèle, l'objectif de la validation peut être considéré comme un essai de falsifier le modèle, pour trouver des aires où il a besoin d'amélioration."
+
+#: ../../source/theory.rst:353 ../../source/theory.rst:616
+msgid "Sensitivity analysis"
+msgstr "Analyse de sensitivité"
+
+#: ../../source/theory.rst:354
+msgid ""
+"Should we vary slightly our modelling assumptions and the input data, the"
+" predicted behaviour would also vary. How much would the simulated "
+"behaviour vary if we varied model structure, parameter values and input "
+"data within reasonable ranges? Answering this question is the aim of the "
+"sensitivity analysis."
+msgstr "Si on varie légèrement les présuppositions du modèle et des données d'entrée, le comportement prédit variera aussi. En quel dégrée varie le comportement simulé si on varie la structure du modèle, les valeurs des paramètres et les données d'entrée dans des rangs raisonnables ? Répondre à cette question est l'objectif de l'analyse de sensitivité."
+
+#: ../../source/theory.rst:360
+msgid ""
+"In other words, sensitivity analysis is the analysis of how the model's "
+"output varies with variations in the parameter values. This definition "
+"can be translated into practice in different ways:"
+msgstr "Dit autrement, l'analyse de sensitivité est l'analyse de comment varie le retour du modèle en fonction des variations des valeurs des paramètres. Cette définition peut être transposée dans la pratique de plusieurs façons :"
+
+#: ../../source/theory.rst:364
+msgid ""
+"Defining sensitivity as the partial derivative of the output :math:`Y` "
+"with respect to a parameter :math:`X_i`: :math:`S_i={\\delta Y}/{\\delta "
+"X_i}`. This is the usage in local sensitivity analyses (sensitivity is "
+"evaluated at a given point), and sensitivity indices are often estimated "
+"by varying one parameter at a time. However, in nonlinear models "
+"sensitivity varies within the parameter space."
+msgstr "En définissant la sensitivité comme la dérivée partielle de la sortie :math:`Y` par rapport au paramètre :math:`X_i` : :math:`S_i={\\delta Y}/{\\delta X_i}`. Ceci est l'usage qu'on trouve dans les analyses de sensitivité locaux (la sensitivité est évaluée sur un point donné), et les indices de sensitivité sont souvent estimés en faisant varier un paramètre à chaque fois. Cependant, dans les modèles non linéaires la sensitivité varie quand on se déplace dans l'espace des paramètres."
+
+#: ../../source/theory.rst:370
+msgid ""
+"Linear regression coefficients can be considered as sensitivity indices "
+"in linear models. In particular, standardized regression coefficients "
+"(SRC) indicate the contribution of the variance of each input factor to "
+"the model output variance. The data for the linear regression can be "
+"obtained from Monte Carlo runs. Since SRCs are calculated over a range of"
+" values they may be considered as global sensitivity indices. In "
+"addition, linear regression models may be used to assess the degree of "
+"linearity of a model. If the coefficient of determination of the model is"
+" high (for example, :math:`R^2 \\geq 0.7`), the model may be considered "
+"to be linear and the SRCs may be used for sensitivity analysis (Hall et "
+"al. 2009)."
+msgstr "Les coefficients de régression linéaire peuvent être considérés comme des indices de sensitivité pour les modèles linéaires. En particulier, les coefficients de régression standardisés (SRC) indiquent la contribution de la variance de chaque facteur d'entrée sur la variance du retour du modèle. Les données pour la régression linéaire peut être obtenue à partir de simulations de Monte Carlo. Du moment où les SRCs sont calculés sur un rang de valeurs ils peuvent être considérés comme des indices de sensitivité globaux. De plus, les modèles de régression linéaire peuvent être utilisés pour évaluer le dégrée de linéarité d'un modèle. Si le coefficient de détermination du modèle est élevé (par exemple, :math:`R^2 \\geq 0.7`), le modèle peut être considéré linéaire et les SRCs peuvent être utilisés pour l'analyse de sensitivité (Hall et al. 2009)."
+
+#: ../../source/theory.rst:380
+msgid ""
+"If the system is nonlinear (:math:`R^2 < 0.7`), more sophisticated "
+"(global) methods will be necessary. Good introductions to global "
+"sensitivity analysis are given by Saltelli et al. (2004) and Saltelli et "
+"al. (2008). We mention here a few options:"
+msgstr "Si le système est non linéaire (:math:`R^2 < 0.7`), des méthodes (globales) plus sophistiquées seront nécessaires. Good introductions to global sensitivity analysis are given by Saltelli et al. (2004) and Saltelli et al. (2008). On donne ci-dessous quelques options :"
+
+#: ../../source/theory.rst:385
+msgid ""
+"Morris's method. It is a one-at-a-time method that analyses sensitivity "
+"at different points along the range of parameter values to obtain an "
+"average sensitivity measure. It has a low computational cost and is thus "
+"specially apt for models with a high computational time or there is a "
+"large number of uncertain parameters. Morris's method is implemented in "
+"this package."
+msgstr "Méthode de Morris. Il s'agit d'une méthode de \"variation une à la fois\" qu'analyse la sensitivité à différents points le long du rang de valeurs des paramètres pour obtenir un mesure de sensitivité moyenne. Elle a un bas coût computationnel et est donc spécialement adaptée aux modèles avec des longs temps de calcul ou quand il y a un grand nombre de paramètres incertaines. La méthode de Morris est implémentée dans ce paquet."
+
+#: ../../source/theory.rst:391
+msgid ""
+"Variance decomposition methods. The variance of the model output is "
+"decomposed into different components, each one attributable to one "
+"parameter (or combination of parameters). We have implemented Sobol's "
+"method in this package. It has a higher computational cost than Morris's "
+"method."
+msgstr "Méthodes de décomposition de la variance. La variance du retour du modèle est décomposé en différentes composantes, chaque une attribuable à un paramètre (ou combinaison de paramètres). On a implémenté la méthode de Sobol dans ce paquet. Elle a un coût computationnel plus élevé que la méthode de Morris."
+
+#: ../../source/theory.rst:395
+msgid ""
+"Monte Carlo filtering (also, Hornberger-Spear-Young method or Regional "
+"Sensitivity Analysis). A performance threshold is used to separate "
+"between \"acceptable\" and \"unacceptable\" simulations (and parameter "
+"sets). If there are differences between the distribution of parameter "
+"values for acceptable and unacceptable simulations, the model is "
+"sensitive to that parameter. They have a very high computational cost (of"
+" the order of thousands of Monte Carlo runs)."
+msgstr "Le filtrage de Monte Carlo (ou aussi méthode de Hornberger-Spear-Young ou Analyse de Sensitivité Régionalisée). On utilise un seuil de performance pour séparer entre des simulations \"acceptables\" et \"inacceptables\" (et ensembles de paramètres). S'il y a des différences entre la distribution des valeurs d'un paramètre pour les simulations acceptables et inacceptables, le modèle est sensible à ce paramètre. Ils ont un coût computationnel très élevé (de l'ordre de milliers d'exécutions de Monte Carlo)."
+
+#: ../../source/theory.rst:406
+msgid ""
+"The results of the sensitivity analysis depend on the range of parameter "
+"values explored in the analysis, i.e., on the uncertainty of individual "
+"parameters."
+msgstr "Les résultats de l'analyse de sensitivité dépend du rang de valeurs des paramètres exploré pendant l'analyse, c'est-à-dire, de l'incertitude des paramètres individuels."
+
+#: ../../source/theory.rst:411
+msgid ""
+"Sensitivity analysis may be used to  answer the following questions (Hall"
+" et al. 2009):"
+msgstr "L'analyse de sensitivité peut être utilisé pour répondre aux questions suivantes (Hall et al. : 2009):"
+
+#: ../../source/theory.rst:414
+msgid "Which are the factors that influence most the model output?"
+msgstr "Quels sont les facteurs qu'influence le plus le retour du modèle ?"
+
+#: ../../source/theory.rst:415
+msgid ""
+"Are there any factors we need to investigate more in depth to be more "
+"confident on the model output?"
+msgstr "Il y a des facteurs qu'il faudrait investiguer plus en détail pour augmenter la crédibilité du retour du modèle ?"
+
+#: ../../source/theory.rst:417
+msgid ""
+"Are there any factors which have an insignificant influence on model "
+"output, so that they can be discarded from subsequent analyses?"
+msgstr "Il y a des facteurs qui ont une influence méprisable sur le retour du modèle, de façon qu'ils puissent être écartés dans les analyses subséquentes ?"
+
+#: ../../source/theory.rst:419
+msgid "Does the model reproduce known relations?"
+msgstr "Le modèle reproduit de relations connues ?"
+
+#: ../../source/theory.rst:420
+msgid ""
+"Are there regions in the input space where the variation in the model "
+"output is maximum?"
+msgstr "Il y a des régions dans l'espace des entrées pour lesquelles la variation du retour du modèle est maximale ?"
+
+#: ../../source/theory.rst:422
+msgid "Which are the optimal regions in parameter space for calibration?"
+msgstr "Quelles sont les régions optimales dans l'espace des paramètres pour la calibration ?"
+
+#: ../../source/theory.rst:423
+msgid ""
+"Are there any factors or group of factors that interact between "
+"themselves?"
+msgstr "Il y a des facteurs ou groupes de facteurs qu'interagissent entre eux ?"
+
+#: ../../source/theory.rst:424
+msgid ""
+"Is model output robust to reasonable discrepancies in the value of input "
+"factors? Or is the model highly sensitive to small variations of the "
+"value of a parameter (which might indicate overfitting)?"
+msgstr "Est-ce que le retour du modèle est robuste face à différences raisonnables de la valeur des facteurs d'entrée ? Ou est-ce que le modèle est très sensible à des petites variations de la valeurs d'un paramètre (ce qui pourrait être indicatif de surcalibration) ?"
+
+#: ../../source/theory.rst:428
+msgid ""
+"Saltelli et al. (2019) analysed the main pitfalls in the use of "
+"sensitivity analysis and gave recommendations for improving its usage."
+msgstr "Saltelli et al. (2019) analysed the main pitfalls in the use of sensitivity analysis and gave recommendations for improving its usage."
+
+#: ../../source/theory.rst:432
+msgid "Sensitivity analysis and uncertainty analysis"
+msgstr "Analyse de sensitivité et analyse d'incertitudes"
+
+#: ../../source/theory.rst:433
+msgid "Uncertainty analysis and sensitivity analysis are related concepts:"
+msgstr "L'analyse de sensitivité et l'analyse d'incertitudes sont des concepts relationnés."
+
+#: ../../source/theory.rst:435
+msgid ""
+"Uncertainty analysis consists in the quantification of the uncertainties "
+"in model inputs and propagating them to obtain the uncertainty of model "
+"forecasts."
+msgstr "L'analyse d'incertitudes consiste en la quantification des incertitudes des entrées du modèle et en leur propagation pour obtenir l'incertitude des prédictions du modèle."
+
+#: ../../source/theory.rst:438
+msgid ""
+"Sensitivity analysis, instead, consists in assessing how variations in "
+"the model inputs, individually or in combination, influence the variation"
+" in the model outputs."
+msgstr "L'analyse de sensitivité, par contre, consiste en l'évaluation de comment les variations des entrées su modèle, individuellement ou en combinaison, influencent la variation des sorties du modèle."
+
+#: ../../source/theory.rst:442
+msgid ""
+"Thus, the focus of uncertainty analysis is on determining the limits of "
+"our knowledge (and lack of knowledge) about the system and its response. "
+"While sensitivity analysis is more centred on determining the factors "
+"that affect most the model output."
+msgstr "Ainsi, le point central d'intérêt de l'analyse d'incertitudes est la détermination des limites de nos connaissances (et de notre manque de connaissance) sur le système et ses réponses. Alors que l'analyse de sensitivité est plus centré sur la détermination des facteurs qu'affectent les plus le retour du modèle."
+
+#: ../../source/theory.rst:448
+msgid "Uncertainty analysis"
+msgstr "Analyse d'incertitudes"
+
+#: ../../source/theory.rst:449
+msgid ""
+"Environmental models cannot predict the future. What they provide are "
+"possible realistic behaviours that approach the behaviour of the real "
+"system. The uncertainty analysis deals with the confidence we can place "
+"on such forecasts and which are the ranges within which a predicted "
+"quantity may vary."
+msgstr "Les modèles environnementaux ne peuvent pas prédire le futur. Ce qu'ils fournissent sont des possibles comportements réalistes qui s'approximent au comportement du système réel. L'analyse d'incertitudes s'occupe de la crédibilité qu'on peut attribuer à ces prévisions et des rangs dans lesquels une quantité prédite peut varier."
+
+#: ../../source/theory.rst:454
+msgid "The uncertainty of model simulations has mainly three sources:"
+msgstr "L'incertitude des simulations d'un modèle a trois causes principales :"
+
+#: ../../source/theory.rst:456
+msgid ""
+"Structural uncertainty, due to the uncertainty in the structure of the "
+"model. Since our knowledge of the system behaviour is incomplete, our "
+"implementation of the system processes is not perfect."
+msgstr "Incertitude structurale, due à l'incertitude dans la structure du modèle. Comme notre connaissance du comportement du système est incomplète, notre implémentation des procès du système ne sera parfaite non plus."
+
+#: ../../source/theory.rst:459
+msgid ""
+"Parametric uncertainty, due to the uncertainty about the value of model "
+"parameters. The available data and measurements of the system state are "
+"limited and they are a partial representation of the studied system. "
+"Thus, the estimated values of the parameters based on them are imprecise."
+msgstr "Incertitude paramétrique, due à l'incertitude sur les valeurs des paramètres du modèle. Les données disponibles et les mesures de l'état du système sont limitées et elles sont une représentation partielle du système étudié. Ainsi, les valeurs estimées des paramètres basées sur ces données sont imprécises."
+
+#: ../../source/theory.rst:463
+msgid ""
+"Measurement error and natural variability. As a result, there is "
+"uncertainty in the boundary conditions of the model (initial state and "
+"forcing data) and system state. Natural variability includes different "
+"components, such as spatial heterogeneity, environmental variability and "
+"genetic variability."
+msgstr "Erreur de la mesure et variabilité naturelle. En conséquence, il y a incertitude sur les conditions de frontière du modèle (état initial et données de forçage) et état du système. La variabilité naturelle inclue différentes composantes, telles que l'hétérogénéité spatiale, la variabilité environnementale et la variabilité génétique."
+
+#: ../../source/theory.rst:469
+msgid ""
+"Ideally, with time, we may reduce the uncertainty of simulations by "
+"improving our understanding of the system (adapting the structure of the "
+"model according to the available data), by reducing measurement error "
+"(with more precise data) and by identifying more precisely the value of "
+"the parameters (with more and more precise data). However, a certain "
+"degree of uncertainty will always remain."
+msgstr "Idéalement, après un certain temps, on peut réduire l'incertitude des simulations par l'amélioration de notre connaissance du système (en adaptant la structure du modèle d'après les données disponibles), par la réduction de l'erreur de mesure (avec de données plus précises) et par l'identification plus précise des valeurs des paramètres (avec plus de données et données plus précises). Cependant, un certain dégrée d'incertitude reste toujours."
+
+#: ../../source/theory.rst:475
+msgid ""
+"Beck (1987) identified four types of problems that are the object of "
+"uncertainty analysis:"
+msgstr "Beck (1987) a identifié quatre types de problèmes qui font l'objet de l'analyse d'incertitudes :"
+
+#: ../../source/theory.rst:478
+msgid ""
+"Analysing the uncertainty about model structure (or about the "
+"relationships between variables characterizing the behaviour of the "
+"system). To answer this question we may use different models or model "
+"structures."
+msgstr "L'analyse de l'incertitude de la structure du modèle (ou sur les relations entre les variables qui caractérisent le comportement du système). Pour répondre cette question on peut utiliser différents modèles ou structures du modèle."
+
+#: ../../source/theory.rst:481
+msgid ""
+"Analysing the uncertainty about the value of the parameters. The "
+"objective is to obtain the distribution of parameter values, based on the"
+" analysis of which parameter values produce simulations that are "
+"consistent with observations of the system behaviour."
+msgstr "L'analyse de l'incertitude de la valeurs des paramètres. L'objectif est d'obtenir la distribution des valeurs des paramètres, en base à l'analyse de quelles valeurs des paramètres donnent des simulations cohérentes avec les observations du comportement du système."
+
+#: ../../source/theory.rst:485
+msgid ""
+"Analysing the uncertainty of forecasts made using the model or predictive"
+" uncertainty. A priori predictive uncertainty is the uncertainty of "
+"forecasts made before incorporating the information of new measurements. "
+"A posteriori predictive uncertainty is the uncertainty of forecasts after"
+" incorporating new measurements."
+msgstr "L'analyse de l'incertitude des prédictions faites avec le modèle ou incertitude prédictive. L'incertitude prédictive a priori est l'incertitude des prédictions faites avant d'incorporer l'information de nouvelles mesures. L'incertitude prédictive a posteriori est l'incertitude des prédictions après l'incorporation des nouvelles mesures."
+
+#: ../../source/theory.rst:490
+msgid ""
+"Designing experiments or monitoring programs to reduce the main "
+"uncertainties. This analysis is related with the analysis of "
+"identifiability and data worth."
+msgstr "La planification expérimentale ou programmes de surveillance pour réduire les principales incertitudes. Cette analyse est liée à l'analyse d'identifiabilité et la valeur des données."
+
+#: ../../source/theory.rst:494
+msgid "Which uncertainty method to use?"
+msgstr "Quelle méthode d'incertitude utiliser ?"
+
+#: ../../source/theory.rst:495
+msgid "We find two main approaches to the analysis of predictive uncertainty:"
+msgstr "On trouve deux approches principales à l'analyse d'incertitude prédictive :"
+
+#: ../../source/theory.rst:497
+msgid ""
+"First-order methods. Limited to the linear case, because of the "
+"intractability of mathematical solutions in nonlinear cases. Often there "
+"is an assumption of Gaussian probability density functions for better "
+"tractability. They use linear algebra to estimate uncertainty and require"
+" few simulations."
+msgstr "Méthodes de premier ordre. Limitées au cas linéaire, à cause de l'intraitabilité des solutions mathématiques dans les cas non linéaires. Souvent il y a une supposition de fonctions de densité de probabilité normales pour une meilleure traitabilité. Elles utilisent l'algèbre linéaire pour estimer l'incertitude et ont besoin de peu de simulations."
+
+#: ../../source/theory.rst:502
+msgid ""
+"Nonlinear methods. These methods can take into account all the complexity"
+" of the models. Some examples:"
+msgstr "Méthodes non linéaires. Ces méthodes peuvent prendre en considération toute la complexité des modèles. Quelques exemples :"
+
+#: ../../source/theory.rst:505
+msgid ""
+"Monte Carlo methods. They are based in obtaining a large number of "
+"simulations by varying the value of the parameters of the model. They "
+"require a large number of simulations."
+msgstr "Méthodes de Monte Carlo. Elles sont basées en l'obtention d'un grand nombre de simulations par le biais de la variation des valeurs des paramètres du modèle. Elles requièrent un grand nombre de simulations."
+
+#: ../../source/theory.rst:508
+msgid ""
+"Iterative Ensemble Smoother. It is a technique specially designed to "
+"calibrate and quantify the uncertainty of nonlinear models with large "
+"numbers of parameters. The number of ensemble members should be greater "
+"than the dimensionality of the solution space. For models with a large "
+"number of parameters, the computational cost of IES in terms of number of"
+" model runs is much smaller than that of Monte Carlo methods."
+msgstr "Lissage Itératif d'Ensemble. C'est une technique spécialement désignée pour calibrer et quantifier l'incertitude des modèles non linéaires avec grands nombres de paramètres. Le nombre de membres de l'ensemble devrait être supérieur à la dimensionnalité de l'espace de solution. Pour les modèles avec un grand nombre de paramètres, le coût computationnel de l'IES en raison du nombre d'exécutions du modèle est beaucoup plus petit que celui des méthodes de Monte Carlo."
+
+#: ../../source/theory.rst:515
+msgid ""
+"Although environmental models are largely nonlinear, linear methods may "
+"also be applied to them if the uncertainty of model parameters is low "
+"enough. This is based on the fact that the behaviour of a nonlinear "
+"(continuously derivable) function in an interval around a certain point "
+"(the parameter value) can be assumed to be linear if the interval is "
+"small enough. We may consider a model has an approximately linear "
+"behaviour when the coefficient of determination of the linear regression "
+"model is higher than 0.7."
+msgstr "Bien que les modèles environnementaux soient largement non linéaires, les méthodes linéaires peuvent y être appliquées aussi si l'incertitude du modèle est suffisamment petite. Ceci est basé sur le fait que le comportement d'une fonction (continuellement dérivable) non linéaire dans un intervalle autour d'un certain point (la valeur du paramètre) peut être présumé linéaire si l'intervalle est assez petit. On peut considérer qu'un modèle a un comportement approximativement linéaire quand le coefficient de détermination du modèle de régression linéaire est supérieur à 0.7."
+
+#: ../../source/theory.rst:524
+msgid ""
+"When choosing a method, we need to take into account computational cost "
+"(number of runs and time of calculation of the model) and parameter "
+"uncertainty. When the uncertainty about the model parameters is high, it "
+"is preferable to use nonlinear methods. In posterior iterations, when we "
+"have acquired more data and the uncertainty about the parameter values "
+"has decreased enough (and the response of the model can be assumed to be "
+"linear), we can use less costly linear methods."
+msgstr "Quand on sélectionne une méthode, il faut prendre en considération le coût computationnel (nombre d'exécutions et temps de calcul du modèle) et incertitude des paramètres. Quand l'incertitude des paramètres du modèle est élevée, il est préférable d'utiliser des méthodes non linéaires. En itérations postérieures, quand on a obtenu plus de données et l'incertitude des valeurs des paramètres a diminué assez (et la réponse du modèle peut être considéré linéaire), on peut utiliser des méthodes linéaires moins coûteux."
+
+#: ../../source/theory.rst:533 ../../source/theory.rst:760
+msgid "Data worth"
+msgstr "Valeur des données"
+
+#: ../../source/theory.rst:534
+msgid ""
+"Data worth or value of information is an assessment of the value of data."
+" The worth of data may be related to a cost-benefit analysis, where "
+"additional measurements have worth if the reduction in uncertainty "
+"overcomes the increased cost. Thus the concept of data worth is "
+"especially important for the design of measurement networks and data "
+"collection campaigns."
+msgstr "La valeur des données ou de l'information est une évaluation de l'utilité des données. La valeur des données peut être relationnée à un analyse de coût-bénéfice, où les mesures additionnelles ont de la valeur si la réduction en incertitude supère l'incrément du coût. Ainsi le concept de la valeur des données est spécialement important pour la planification de réseaux de mesure et de campagnes de collection de données."
+
+#: ../../source/theory.rst:540
+msgid ""
+"Data worth measures the potential of reduction of the uncertainty of "
+"relevant management predictions. There are two ways to assess data worth:"
+msgstr "La valeur des données mesure le potentiel de réduction de l'incertitude de prédictions relevantes pour la gestion. Il y a deux façons d'évaluer la valeur des données :"
+
+#: ../../source/theory.rst:543
+msgid ""
+"as the decrease in predictive uncertainty produced if the data were added"
+" to the dataset;"
+msgstr "comme une diminution de l'incertitude prédictive due à l'addition de données au jeu de données ;"
+
+#: ../../source/theory.rst:545
+msgid ""
+"as the increase in predictive uncertainty produced if the data were "
+"removed from the dataset."
+msgstr "comme une augmentation de l'incertitude prédictive due à l'élimination de données au jeu de données ;"
+
+#: ../../source/theory.rst:548
+msgid ""
+"However, the most common situation is that new data is added to the "
+"system."
+msgstr "Cependant, la situation la plus habituelle est que des nouvelles données soient ajoutées au système."
+
+#: ../../source/theory.rst:551
+msgid "An example: simulation of surface water temperature"
+msgstr "Un exemple : simulation de la température de la surface de l'eau"
+
+#: ../../source/theory.rst:552
+msgid ""
+"To demonstrate the concepts and techniques implemented in this package we"
+" will use the study case of the simulation of surface water temperature "
+"using one simple model depending on air temperature."
+msgstr "Pour démontrer les concepts et techniques implémentées dans ce paquet nous présentons le cas d'étude de la simulation de la température de la surface de l'eau en utilisant un modèle simple qui dépend de la température de l'air."
+
+#: ../../source/theory.rst:556
+msgid ""
+"The relationship between air and water temperatures can be described by a"
+" non-linear equation. Mohseni et al. (1998) proposed the following "
+"sigmoid equation:"
+msgstr "La relation entre les températures de l'air et de l'eau peut être décrite avec une équation non linéaire. Mohseni et al. (1998) a proposé l'équation sigmoïde suivante :"
+
+#: ../../source/theory.rst:560
+msgid " T_w = \\mu + \\frac{\\alpha - \\mu}{1 + e^{\\gamma(\\beta - T_a)}}"
+msgstr " T_w = \\mu + \\frac{\\alpha - \\mu}{1 + e^{\\gamma(\\beta - T_a)}}"
+
+#: ../../source/theory.rst:566
+msgid ""
+"In this example, we will apply this model to the case of surface "
+"temperature in the reservoir of Naussac. We will use satellite "
+"measurements of surface temperature from the LakeSST dataset (Prats et "
+"al. 2018) and air temperature from the SAFRAN reanalysis (Quintana-Seguí "
+"et al., 2008), shown in the following figure. The data covers the period "
+"1999-2015."
+msgstr "Dans cet exemple, nous appliquons ce modèle au cas de la température de la surface dans la retenue de Naussac. Nous utilisons des mesures par satellite de la température de la surface du jeu de données LakeSST (Prats et al. 2018) et la température de l'air de la réanalyse SAFRAN (Quintana-Seguí et al., 2008), montrées dans la figure suivante. Les données recouvrent la période 1999-2015."
+
+#: ../../source/theory.rst:574
+msgid ""
+"The objective of the exercise will be to estimate water temperature and "
+"its uncertainty on the 1st and 15th of each month in 2015."
+msgstr "L'objectif de l'exercice est d'estimer la température de l'eau et son incertitude les jours 1er et 15e de chaque mois en 2015."
+
+#: ../../source/theory.rst:578
+msgid "Prior uncertainty"
+msgstr "Incertitude a priori"
+
+#: ../../source/theory.rst:579
+msgid ""
+"Assume we did not have any available data on surface temperature in the "
+"reservoir. And assume we need to estimate it. How confidently could we do"
+" it? We can answer this question with Monte Carlo simulations."
+msgstr "Supposez que nous n'avons pas de données sur la température de la surface dans le réservoir. Et supposez que nous avons besoin de l'estimer. Quelle confidence peut-on attacher à nous estimations ? On peut répondre cette question avec des simulations de Monte Carlo."
+
+#: ../../source/theory.rst:583
+msgid ""
+"Even in the absence of field data, we could still make an estimation "
+"based on previous scientific knowledge. We know water temperature is "
+"highly correlated to air temperature and that it can be estimated quite "
+"accurately using Eq. :eq:`model_2`. Also, many studies have calibrated "
+"that model in several instances, so that we can use expert judgement to "
+"provide an estimation of the expected value and range of the parameters "
+"of the model. The values on the following table are based on the results "
+"obtained by Mohseni et al. (1998)."
+msgstr "Même si on n'a pas de données de terrain, on peut encore faire une estimation en base aux connaissances scientifiques antérieures. On sait que la température de l'eau est très corrélée à la température de l'air et qu'elle peut être estimée avec assez de précision avec l'Éq. :eq:`model_2`. Aussi, beaucoup d'études ont calibré ce modèle dans plusieurs cas, et en conséquence on peut utiliser l'avis d'expert pour avoir une estimation de la valeur espérée et du rang de variation des paramètres du modèle. Les valeurs de la table suivante sont dérivées depuis les résultats obtenus par Mohseni et al. (1998)."
+
+#: ../../source/theory.rst:592
+msgid "A first (expert-based) estimation of model parameters"
+msgstr "Une première estimation des paramètres du modèle (basée sur l'avis d'expert)"
+
+#: ../../source/theory.rst:1
+msgid "**Parameter**"
+msgstr "**Paramètre**."
+
+#: ../../source/theory.rst:1
+msgid "**Mean**"
+msgstr "**Moyenne**"
+
+#: ../../source/theory.rst:1
+msgid "**Min.**"
+msgstr "**Min.**"
+
+#: ../../source/theory.rst:1
+msgid "**Max.**"
+msgstr "**Max.**"
+
+#: ../../source/theory.rst:1
+msgid ":math:`\\alpha` (ºC)"
+msgstr ":math:`\\alpha` (ºC)"
+
+#: ../../source/theory.rst:1
+msgid "26.2"
+msgstr "26.2"
+
+#: ../../source/theory.rst:1
+msgid "10.8"
+msgstr "10.8"
+
+#: ../../source/theory.rst:1
+msgid "40.9"
+msgstr "40.9"
+
+#: ../../source/theory.rst:1
+msgid ":math:`\\beta` (ºC)"
+msgstr ":math:`\\beta` (ºC)"
+
+#: ../../source/theory.rst:1
+msgid "13.3"
+msgstr "13.3"
+
+#: ../../source/theory.rst:1
+msgid "3.7"
+msgstr "3.7"
+
+#: ../../source/theory.rst:1
+msgid "20.8"
+msgstr "20.8"
+
+#: ../../source/theory.rst:1
+msgid ":math:`\\gamma` (ºC\\ :sup:`-1`\\ )"
+msgstr ":math:`\\gamma` (ºC\\ :sup:`-1`\\ )"
+
+#: ../../source/theory.rst:1
+msgid "0.18"
+msgstr "0.18"
+
+#: ../../source/theory.rst:1
+msgid "0.10"
+msgstr "0.10"
+
+#: ../../source/theory.rst:1
+msgid "0.80"
+msgstr "0.80"
+
+#: ../../source/theory.rst:1
+msgid ":math:`\\mu` (ºC)"
+msgstr ":math:`\\mu` (ºC)"
+
+#: ../../source/theory.rst:1
+msgid "0.8"
+msgstr "0.8"
+
+#: ../../source/theory.rst:1
+msgid "0.0"
+msgstr "0.0"
+
+#: ../../source/theory.rst:1
+msgid "8.9"
+msgstr "8.9"
+
+#: ../../source/theory.rst:600
+msgid ""
+"From these parameters we can draw several random samples (e.g., 500 "
+"samples) and carry simulations with each set of parameter values. In this"
+" case, since we suppose we do not have any additional information. When "
+"there is no information on the shape of the distribution of the parameter"
+" values, it is often assumed that they follow a uniform distribution, "
+"which can be considered a non-informative distribution."
+msgstr "On peut utiliser ces valeurs pour extraire plusieurs échantillons aléatoires (p. ex., 500 échantillons) des valeurs des paramètres et réaliser une simulation pour chaque jeu de valeurs des paramètres. Dans ce cas, on présume qu'on n'a pas d'information additionnelle. Quand il n'y a pas d'information sur la forme de la distribution des valeurs des paramètres, on assume souvent qu'elles suivent une distribution uniforme, qui peut être considérée comme une distribution non informative."
+
+#: ../../source/theory.rst:609
+msgid ""
+"The simulated values for the different parameter sets provide the prior "
+"uncertainty of the temperature estimations based on prior knowledge. We "
+"can see that, as expected, uncertainty is quite large at this point."
+msgstr "Les valeurs simulées pour les différents jeux de paramètres proportionnent l'incertitude a priori des estimations de la température en base aux connaissances antérieurement existantes. On peut voire que, comme c'était attendu, l'incertitude est assez large en ce moment."
+
+#: ../../source/theory.rst:617
+msgid ""
+"To reduce simulation uncertainty, we need to calibrate the model choosing"
+" appropriate values for the model parameters. However, before passing to "
+"calibration it is helpful to make a sensitivity analysis to find which "
+"are the parameters that have a greater influence in the simulation "
+"results. Given the large uncertainty at this point, a global sensitivity "
+"analysis method should be used. We will use here the method of Sobol."
+msgstr "Pour réduire l'incertitude de la simulation, nous avons besoin de calibrer le modèle et choisir de valeurs appropriées pour les valeurs des paramètres. Cependant, avant de passer à la calibration il est d'utilité de faire une analyse de sensitivité pour investiguer quels sont les paramètres avec une majeure influence sur les résultats de simulation. Vu la large incertitude à ce point-ci, il faudrait utiliser une méthode d'analyse de sensitivité globale. Nous utiliserons ici la méthode de Sobol."
+
+#: ../../source/theory.rst:624
+msgid ""
+"The method of Sobol is a Monte Carlo-based method of decomposition of the"
+" variance. The objective of the method is to assess the proportion of the"
+" output variance that is due to each parameter. This method can reveal "
+"the existence of nonlinearity and interactions between parameters. When "
+"using this method usually two indexes are calculated: first-order "
+"sensitivity index (:math:`S_i`) and total effect index (:math:`S_{T_i}`)."
+msgstr "La méthode de Sobol est une méthode de Monte Carlo de décomposition de la variance. L'objectif de la méthode est d'évaluer la proportion de la variance des résultats qui est due à chaque paramètre. Cette méthode peut révéler l'existence de non-linéarité et d'interactions entre paramètres. Quand on utilise cette méthode d'habitude on calcule deux indexes : l'index de sensitivité de premier ordre (:math:`S_i`) et l'index des effets totaux (:math:`S_{T_i}`)."
+
+#: ../../source/theory.rst:631
+msgid "Sensitivity of model parameters (Sobol method, 400 samples)"
+msgstr "Sensitivité des paramètres du modèle (méthode de Sobol, 400 échantillons)"
+
+#: ../../source/theory.rst:1
+msgid ":math:`S_i`"
+msgstr ":math:`S_i`"
+
+#: ../../source/theory.rst:1
+msgid ":math:`S_{T_i}`"
+msgstr ":math:`S_{T_i}`"
+
+#: ../../source/theory.rst:1
+msgid ":math:`\\alpha`"
+msgstr ":math:`\\alpha`"
+
+#: ../../source/theory.rst:1
+msgid "0.29"
+msgstr "0.29"
+
+#: ../../source/theory.rst:1
+msgid "0.52"
+msgstr "0.52"
+
+#: ../../source/theory.rst:1
+msgid ":math:`\\beta`"
+msgstr ":math:`\\beta`"
+
+#: ../../source/theory.rst:1
+msgid "0.37"
+msgstr "0.37"
+
+#: ../../source/theory.rst:1
+msgid "0.55"
+msgstr "0.55"
+
+#: ../../source/theory.rst:1
+msgid ":math:`\\gamma`"
+msgstr ":math:`\\gamma`"
+
+#: ../../source/theory.rst:1
+msgid "0.03"
+msgstr "0.03"
+
+#: ../../source/theory.rst:1
+msgid "0.08"
+msgstr "0.08"
+
+#: ../../source/theory.rst:1
+msgid ":math:`\\mu`"
+msgstr ":math:`\\mu`"
+
+#: ../../source/theory.rst:1
+msgid "0.01"
+msgstr "0.01"
+
+#: ../../source/theory.rst:639
+#, python-format
+msgid ""
+"The first order sensitivity index :math:`S_i` measures the proportion of "
+"the variance of the model output that is explained by each parameter "
+"(without interactions). The index :math:`S_i` theoretically varies "
+"between 0 (unsensitive) and 1 (maximum sensitivity). The sum of all "
+":math:`S_i` is equal to 1 for additive models (the effect of the "
+"parameters is independent), and it is less than 1 for nonadditive models "
+"(there are interactions between the parameters). In this case, the sum of"
+" all :math:`S_i` is 0.7. Thus, the variation in individual parameters "
+"explains 70% of the output variance and the model may be considered to "
+"have a largely linear behaviour, notwithstanding the rather large "
+"parameter space explored here."
+msgstr "L'index de sensitivité de premier ordre :math:`S_i` mesure la proportion de la variance du retour du modèle qu'est expliquée par chaque paramètre individuellement (sans interactions). L'index :math:`S_i` varie théoriquement entre 0 (non sensible) et 1 (sensitivité maximale). La somme de tous les :math:`S_i` est égale à 1 pour des modèles additifs (l'effet de chaque paramètre est indépendant), et elle est moins de 1 pour des modèles non-additifs (il y a des interactions entre les paramètres). Dans notre cas, la somme de tous les :math:`S_i` est 0.7. Ainsi, la variation des paramètres individuels explique un 70 % de la variance des sorties et on peut considérer que le modèle a un comportement largement linéaire, au malgré de l'espace des paramètres assez large qu'on a exploré ici."
+
+#: ../../source/theory.rst:652
+msgid ""
+"When :math:`S_i` is calculated using the Sobol's method, it may take "
+"negative values because of numeric inaccuracies when :math:`S_i` is near "
+"zero and the sample size is small."
+msgstr "Quand :math:`S_i` est calculé avec la méthode de Sobol, il peut prendre des valeurs négatives à cause d'imprécisions numériques quand :math:`S_i` est proche de zéro et la taille de l'échantillon est petite."
+
+#: ../../source/theory.rst:656
+msgid ""
+"The total effect index :math:`S_{T_i}` measures the contribution to the "
+"variance of the model output made by a parameter including interactions "
+"with other parameters. The index :math:`S_{T_i}` is equal to :math:`S_i` "
+"if there are no interactions between parameter :math:`X_i` and other "
+"parameters, and greater than :math:`S_i` if there are interactions with "
+"other parameters. If :math:`S_{T_i}=0`, the parameter :math:`X_i` is "
+"noninfluential. The sum of all :math:`S_{T_i}` is usually greater than 1;"
+" it is 1 only if the model is perfectly additive (no interactions between"
+" parameters)."
+msgstr "L'index des effets totaux :math:`S_{T_i}` mesure la contribution à la variance des sorties du modèle d'un paramètre en incluant les interactions avec d'autres paramètres. L'index :math:`S_{T_i}` est égal à :math:`S_i` si'l n'y a pas d'interactions entre le paramètre :math:`X_i` et d'autres paramètres, et plus grand que :math:`S_i` s'il y a des interactions avec d'autres paramètres. Si :math:`S_{T_i}=0`, le paramètre :math:`X_i` n'a aucune influence. La somme de tous les :math:`S_{T_i}` est habituellement supérieure à 1 ; c'est 1 seulement si le modèle est parfaitement additif (pas d'interactions entre paramètres)."
+
+#: ../../source/theory.rst:666
+msgid ""
+"In our example, the parameters :math:`\\alpha` and :math:`\\beta` are the"
+" most influential parameters: fixing the value of one of them would "
+"reduce the output variance by more than 50%. The paramater "
+":math:`\\gamma` is much less influential. And the parameter :math:`\\mu` "
+"is noninfluential since its total effect index is nearly zero. Also, "
+"since the sum of :math:`S_i` is less than 1, the sum of :math:`S_{T_i}` "
+"is greater than 1, and :math:`S_{T_i}>S_i` for the parameters "
+":math:`\\alpha`, :math:`\\beta` and :math:`\\gamma`, there are "
+"interactions between these parameters."
+msgstr "Dans notre exemple, les paramètres :math:`\\alpha` et :math:`\\beta` sont les paramètres les plus influents : la fixation de la valeur d'un entre eux réduirait la variance des sorties de plus d'un 50 %. Le paramètre :math:`\\gamma` est beaucoup moins influent. Et le paramètre :math:`\\mu` n'a pas d'influence puisque son index d'effets totaux est presque zéro. De plus, comme la somme de :math:`S_i` est moins de 1, la somme de :math:`S_{T_i}` est plus de 1, et :math:`S_{T_i}>S_i` pour les paramètres :math:`\\alpha`, :math:`\\beta` et :math:`\\gamma`, il y a des interactions entre ces paramètres."
+
+#: ../../source/theory.rst:676
+msgid ""
+"The following figure shows the 400 random realizations used to calculate "
+"Sobol indexes superimposed on measurements. The figure shows visually "
+"that there is a large uncertainty in the value of the parameters "
+":math:`\\alpha` and :math:`\\beta`, which determine, respectively, the "
+"upper asymptote and the inflexion point of the logistic curve."
+msgstr "La figure suivante montre les 400 réalisations aléatoires utilisées pour calculer les indexes de Sobol surimposées aux mesures. La figure montre visuellement qu'il y a une grande incertitude dans la valeur des paramètres :math:`\\alpha` et :math:`\\beta`, qui déterminent, respectivement, l'asymptote supérieure et le point d'inflexion point de la courbe logistique."
+
+#: ../../source/theory.rst:686
+msgid ""
+"In the previous section, we have seen that the parameters :math:`\\gamma`"
+" and :math:`\\mu` are mostly noninfluential. This means that multiple "
+"combinations of the values of these parameters results in simulations of "
+"similar quality, thus increasing the uncertainty of parameter values. To "
+"reduce this uncertainty, we may fix the value of the parameters "
+":math:`\\gamma` and :math:`\\mu` to their average values, and calibrate "
+"the value of the parameters :math:`\\alpha` and :math:`\\beta`."
+msgstr "Dans la section antérieure on a vu que les paramètres :math:`\\gamma` et :math:`\\mu` n'ont presque pas d'influence sur les résultats de la simulation. Ceci signifie que plusieurs combinaisons des valeurs des paramètres produisent des simulations de qualité similaire, ce qui fait augmenter l'incertitude des valeurs des paramètres. Pour réduire cette incertitude, on peut fixer la valeur des paramètres :math:`\\gamma` et :math:`\\mu` sur les valeurs moyennes, et calibrer la valeur des paramètres :math:`\\alpha` et :math:`\\beta`."
+
+#: ../../source/theory.rst:694
+msgid ""
+"The previous process of fixing the value of some parameters is an example"
+" of (manual) regularisation, a process by which the complexity of a model"
+" is reduced so that the remaining parameters can be estimated uniquely "
+"(i.e., with low uncertainty). Other more sophisticated regularisation "
+"methods include Tikhonov regularisation and subspace regularisation."
+msgstr "Le procès susdit de fixer la valeur de certains paramètres est un exemple de régularisation (manuelle), une opération par laquelle on réduit la complexité d'un modèle de façon que le reste de paramètres puisse être estimé de façon univoque (i.e., avec une basse incertitude). D'autres méthodes de régularisation plus sophistiqués incluent la régularisation de Tikhonov et la régularisation par sous-espaces."
+
+#: ../../source/theory.rst:700
+msgid ""
+"Since there is a great uncertainty on the value of the parameters, we "
+"will use Differential Evolution (DE) to make a first calibration. DE is a"
+" global calibration method that explores the whole parameter space, "
+"rather than a local range of parameter values. Thus this method provides "
+"a global optimum."
+msgstr "Comme il y a une grande incertitude par rapport à la valeur des paramètres, nous utiliserons la méthode d'Évolution Différentielle (DE) pour faire une première calibration. La DE est une méthode de calibration globale qui explore l'entier espace des paramètres, plutôt qu'un rang local de valeurs des paramètres. Ainsi cette méthode proportionne un optimum global."
+
+#: ../../source/theory.rst:708
+msgid ""
+"After applying a global calibration method it is advisable to refine the "
+"calibration with a local method. Thus, we repeat the calibration with the"
+" GLM algorithm, but now without fixing the parameters :math:`\\gamma` and"
+" :math:`\\mu`. We can see there is just a slight improvement in RMSE."
+msgstr "Après l'application d'une méthode de calibration globale il est conseillé de raffiner la calibration avec une méthode locale. Ainsi, nous répétons la calibration avec l'algorithme GLM, mais maintenant nous ne fixons plus les paramètres :math:`\\gamma` et :math:`\\mu`. On peut voire qu'il y a juste une petite amélioration du RMSE."
+
+#: ../../source/theory.rst:715
+msgid "Calibrated values of model parameters"
+msgstr "Valeurs calibrées des paramètres du modèle"
+
+#: ../../source/theory.rst:1
+#, python-format
+msgid "**2.5% confidence value**"
+msgstr "**Confidence 2,5 %**"
+
+#: ../../source/theory.rst:1
+#, python-format
+msgid "**97.5% confidence value**"
+msgstr "**Confidence 97,5 %**"
+
+#: ../../source/theory.rst:1
+msgid "22.3"
+msgstr "22.3"
+
+#: ../../source/theory.rst:1
+msgid "20.2"
+msgstr "20.2"
+
+#: ../../source/theory.rst:1
+msgid "24.4"
+msgstr "24.4"
+
+#: ../../source/theory.rst:1
+msgid "11.7"
+msgstr "11.7"
+
+#: ../../source/theory.rst:1
+msgid "10.6"
+msgstr "10.6"
+
+#: ../../source/theory.rst:1
+msgid "12.8"
+msgstr "12.8"
+
+#: ../../source/theory.rst:1
+msgid "0.26"
+msgstr "0.26"
+
+#: ../../source/theory.rst:1
+msgid "0.19"
+msgstr "0.19"
+
+#: ../../source/theory.rst:1
+msgid "0.34"
+msgstr "0.34"
+
+#: ../../source/theory.rst:1
+msgid "3.2"
+msgstr "3.2"
+
+#: ../../source/theory.rst:1
+msgid "0.6"
+msgstr "0.6"
+
+#: ../../source/theory.rst:1
+msgid "5.7"
+msgstr "5.7"
+
+#: ../../source/theory.rst:725
+msgid "Posterior uncertainty (Schur's complement analysis)"
+msgstr "Incertitude a posteriori (analyse du complément de Schur)"
+
+#: ../../source/theory.rst:726
+msgid ""
+"Schur's complement analysis is valid when the model has linear (or almost"
+" linear) response to variations in the value of the parameters. We "
+"already showed above that the model has a nearly linear behaviour in the "
+"prior parameter space using Sobol's uncertainty method of decomposition "
+"of variance. The following table shows the reduction in parameter "
+"uncertainty through calibration according to Schur's complement analysis."
+msgstr "L'analyse du complément de Schur est valide quand le modèle a une réponse linéaire (ou presque linéaire) aux variations de la valeur des paramètres. Nous avons déjà démontré que le modèle a un comportement presque linéaire dans l'espace des paramètres a priori en utilisant la méthode de Sobol de décomposition de la variance. La table suivante montre la réduction d'incertitude des paramètres produite par la calibration d'après l'analyse du complément de Schur."
+
+#: ../../source/theory.rst:733
+msgid "Reduction of parameter uncertainty by calibration"
+msgstr "Réduction de l'incertitude des paramètres par calibration"
+
+#: ../../source/theory.rst:1
+msgid "**Prior variance**"
+msgstr "**Variance a priori**"
+
+#: ../../source/theory.rst:1
+msgid "**Posterior variance**"
+msgstr "**Variance a posteriori**"
+
+#: ../../source/theory.rst:1
+msgid "**Reduction in par. uncertainty (%)**"
+msgstr "**Réduction dans l'incertitude des par. (%)**"
+
+#: ../../source/theory.rst:1
+msgid "56.6"
+msgstr "56.6"
+
+#: ../../source/theory.rst:1
+msgid "1.0"
+msgstr "1.0"
+
+#: ../../source/theory.rst:1
+msgid "98"
+msgstr "98"
+
+#: ../../source/theory.rst:1
+msgid "18.3"
+msgstr "18.3"
+
+#: ../../source/theory.rst:1
+msgid "0.4"
+msgstr "0.4"
+
+#: ../../source/theory.rst:1
+msgid "0.031"
+msgstr "0.031"
+
+#: ../../source/theory.rst:1
+msgid "0.002"
+msgstr "0.002"
+
+#: ../../source/theory.rst:1
+msgid "93"
+msgstr "93"
+
+#: ../../source/theory.rst:1
+msgid "4.95"
+msgstr "4.95"
+
+#: ../../source/theory.rst:1
+msgid "1.56"
+msgstr "1.56"
+
+#: ../../source/theory.rst:1
+msgid "69"
+msgstr "69"
+
+#: ../../source/theory.rst:741
+msgid ""
+"After calibration the uncertainty of the parameters has been much "
+"reduced. We note that the reduction in uncertainty for :math:`\\mu` is "
+"less important than for the other parameters. In fact, this parameter "
+"corresponds to the lower asymptote of the logistic curve, but there are "
+"few low temperature measurements to inform this parameter."
+msgstr "Après la calibration l'incertitude des paramètres a diminué beaucoup. On peut noter que la réduction dans l'incertitude pour :math:`\\mu` est beaucoup moins importante que pour les autres paramètres. En fait, ce paramètre correspond à l'asymptote inférieure de la courbe logistique, mais il y a peu de mesures des basses températures qui puissent apporter information à ce paramètre."
+
+#: ../../source/theory.rst:747
+msgid ""
+"The reduction in the uncertainty of the parameter values results in a "
+"decrease in the uncertainty of the simulations. Please note, though, that"
+" in this case the uncertainty is the uncertainty due to parametric "
+"uncertainty only and does not take into account measurement error or "
+"model inadequacies."
+msgstr "La réduction de l'incertitude des valeurs des paramètres produit une diminution de l'incertitude des simulations. Veuillez noter, pourtant, que dans ce cas l'incertitude comprends seulement l'incertitude paramétrique et ne prend en compte les erreurs de mesure ou les imperfections du modèle."
+
+#: ../../source/theory.rst:755
+msgid ""
+"We note that uncertainty is not equal along the year. Uncertainty is "
+"greater for periods of high and, especially, for low temperatures."
+msgstr "On voit que l'incertitude n'est pas égale le long de l'année. L'incertitude est plus grande pour les périodes avec des températures élevées et, spécialement, basses."
+
+#: ../../source/theory.rst:761
+msgid ""
+"The following figure shows the percent reduction in uncertainty by "
+"parameter and forecast date. It can be seen that forecasts on days with "
+"lower temperatures are influenced mostly by :math:`\\mu` and forecasts on"
+" days with the highest temperatures are influenced mostly by "
+":math:`\\alpha`. This is quite logical since :math:`\\alpha` determines "
+"the higher asymptote of the logistic curve and :math:`\\mu` determines "
+"the lower asymptote."
+msgstr "La figure suivante montre le pourcentage de réduction de l'incertitude par paramètre et date de la prédiction. On peut voire que les prédictions pour les jours avec de basses température sont influencées principalement par :math:`\\mu` et les prédictions pour les jours avec les plus hautes températures sont influencées principalement par :math:`\\alpha`. Ceci est assez logique car :math:`\\alpha` détermine l'asymptote supérieure de la courbe logistique et :math:`\\mu` en détermine l'asymptote inférieure."
+
+#: ../../source/theory.rst:770
+msgid ""
+"This figure shows the percentage reduction in uncertainty that we would "
+"obtain in the estimation of the value of the parameters by acquiring a "
+"measurement on the given days."
+msgstr "Cette figure montre le pourcentage de réduction de l'incertitude de l'estimation des paramètres qu'on obtiendrait par l'acquisition d'une mesure dans les jours donnés."
+
+#: ../../source/theory.rst:773
+msgid ""
+"If we wanted to reduce the uncertainty of winter and summer forecasts, "
+"which measurements would we need to take? We can investigate this "
+"question with the concept of data worth. In the next figure we show data "
+"worth as the percent uncertainty increase when removing an observation "
+"for two forecasts, for 1 January 2015 and for 1 July 2015. We see the "
+"most valuable data to reduce forecast uncertainty is that which "
+"corresponds to the same period of the year. We would thus need to "
+"concentrate our measurement efforts in the summer and winter."
+msgstr "Si on voulait réduire l'incertitude des prédictions en été et en hiver, quels mesures additionnels devrions-nous prendre ? On peut investiguer cette question avec le concept de valeur des données. La figure suivante montre la valeur des données comme le pourcentage d'incrément de l'incertitude quand on élimine une observation pour deux prévisions, celles du 1 janvier 2015 et du 1 juillet 2015. On voit que les données qui ont plus de valeur pour réduire l'incertitude des prédictions sont celles qui correspondent à la même période de l'année. On devrait donc concentrer ses efforts de mesure en été et hiver."
+
+#: ../../source/theory.rst:785
+msgid "Posterior predictive error (error variance analysis)"
+msgstr "Erreur prédictive a posteriori (analyse de la variance de l'erreur)"
+
+#: ../../source/theory.rst:786
+msgid ""
+"Error variance analysis is an alternative linear uncertainty analysis "
+"method that decomposes the variance of predictive error into three "
+"components:"
+msgstr "L'analyse de la variance de l'erreur est une méthode linéaire alternative pour l'analyse d'incertitudes qui décompose la variance de l'erreur prédictive en trois composantes :"
+
+#: ../../source/theory.rst:790
+msgid "Potential forecast error arising from parameter uncertainty."
+msgstr "Erreur potentielle de prédiction due à l'incertitude des paramètres."
+
+#: ../../source/theory.rst:791
+msgid ""
+"Potential forecast error arising from model-to-measurement misfit "
+"(including measurement noise and structural noise)."
+msgstr "Erreur potentielle de prédiction due à l'écart entre modèle et mesures (incluant l'erreur des mesures et l'erreur structurelle)."
+
+#: ../../source/theory.rst:793
+msgid ""
+"Potential forecast error arising from not calibrating all model "
+"parameters."
+msgstr "Erreur potentielle de prédiction due à la calibration seulement d'une partie des paramètres du modèle."
+
+#: ../../source/theory.rst:795
+msgid ""
+"Thus, posterior predictive error is expected to be greater than posterior"
+" uncertainty."
+msgstr "Ainsi, on attend que l'erreur prédictive a posteriori soit plus grand que l'incertitude a posteriori."
+
+#: ../../source/theory.rst:798
+msgid ""
+"However, one of the difficulties in using error variance analysis lies in"
+" estimating the number of singular values to use, which may introduce a "
+"certain degree of subjectivity. The error variance analysis uses singular"
+" value decomposition (SVD) to estimate the effective dimensionality of "
+"the system and different criteria have been proposed to choose how many "
+"singular values should be used:"
+msgstr "Pourtant, une des difficultés à utiliser l'analyse de la variance de l'erreur est celle d'estimer le nombre de valeurs singuliers à utiliser, ce qui peut introduire un certain dégrée de subjectivité. L'analyse de la variance de l'erreur utilise la décomposition en valeurs singulières (DVS) pour estimer la dimensionnalité effective du système et plusieurs critères ont été proposés pour choisir combien de valeurs singulières il faudrait utiliser :"
+
+#: ../../source/theory.rst:805
+msgid "Identifying the place with a sharp elbow."
+msgstr "Identifier le point avec un angle marqué."
+
+#: ../../source/theory.rst:806
+msgid ""
+"Use as many singular values as necessary to account for at least 90 % (or"
+" 99%) of total energy."
+msgstr "Utiliser autant de valeurs singulières comme il faut pour représenter au moins un 90 % (ou 99 %) de l'énergie totale."
+
+#: ../../source/theory.rst:808
+msgid ""
+"When residuals have mean zero and are uncorrelated (white noise), Gavish "
+"& Donoho (2014) proposed an optimal threshold of :math:`2.858y_{med}`, "
+"where :math:`y_{med}` is the median singular value."
+msgstr "Quand les résidus ont une moyenne de zéro et ne sont pas corrélés (bruit blanc), Gavish & Donoho (2014) ont proposé un seuil optimal de :math:`2.858y_{med}`, où :math:`y_{med}` est la valeur singulière médiane."
+
+#: ../../source/theory.rst:812
+msgid ""
+"The rational is that the few singular values kept are enough to "
+"characterise most of the information, while the discarded singular values"
+" represent mostly noise."
+msgstr "Le raisonnement est que le peu de valeurs singulières retenues sont suffisantes pour caractériser la plus grande partie de l'information, alors que les valeurs singulières rejetées représentent majoritairement du bruit."
+
+#: ../../source/theory.rst:818
+#, python-format
+msgid ""
+"In our study case, we would need 2 singular values according to the 90% "
+"energy criterion. But only 1, according to Gavish & Donoho's hard "
+"threshold. However, this threshold might not be appropriate, since we "
+"expect the residuals to be correlated. Besides, the power of the second "
+"singular value is quite near to this threshold. Thus, we will use 2 "
+"singular values in this case."
+msgstr "Dans notre cas d'étude, il nous faudrait 2 valeurs singulières d'après le critère du 90 % d'énergie. Mais seulement 1, d'après le seuil strict de Gavish & Donoho. Cependant, ce seuil pourrait ne pas être approprié, car on espère que les résidus soient corrélés. D'ailleurs, la puissance de la deuxième valeur singulière est assez proche de ce seuil. Ainsi, nous utiliserons 2 valeurs singulières dans ce cas."
+
+#: ../../source/theory.rst:826
+msgid ""
+"According to these results, predictive error is greater in the summer and"
+" in the winter, in coherence with the results for posterior uncertainty."
+msgstr "D'après ces résultats, l'erreur prédictive est plus importante en été et en hiver, en cohérence avec les résultats obtenus pour l'incertitude a posteriori."
+
+#: ../../source/theory.rst:831
+msgid ""
+"Error variance analysis also provides an estimation of parameter "
+"identifiability. According to parameter identifiability results (again, "
+"using 2 singular values), the calibration data allow to determine "
+"uniquely the value of :math:`\\gamma` (identifiability near to one). "
+"However, for the other parameters the information is shared between them,"
+" and the calibration data only allows to estimate a combination of these "
+"parameters. This means that the solution obtained for the parameters "
+":math:`\\alpha`, :math:`\\beta` and :math:`\\mu` is not unique, but one "
+"of several possibilities with a similar error level. Also, parameters are"
+" correlated among themselves."
+msgstr "L'analyse de la variance de l'erreur proportionne aussi une estimation de l'identifiabilité des paramètres. D'après les résultats d'identifiabilité des paramètres (à nouveau, en utilisant 2 valeurs singulières), les données de calibration nous permettent de déterminer comme une valeur unique la valeur de :math:`\\gamma` (identifiabilité proche à un). Par contre, pour les autres paramètres l'information est partagée entre eux, et les données de calibration nous permettent seulement d'estimer une combinaison de ces paramètres. Ceci signifie que la solution obtenue pour les paramètres :math:`\\alpha`, :math:`\\beta` et :math:`\\mu` n'est pas unique, mais une de plusieurs possibilités avec un niveau de l'erreur similaire. Aussi, les paramètres sont corrélés entre eux."
+
+#: ../../source/theory.rst:843
+msgid ""
+"The parameters with highest identifiability in the study case are "
+":math:`\\gamma` and :math:`\\beta`, which determine the slope and "
+"location of the curve around its inflexion point. But the available data "
+"does not allow to determine as well the location of the S-curve "
+"asymptotes indicated by :math:`\\alpha` and :math:`\\beta`."
+msgstr "Les paramètres avec une identifiabilité plus élevé dans le cas d'étude sont :math:`\\gamma` et :math:`\\beta`, qui déterminent la pente et position de la courbe autour de son point d'inflexion. Mais les données disponibles ne permettent de déterminer également bien la position des asymptotes de la courbe en forme de S, indiquée par :math:`\\alpha` et :math:`\\beta`."
+
+#: ../../source/theory.rst:851
+msgid ""
+"Validation may be considered as a test to assess the degree of coherence "
+"of simulations with the observed behaviour. The following figure shows "
+"temperature measurements taken in 2015, superimposed on simulations and "
+"predictive uncertainty for all days in the same year."
+msgstr "On peut considérer la validation comme un test pour évaluer le dégrée de cohérence des simulations avec le comportement observé. La figure suivante montre les mesures de température prises en 2015, surimposées aux simulations et à l'incertitude prédictive pour tous les jours dans la même année."
+
+#: ../../source/theory.rst:858
+msgid ""
+"We see that the predictions are quite consistent with observations: most "
+"measurements are within the estimated ranges of predictive error. "
+"However, the fact that the measurement for 21 Sept. 2015 is outside the "
+"predictive error range may indicate a model inadequacy."
+msgstr "On voit que les prédictions sont assez cohérentes avec les observations : la plupart des mesures sont dans les rangs estimés d'erreur prédictive. Pourtant, le fait que la mesure pour le 21 sept. 2015 soit dehors le range d'erreur prédictive peut indiquer une imperfection du modèle."
+
+#: ../../source/theory.rst:863
+msgid ""
+"In fact, the variability of estimated water temperature in spring and "
+"autumn seems too large. Water temperature varies more slowly than air "
+"temperature, and daily water temperature is best correlated to the "
+"average of air temperature in the previous days. This is the rational for"
+" the modification proposed by Koch & Grünewald (2010) to Eq. "
+":eq:`model_2`."
+msgstr "En fait, la variabilité de la température de l'eau estimée du printemps et automne semble trop large. La température de l'eau varie plus lentement que la température de l'air, et la température de l'eau est mieux corrélée à la température de l'air des jours antérieurs. Ceci est la justification de la modification proposée par Koch & Grünewald (2010) de l'Éq. :eq:`model_2`."
+
+#: ../../source/theory.rst:870
+msgid "Using the results in a management setting: effect of climate change"
+msgstr "Utilisation des résultats dans un scénario de gestion : l'effet du changement climatique"
+
+#: ../../source/theory.rst:871
+msgid ""
+"We can use the results obtained here to analyse a management question: "
+"which would be the effect of climate change? To do this we will use the "
+"same air temperatures for 2015 but increased by 1.5 ºC to simulate water "
+"temperature using eq. :eq:`model_2`."
+msgstr "Nous pouvons utiliser les résultats obtenus ici pour analyser un problème de gestion management : quel serait l'effet du changement climatique ? Pour faire ça, nous utiliserons les mêmes températures de l'air que pour 2015 mais incrémentées de 1.5ºC pour simuler la température de l'eau avec l'éq. :eq:`model_2`."
+
+#: ../../source/theory.rst:878
+msgid ""
+"The model predicts an average increase of 1.1 ºC in water temperature "
+"with a 1.5 ºC increase in water temperature. During most of the year "
+"predictive uncertainty in the :math:`T_{air} + 1.5` ºC scenario is equal "
+"or lower to that during the base scenario, with the exception of July "
+"when it increases. It is also the month when uncertainty was already "
+"highest for the base scenario. This is related to the difficulty in "
+"obtaining a precise value for the parameter :math:`\\alpha` and the fact "
+"that the warming makes summer temperatures leave the range of values for "
+"which there is information. This points to a critical issue: the "
+"difficulty in predicting water temperature is greatest when there is a "
+"higher risk of high temperatures."
+msgstr "Le modèle prédits une augmentation moyenne de la température de l'eau de 1,1ºC avec une augmentation de 1.5ºC de la température de l'air. Durant la plupart de l'année l'incertitude prédictive du scénario :math:`T_{air} + 1.5`ºC est égale ou inférieure à celle du scénario de base, avec l'exception de juillet, quand elle est plus importante. Il est aussi le mois où l'incertitude était plus notable dans le scénario de base. Ceci a relation avec la difficulté à obtenir une valeur précise du paramètre :math:`\\alpha` et le fait que le réchauffement fait que les températures d'été sortent du rang de valeurs pour lesquels il y a de l'information. Cette situation remarque un problème critique : la difficulté de prédire la température de l'eau quand il y a les plus grand risque d'avoir des hautes températures."
+
+#: ../../source/theory.rst:890
+msgid "A note on the use of linear an nonlinear uncertainty methods"
+msgstr "Une note sur l'utilisation de méthodes d'analyse de l'incertitude linéaires et non-linéaires"
+
+#: ../../source/theory.rst:891
+msgid ""
+"Some of the previous analyses are based on the use of linear uncertainty "
+"methods. The application of such methods to nonlinear models provides "
+"approximate results only. However, although these methods do not allow an"
+" exact estimation of uncertainty, they provide semi-quantitative "
+"information sufficiently robust to analyse the relative contributions of "
+"different sources of uncertainty or parameters (Moore & Doherty, 2005)."
+msgstr "Quelques uns des analyses précédents sont basés sur l'utilisation de méthodes linéaires d'analyse de l'incertitude. L'application de telles méthodes à de modèles non-linéaires donne seulement des résultats approximés. Cependant, si bien ces méthodes ne permettent pas une estimation exacte de l'incertitude, elles proportionnent de l'information semi-quantitative suffisamment robuste pour analyser les contributions relatives de différentes sources d'incertitude des paramètres (Moore & Doherty, 2005)."
+
+#: ../../source/theory.rst:898
+msgid ""
+"Nonlinear methods (such as Monte Carlo methods) could also be used to "
+"obtain more appropriate quantitative results. However, they require a "
+"much higher number of simulations, which may be prohibitive if the model "
+"run time is large. Such methods allow analysing the effect of parametric "
+"uncertainty as shown above (see `Prior uncertainty`_). Using such "
+"methods, the effect of noise (measurement noise of model structural "
+"noise) can also be taken into account by appropriately characterising it,"
+" for example, as white noise (if noise is uncorrelated) or as a "
+"stochastic process. But to determine the characteristics of noise may "
+"require a large dataset."
+msgstr "Les méthodes non-linéaires (telles que les méthodes de Monte Carlo) pourrait être utilisées aussi pour avoir des résultats quantitatifs plus appropriés. Pourtant, elles requièrent un majeur nombre de simulations, que peut être prohibitif si le temps d’exécution du modèle est élevé. Ces méthodes permettent d'analyser l'effet de l'incertitude paramétrique comme on a vu dessus (voir `Incertitude a priori`_). Avec ces méthodes, l'effet du bruit (erreur de mesure ou erreur structurelle du modèle) peuvent être pris en considération aussi par le biais d'une caractérisation appropriée, par exemple, comme un bruit blanc (si le bruit n'est pas corrélé) ou comme un procès stochastique. Mais pour déterminer les caractéristiques du bruit il peut être nécessaire d'utiliser un jeu de données très riche."
+
+#: ../../source/theory.rst:908
+msgid ""
+"Thus, to choose between a linear or nonlinear method it is necessary to "
+"take into account the model run time and computational cost of the method"
+" and the available data."
+msgstr "Ainsi, pour choisir entre une méthode linéaire ou non-linéaire il faut prendre en considération le temps de calcul, le coût computationnel de la méthode et les données disponibles."
+
+#: ../../source/theory.rst:913
+msgid "References"
+msgstr "Références"
+
+#: ../../source/theory.rst:915
+msgid ""
+"Bennett, N.D.; Croke, B.F.W.; Guariso, G.; Guillaume, J.H.A.; Hamilton, "
+"S.H.; Jakeman, A.J.; Marsili-Libelli, S.; Newham, L.T.H.; Norton, J.P.; "
+"Perrin, C.; Pierce, S.A.; Robson, B.; Seppelt, R.; Voinov, A.A.; Fath, "
+"B.D.; Andreassian, V. (2013) Characterising performance of environmental "
+"models. *Environmental Modelling & Practice* 40, 1-20."
+msgstr "Bennett, N.D.; Croke, B.F.W.; Guariso, G.; Guillaume, J.H.A.; Hamilton, S.H.; Jakeman, A.J.; Marsili-Libelli, S.; Newham, L.T.H.; Norton, J.P.; Perrin, C.; Pierce, S.A.; Robson, B.; Seppelt, R.; Voinov, A.A.; Fath, B.D.; Andreassian, V. (2013) Characterising performance of environmental models. *Environmental Modelling & Practice* 40, 1-20."
+
+#: ../../source/theory.rst:920
+msgid ""
+"Beck M.B. (1987) Water Quality Modeling: A Review of the Analysis of "
+"Uncertainty. *Water Resources Research* 23(8), 1393-1442."
+msgstr "Beck M.B. (1987) Water Quality Modeling: A Review of the Analysis of Uncertainty. *Water Resources Research* 23(8), 1393-1442."
+
+#: ../../source/theory.rst:922
+msgid ""
+"Beven, K.; Binley, A. (1992) The future of distributed models: model "
+"calibration and uncertainty prediction. *Hydrological Processes* 6, "
+"279-298."
+msgstr "Beven, K.; Binley, A. (1992) The future of distributed models: model calibration and uncertainty prediction. *Hydrological Processes* 6, 279-298."
+
+#: ../../source/theory.rst:924
+msgid ""
+"Beven, K.; Freer, J. (2001) Equifinality, data assimilation, and "
+"uncertainty estimation in mechanistic modelling of complex environmental "
+"systems using the GLUE methodology. *Journal of Hydrology* 249, 11-29."
+msgstr "Beven, K.; Freer, J. (2001) Equifinality, data assimilation, and uncertainty estimation in mechanistic modelling of complex environmental systems using the GLUE methodology. *Journal of Hydrology* 249, 11-29."
+
+#: ../../source/theory.rst:927
+msgid ""
+"Beven, K.; Young, P. (2013) A guide to good practice in modeling "
+"semantics for authors and referees. *Water Resources Research* 49, "
+"5092-5098."
+msgstr "Beven, K.; Young, P. (2013) A guide to good practice in modeling semantics for authors and referees. *Water Resources Research* 49, 5092-5098."
+
+#: ../../source/theory.rst:929
+msgid ""
+"Boschetti, F.; Grigg, N.J.; Enting, I. (2011) Modelling = conditional "
+"prediction. *Ecological Complexity* 8, 86-91."
+msgstr "Boschetti, F.; Grigg, N.J.; Enting, I. (2011) Modelling = conditional prediction. *Ecological Complexity* 8, 86-91."
+
+#: ../../source/theory.rst:931
+msgid ""
+"Doherty, J.; Hunt, R.J. (2009) Two statistics for evaluating parameter "
+"identifiability and error reduction. *Journal of Hydrology* 366, 119-127."
+msgstr "Doherty, J.; Hunt, R.J. (2009) Two statistics for evaluating parameter identifiability and error reduction. *Journal of Hydrology* 366, 119-127."
+
+#: ../../source/theory.rst:933
+msgid ""
+"Gavish, M.; Donoho, D.L. (2014) The optimal hard threshold for singular "
+"values is :math:`4/\\sqrt{3}`. *IEEE Transactions on Information Theory* "
+"60(8), 5040-5053."
+msgstr "Gavish, M.; Donoho, D.L. (2014) The optimal hard threshold for singular values is :math:`4/\\sqrt{3}`. *IEEE Transactions on Information Theory* 60(8), 5040-5053."
+
+#: ../../source/theory.rst:936
+msgid ""
+"Guillaume, J.H.A.; Jakeman, J.D.; Marsili-Libelli, S.; Asher, M.; "
+"Brunner, P.; Croke, B.; Hill, M.C.; Jakeman, A.J.; Keesman, K.J.; Razavi,"
+" S.; Stigter, J.D. (2019) Introductory overview of identifiability "
+"analysis: A guide to evaluating whether you have the right type of data "
+"for your modeling purpose. *Environmental Modelling & Software* 119, "
+"418-432."
+msgstr "Guillaume, J.H.A.; Jakeman, J.D.; Marsili-Libelli, S.; Asher, M.; Brunner, P.; Croke, B.; Hill, M.C.; Jakeman, A.J.; Keesman, K.J.; Razavi, S.; Stigter, J.D. (2019) Introductory overview of identifiability analysis: A guide to evaluating whether you have the right type of data for your modeling purpose. *Environmental Modelling and Software* 119,  418-432."
+
+#: ../../source/theory.rst:941
+msgid ""
+"Hall, J.W.; Boyce, S.A.; Wang, Y.; Dawson, R.J.; Tarantola, S.; Saltelli,"
+" A. (2009) Sensitivity analysis for hydraulic models. *Journal of "
+"Hydraulic Engineering* 135(11), 959-969."
+msgstr "Hall, J.W.; Boyce, S.A.; Wang, Y.; Dawson, R.J.; Tarantola, S.; Saltelli, A. (2009) Sensitivity analysis for hydraulic models. *Journal of Hydraulic Engineering* 135(11), 959-969."
+
+#: ../../source/theory.rst:944
+msgid ""
+"Jakeman, A.J.; Letcher, R.A.; Norton, J.P. (2006) Ten iterative steps in "
+"development and evaluation of environmental models. *Environmental "
+"Modelling & Software* 21, 602-614."
+msgstr "Jakeman, A.J.; Letcher, R.A.; Norton, J.P. (2006) Ten iterative steps in development and evaluation of environmental models. *Environmental Modelling and Software* 21, 602-614."
+
+#: ../../source/theory.rst:947
+msgid ""
+"Koch, H.; Grünewald, U. (2010) Regression models for daily stream "
+"temperature simulation: case studies for the river Elbe, Germany. "
+"*Hydrological Processes* 24, 3826-3836."
+msgstr "Koch, H.; Grünewald, U. (2010) Regression models for daily stream temperature simulation: case studies for the river Elbe, Germany. *Hydrological Processes* 24, 3826-3836."
+
+#: ../../source/theory.rst:950
+msgid ""
+"Moore, C.; Doherty, J. (2005) Role of the calibration process in reducing"
+" model predictive error. *Water Resources Research* 41, W05020, 14 p."
+msgstr "Moore, C.; Doherty, J. (2005) Role of the calibration process in reducing model predictive error. *Water Resources Research* 41, W05020, 14 p."
+
+#: ../../source/theory.rst:952
+msgid ""
+"Oreskes, N.; Shrader-Frechette, K.; Belitz, K. (1994) Verification, "
+"validation, and confirmation of numerical models in the Earth sciences. "
+"*Science* 263, 641-646."
+msgstr "Oreskes, N.; Shrader-Frechette, K.; Belitz, K. (1994) Verification, validation, and confirmation of numerical models in the Earth sciences. *Science* 263, 641-646."
+
+#: ../../source/theory.rst:955
+msgid ""
+"Prats, J.; Reynaud, N.; Rebière, D.; Peroux, T.; Tormos, T.; Danis, P.-A."
+" (2018) LakeSST: Lake Skin Surface Temperature in French inland water "
+"bodies for 1999-2016 from Landsat archives. *Earth System Science Data* "
+"10, 727-743."
+msgstr "Prats, J.; Reynaud, N.; Rebière, D.; Peroux, T.; Tormos, T.; Danis, P.-A. (2018) LakeSST: Lake Skin Surface Temperature in French inland water bodies for 1999-2016 from Landsat archives. *Earth System Science Data* 10, 727-743."
+
+#: ../../source/theory.rst:959
+msgid ""
+"Quintana-Seguí, P.; Le Migno, P.; Durand, Y.; Martin, E.; Habets, F.; "
+"Baillon, M.; Canellas, C.; Franchisteguy, L.; Morel, S. (2008) Analysis "
+"of near-surface atmospheric variables: validation of the SAFRAN analysis "
+"over France. *Journal of Applied Meteorology* 47, 92-107."
+msgstr "Quintana-Seguí, P.; Le Migno, P.; Durand, Y.; Martin, E.; Habets, F.; Baillon, M.; Canellas, C.; Franchisteguy, L.; Morel, S. (2008) Analysis of near-surface atmospheric variables: validation of the SAFRAN analysis over France. *Journal of Applied Meteorology* 47, 92-107."
+
+#: ../../source/theory.rst:963
+msgid ""
+"Saltelli, A.; Tarantola, S.; Campolongo, F.; Ratto, M. (2004) "
+"*Sensitivity Analysis in Practice. A Guide to Assessing Scientific "
+"Models.* John Wiley & Sons, Ltd, Chichester. 219 p."
+msgstr "Saltelli, A.; Tarantola, S.; Campolongo, F.; Ratto, M. (2004) *Sensitivity Analysis in Practice. A Guide to Assessing Scientific Models.* John Wiley & Sons, Ltd, Chichester. 219 p."
+
+#: ../../source/theory.rst:966
+msgid ""
+"Saltelli, A.; Ratto, M.; Andres, T.; Campolongo, F.; Cariboni, J.; "
+"Gatelli, D.; Saisana, M.; Tarantola, S. (2008) *Global Sensitivity "
+"analysis. The Primer.* John Wiley & Sons, Ltd, Chichester. 292 p."
+msgstr "Saltelli, A.; Ratto, M.; Andres, T.; Campolongo, F.; Cariboni, J.; Gatelli, D.; Saisana, M.; Tarantola, S. (2008) *Global Sensitivity Analysis. The Primer.* John Wiley & Sons, Ltd, Chichester. 292 p."
+
+#: ../../source/theory.rst:969
+msgid ""
+"Saltelli, A.; Aleksankina, K.; Becker, W.; Fennell, P.; Ferretti, F.; "
+"Holst, N.; Li, S.; Wu, Q. (2019) Why so many published sensitivity "
+"analyses are false: A systematic review of sensitivity analysis "
+"practices. *Environmental Modelling & Software* 114, 29-39."
+msgstr "Saltelli, A.; Aleksankina, K.; Becker, W.; Fennell, P.; Ferretti, F.; Holst, N.; Li, S.; Wu, Q. (2019) Why so many published sensitivity analyses are false: A systematic review of sensitivity analysis practices. *Environmental Modelling and Software* 114, 29-39."
+
+#~ msgid ""
+#~ "Given the results obtained in the "
+#~ "previous section, we could fix the "
+#~ "value of the parameters :math:`\\gamma` "
+#~ "and :math:`\\mu` to their average "
+#~ "values, and calibrate the value of "
+#~ "the parameters :math:`\\alpha` and "
+#~ ":math:`\\beta`."
+#~ msgstr ""
+#~ "En vue des résultats obtenus dans "
+#~ "la section antérieure, nous pouvons "
+#~ "fixer la valeur des paramètres "
+#~ ":math:`\\gamma` et :math:`\\mu` sur leurs "
+#~ "valeurs moyennes, et calibrer la valeur"
+#~ " des paramètres :math:`\\alpha` et "
+#~ ":math:`\\beta`."
+

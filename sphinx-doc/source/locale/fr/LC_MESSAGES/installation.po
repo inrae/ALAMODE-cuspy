@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Segula Technologies - Office Français de la
+# Biodiversité
+# This file is distributed under the same license as the cuspy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr "Project-Id-Version: cuspy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-07 12:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../source/installation.rst:2
+msgid "Installation"
+msgstr "Installation"
+
+#: ../../source/installation.rst:5
+msgid "Requirements and dependencies"
+msgstr "Requirements and dependencies"
+
+#: ../../source/installation.rst:6
+msgid ""
+"You need Python 3.6 or later to run the :mod:`cuspy` package. You can "
+"have multiple Python versions (2.x and 3.x) installed on the same system "
+"without problems using, for example, virtual environments."
+msgstr "Il est nécessaire d'avoir une version Python 3.6 ou ultérieure pour faire tourner le paquet :mod:`cuspy`. Il est possible d'avoir plusieurs versions de Python (2.x et 3.x) installées sur le même système d'exploitation en utilisant, par exemple, les environnements virtuels."
+
+#: ../../source/installation.rst:10
+msgid "You may use ``pip`` to install the required packages."
+msgstr "Vous pouvez utiliser ``pip`` pour installer les paquets requis."
+
+#: ../../source/installation.rst:12
+msgid ""
+"In Windows, to use ``pip`` to install the required packages, please "
+"verify that the path to ``pip``'s executable file has been added "
+"correctly to your environment variable ``PATH``. The address may vary "
+"depending on whether you install it for one or all users (e.g., "
+":file:`%USERPROFILE%/AppData/roaming/Python/Python37/scripts` or "
+":file:`C:/Users/MyUserName/AppData/Local/Programs/Python/Python37/Scripts`)."
+msgstr "Sous Windows, pour utiliser ``pip`` pour installer les paquets requis, veuillez vérifier que le chemin au fichier exécutable de ``pip`` a été ajouté correctement à votre variable d'environnement ``PATH``. L'adresse peut varier en fonction de si vous l'installez pour un ou plusieurs utilisateurs (p. ex., :file:`%USERPROFILE%/AppData/roaming/Python/Python37/scripts` ou :file:`C:/Users/MyUserName/AppData/Local/Programs/Python/Python37/Scripts`)."
+
+#: ../../source/installation.rst:18
+msgid ""
+"The application :mod:`cuspy` depends on the Python packages :mod:`numpy`,"
+" :mod:`pandas` and :mod:`pyemu`. The package :mod:`pyemu` also depends on"
+" :mod:`matplotlib` for plotting. Make sure they are installed before "
+"using :mod:`cuspy`."
+msgstr "Le logiciel :mod:`cuspy` dépend des paquets Python :mod:`numpy`, :mod:`pandas` et :mod:`pyemu`. Le paquet :mod:`pyemu` dépend aussi de :mod:`matplotlib` pour tracer des graphiques. Assurez-vous qu'ils sont installés avant l'utilisation de :mod:`cuspy`."
+
+#: ../../source/installation.rst:22
+msgid ""
+"In addition, :mod:`cuspy` relies on the use of the PEST++ executables. "
+"PEST++ executables for Windows are available at "
+"https://github.com/usgs/pestpp/bin/win, but you will need to compile them"
+" for Linux (see the instructions below, `Compiling PEST++ executables`_)."
+msgstr "De plus, :mod:`cuspy` utilise les exécutables de PEST++. Les exécutables de PEST++ pour Windows are sont disponibles sur https://github.com/usgs/pestpp/bin/win, mais pour Linux vous devrez les compiler (voir les instructions dessous, `Compilation des exécutables de PEST++`_)."
+
+#: ../../source/installation.rst:27
+msgid ""
+"If you do not have to compile the documentation, :mod:`sphinx` is not "
+"necessary to use :mod:`cuspy`, since a precompiled pdf copy of the "
+"documentation is included in the folder :file:`docs`."
+msgstr "Si vous ne devez pas compiler la documentation, :mod:`sphinx` n'est pas nécessaire pour utiliser :mod:`cuspy`, puisque une copie déjà compilée de la documentation en pdf est incluse dans le dossier :file:`docs`."
+
+#: ../../source/installation.rst:31
+msgid ""
+"If you need to compile the documentation from source (e.g., to modify "
+"it), you will need the package :mod:`sphinx`. To install :mod:`sphinx` "
+"just make:"
+msgstr "Si vous avez besoin de compiler la documentation depuis le code source (p. ex., parce que vous avez fait des modifications), vous aurez besoin du paquet :mod:`sphinx`. Pour installer :mod:`sphinx` simplement faites"
+
+#: ../../source/installation.rst:38
+msgid ""
+"The package :mod:`sphinx` works by default with reStructuredText "
+"documents. However, it can also recognise Markdown by installing the "
+"Markdown parser :mod:`recommonmark`."
+msgstr "Le paquet :mod:`sphinx` travaille par défaut avec documents de type reStructuredText. Mais il peut aussi reconnaître le formatage Markdown si on installe le parseur Markdown :mod:`recommonmark`."
+
+#: ../../source/installation.rst:45
+msgid ""
+"To create multilingual documentation, you will need the package :mod"
+":`sphinx-intl`. The installation process is as above:"
+msgstr "Pour créer documentation multilingue, vous avez besoin du paquet :mod:`sphinx-intl`. Le procès d'installation est comme ci-dessus :"
+
+#: ../../source/installation.rst:52
+msgid ""
+"To compile pdf documents (only in Linux), you will also need to have "
+"installed latex and the Python package :mod:`latexmk`. To install latex, "
+"type:"
+msgstr "Pour compiler documents pdf (seulement sous Linux), il vous faudra installer aussi latex et le paquet Python :mod:`latexmk`. Pour installer latex, tapez :"
+
+#: ../../source/installation.rst:59
+msgid "And to install :mod:`latexmk`, type:"
+msgstr "Et pour installer :mod:`latexmk`, tapez :"
+
+#: ../../source/installation.rst:65
+msgid "On Ubuntu you may use:"
+msgstr "Sur Ubuntu vous pouvez utiliser :"
+
+#: ../../source/installation.rst:72
+msgid "Cloning repositories"
+msgstr "Clonage du répertoire"
+
+#: ../../source/installation.rst:73
+msgid ""
+"You need to clone the :mod:`cuspy` package and :mod:`pestpp` source with "
+"git. For this go to an appropriate directory (e.g., "
+":file:`pathtoprojectsfolder`) where to copy the project's code in a "
+"subfolder and clone the project. For example, for :mod:`cuspy`:"
+msgstr "Vous devez cloner les paquets :mod:`okplm` et :mod:`pestpp` avec git. Pour ça, placez-vous dans un dossier approprié (p. ex., :file:`pathtoprojectsfolder`) où copier dans un sous-dossier le code du projet et clonez le projet : Par exemple, pour :mod:`cuspy`:"
+
+#: ../../source/installation.rst:83
+msgid ""
+"This command creates the :mod:`cuspy` repertory in the folder "
+":file:`pathtoprojectsfolder`."
+msgstr "Cette commande crée le répertoire :mod:`okplm` dans le dossier :file:`pathtoprojectsfolder`."
+
+#: ../../source/installation.rst:86
+msgid ""
+"To install the development branch of the project, after cloning the "
+":mod:`cuspy` package, change to the ``dev`` branch:"
+msgstr "Pour installer la branche de développement du projet, changez à la branche ``dev`` après avoir cloné le paquet :mod:`cuspy` package :"
+
+#: ../../source/installation.rst:94
+msgid "To clone the ``pestpp`` source, do:"
+msgstr "Pour cloner le code source de ``pestpp``, faites :"
+
+#: ../../source/installation.rst:103
+msgid "Compiling PEST++ executables"
+msgstr "Compilation des exécutables de PEST++"
+
+#: ../../source/installation.rst:104
+msgid ""
+"If you work on Linux, you need to compile the PEST++ executables. For "
+"this you will need to have ``gcc``, ``gfortran`` and the libraries "
+"``lapack`` and ``blas`` installed. To install them you can use:"
+msgstr "Si vous travaillez sous Linux, vous devrez compiler les exécutables de PEST++. Pour ça vous avez besoin d'avoir ``gcc``, ``gfortran`` et les librairies ``lapack`` et ``blas`` installés sur votre ordinateur. Pour les installer vous pouvez utiliser :"
+
+#: ../../source/installation.rst:114
+msgid ""
+"To compile the PEST++ executables, go to the :file:`pestpp/src` folder "
+"and do:"
+msgstr "Pour compiler les exécutables de PEST++, allez au dossier :file:`pestpp/src` et faites :"
+
+#: ../../source/installation.rst:121
+msgid ""
+"The compiled executables can then be found in the folder "
+":file:`pestpp/bin/linux`."
+msgstr "Les exécutables compilés se trouvent alors dans le dossier :file:`pestpp/bin/linux`."
+
+#: ../../source/installation.rst:124
+msgid "Installing :mod:`cuspy`"
+msgstr "Installation de :mod:`cuspy`"
+
+#: ../../source/installation.rst:125
+msgid ""
+"To install :mod:`cuspy`, go to the repertory created during the cloning "
+"of the package :mod:`cuspy` (e.g., :file:`pathtorepertorycuspy`) and "
+"install it using ``pip``:"
+msgstr "Pour installer :mod:`cuspy`, allez au répertoire créé pendant le clonage de :mod:`cuspy` (p. ex., :file:`pathtorepertorycuspy`) et installe-le avec ``pip``."
+
+#: ../../source/installation.rst:135
+msgid "Compilation of the project documentation"
+msgstr "Compilation de la documentation du projet"
+
+#: ../../source/installation.rst:136
+msgid ""
+"The source files for the project user manual are stored in the folder "
+":file:`pathtorepertorycuspy/sphinx-doc/source`. Sphinx also extracts data"
+" from the project modules docstrings."
+msgstr "Les fichiers source du manuel d'utilisation du projet sont stockés dans le dossier :file:`pathtorepertorycuspy/sphinx-doc/source`. Sphinx extrait aussi des données des docstrings des modules du projet."
+
+#: ../../source/installation.rst:141
+msgid "Documentation in English"
+msgstr "Documentation en anglais"
+
+#: ../../source/installation.rst:142
+msgid ""
+"To compile the user manual in English as html files go to the folder "
+":file:`pathtorepertorycuspy/sphinx-doc` and type:"
+msgstr "Pour compiler le manuel d'utilisation en anglais en html allez au dossier :file:`pathtorepertorycuspy/sphinx-doc` et tapez :"
+
+#: ../../source/installation.rst:149
+msgid ""
+"The output html files are saved in the folder :file:`pathtorepertorycuspy"
+"/sphinx-doc/build/html`."
+msgstr "Les fichiers html de sortie sont stockés dans le dossier :file:`pathtorepertorycuspy/sphinx-doc/build/html`."
+
+#: ../../source/installation.rst:152
+msgid "You can also compile the user manual as a pdf file making:"
+msgstr "Vous pouvez compiler aussi le manuel d'utilisation en pdf avec :"
+
+#: ../../source/installation.rst:158
+msgid ""
+"The source documentation files are converted to latex and then to pdf. "
+"The output latex and pdf files are saved in the folder "
+":file:`pathtorepertorycuspy/sphinx-doc/build/latex`."
+msgstr "Les fichiers source de la documentation sont convertis à latex et après à pdf. Les fichiers latex et pdf de sortie sont stockés dans le dossier  :file:`pathtorepertorycuspy/sphinx-doc/build/latex`."
+
+#: ../../source/installation.rst:163
+msgid "Documentation in French"
+msgstr "Documentation en français"
+
+#: ../../source/installation.rst:164
+msgid ""
+"To compile the user manual in French as html files go to the folder "
+":file:`pathtorepertorycuspy/sphinx-doc` and type:"
+msgstr "Pour compiler le manuel d'utilisation en français en html allez au dossier :file:`pathtorepertorycuspy/sphinx-doc` et tapez :"
+
+#: ../../source/installation.rst:171
+msgid ""
+"The output html files are saved in the folder :file:`pathtorepertorycuspy"
+"/sphinx-doc/build_fr/html`."
+msgstr "Les fichiers html de sortie sont stockés dans le dossier :file:`pathtorepertorycuspy/sphinx-doc/build_fr/html`."
+
+#: ../../source/installation.rst:174
+msgid "To compile the pdf documentation, type the following commands:"
+msgstr "Pour compiler la documentation en pdf, tapez les commandes suivantes :"
+
+#: ../../source/installation.rst:182
+msgid ""
+"The source documentation files are converted to latex and then to pdf. "
+"The output latex and pdf files are saved in the folder "
+":file:`pathtorepertorycuspy/sphinx-doc/build_fr/latex`."
+msgstr "Les fichiers source de la documentation sont convertis à latex et après à pdf. Les fichiers latex et pdf de sortie sont stockés dans le dossier  :file:`pathtorepertorycuspy/sphinx-doc/build_fr/latex`."
+
+#~ msgid "Using ``septuptools``:"
+#~ msgstr "Avec ``septuptools`` :"
+
+#~ msgid "Using ``pip``:"
+#~ msgstr "Avec ``pip`` :"
+

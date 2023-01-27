@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Segula Technologies - Office Français de la
+# Biodiversité
+# This file is distributed under the same license as the cuspy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr "Project-Id-Version: cuspy \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-09 10:11+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../source/presentation.rst:2
+msgid "Presentation"
+msgstr "Présentation"
+
+#: ../../source/presentation.rst:4
+msgid "What is the :mod:`cuspy` package?"
+msgstr "Qu'est-ce que c'est le paquet :mod:`cuspy` ?"
+
+#: ../../source/presentation.rst:5
+msgid ""
+"The package :mod:`cuspy` (Calibration, Uncertainty and Sensitivity "
+"analysis in PYthon) is a package in Python 3 that provides tools for "
+"parameter estimation, and sensitivity and uncertainty analyses of models."
+msgstr "Le paquet :mod:`cuspy` (Calibration, Incertitude et analyse de Sensitivité en PYthon) est un paquet en Python 3 qui proportionne des instruments pour l'estimation de paramètres, et pour les analyses de sensitivité et d'incertitude des modèles."
+
+#: ../../source/presentation.rst:9
+msgid ""
+"The package is based on the use of the Python package :mod:`pyemu` (White"
+" et al. 2016) and the PEST++ suite of software tools (White et al. 2019)."
+" PEST and PEST++ (Doherty et al. 2018) are software suites designed for "
+"and used mainly by the hydrological community. They implement several "
+"linear and nonlinear uncertainty analysis, calibration methods and global"
+" sensitivity analyses. The package :mod:`pyemu` offers a Python interface"
+" to use and configure PEST++ tools and to access and process their "
+"results."
+msgstr "The package is based on the use of the Python package :mod:`pyemu` (White et al. 2016) and the PEST++ suite of software tools (White et al. 2019). PEST and PEST++ (Doherty et al. 2018) are software suites designed for and used mainly by the hydrological community. Ils implémentent plusieurs analyses d'incertitudes linéaires et non linéaires, méthodes de calibration et analyses de sensitivité globale. Le paquet :mod:`pyemu` présente une interface Python pour utiliser et configurer les outils de PEST++ et pour accéder et traiter leurs résultats."
+
+#: ../../source/presentation.rst:18
+msgid ""
+"However, the package :mod:`cuspy` does not offer all the functionalities "
+"of PEST++ and :mod:`pyemu` (for example, tied parameters are not "
+"supported). In fact, the package :mod:`cuspy` has been designed with the "
+"objective of facilitating the application of :mod:`pyemu` and PEST++ "
+"functionalities to the water temperature models and hydrological models "
+"implemented with the packages :mod:`okplm`, :mod:`glmtools` and "
+":mod:`tributary`. Still, the design of the package is sufficiently "
+"general to be quite model-independent. The main requirements are that the"
+" model can be run through the command line and that it communicates with "
+"the user through text files."
+msgstr "Cependant, le paquet :mod:`cuspy` n'offre pas toutes les fonctionnalités de PEST++ et de :mod:`pyemu` (par exemple, les paramètres liés ne sont pas supportés). En fait, le paquet :mod:`cuspy` a été désigné avec l'objective de faciliter l'application des fonctionnalités de :mod:`pyemu` et PEST++ aux modèles de température de l'eau et hydrologiques implémentés dans les paquets :mod:`okplm`, :mod:`glmtools` et :mod:`tributary`. De toute façon, le design du paquet est suffisamment général pour être assez indépendant du modèle. Les principaux besoins sont qu'il soit possible de faire tourner le modèle depuis la ligne de commandes et que la communication avec l'utilisateur soit par le moyen de fichiers texte."
+
+#: ../../source/presentation.rst:29
+msgid "Authors"
+msgstr "Auteurs"
+
+#: ../../source/presentation.rst:30
+msgid "Jordi Prats-Rodríguez (jprats@segula.es)"
+msgstr "Jordi Prats-Rodríguez (jprats@segula.es)"
+
+#: ../../source/presentation.rst:31
+msgid "Pierre-Alain Danis (pierre-alain.danis@ofb.gouv.fr)"
+msgstr "Pierre-Alain Danis (pierre-alain.danis@ofb.gouv.fr)"
+
+#: ../../source/presentation.rst:34
+msgid "References"
+msgstr "Références"
+
+#: ../../source/presentation.rst:35
+msgid ""
+"Doherty, J.; White, J.; Welter, D. (2018) *PEST & PEST++. An Overview.* "
+"Watermark Numerical Computing. 48 p."
+msgstr "Doherty, J.; White, J.; Welter, D. (2018) *PEST & PEST++. An Overview.* Watermark Numerical Computing. 48 p."
+
+#: ../../source/presentation.rst:37
+msgid ""
+"White, J.T.; Fienen, M.N.; Doherty, J.E. (2016) A python framework for "
+"environmental model uncertainty analysis. *Environmental Modelling & "
+"Software*, 85, 217-228, doi: `10.1016/j.envsoft.2016.08.017 "
+"<https://dx.doi.org/10.1016/j.envsoft.2016.08.017>`_."
+msgstr "White, J.T.; Fienen, M.N.; Doherty, J.E. (2016) A python framework for environmental model uncertainty analysis. *Environmental Modelling & Software*, 85, 217-228, doi: `10.1016/j.envsoft.2016.08.017 <https://dx.doi.org/10.1016/j.envsoft.2016.08.017>`_."
+
+#: ../../source/presentation.rst:42
+msgid ""
+"White, J.; Welter, D.; Doherty, J. (2019) *PEST++ Version 4.2.16.* PEST++"
+" Development Team."
+msgstr "White, J.; Welter, D.; Doherty, J. (2019) *PEST++ Version 4.2.16.* PEST++ Development Team."
+

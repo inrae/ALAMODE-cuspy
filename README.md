@@ -5,6 +5,8 @@ Copyright 2020-2023 Segula Technologies - Office Français de la Biodiversité.
 <img title="banner ALAMODE" src="images/ALAMOD_withlogos.png">
 </p>
 
+[![DOI](https://zenodo.org/badge/594141785.svg)](https://zenodo.org/badge/latestdoi/594141785)
+
 ## Content
 
 1. [What is the cuspy package?](#purpose)
